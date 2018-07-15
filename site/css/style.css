@@ -13,10 +13,16 @@
 html {
   font-size: 18px;
   font-family: 'PFDinTextCondPro';
+  width: 100%;
+  position: relative; }
+
+body {
+  position: relative;
   width: 100%; }
 
 nav {
-  background-color: #f2f2f2; }
+  background-color: #f2f2f2;
+  width: 100%; }
 
 section {
   position: relative;
@@ -29,7 +35,8 @@ section {
 .container-fluid {
   max-width: 1280px;
   position: relative;
-  padding: 0; }
+  padding: 0;
+  width: 100%; }
 
 .buttons {
   background-color: rgba(0, 0, 0, 0);
@@ -130,7 +137,8 @@ button {
       width: 20px; }
 
 #nav_invisible {
-  display: none; }
+  display: none;
+  width: 100%; }
   #nav_invisible .nav-items {
     display: flex;
     height: auto;
@@ -359,15 +367,6 @@ button {
         background-color: #66cc66;
         color: white; }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
-  .kinds_block_buttons {
-    flex-direction: column; }
-  .kinds_block_button_more {
-    width: 50%;
-    margin-bottom: 0.3rem; }
-  .kinds_block_button_order {
-    width: 50%; } }
-
 .consulti {
   margin-top: 2rem;
   margin-bottom: 4rem; }
@@ -530,7 +529,8 @@ button {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      text-align: center; }
+      text-align: center;
+      position: relative; }
       .action_order_text_fields_wrap {
         position: relative; }
       .action_order_text_fields_in {
@@ -860,6 +860,164 @@ footer {
 
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 480px) {
+  body {
+    max-width: 480px; }
+  .buttons:hover {
+    transform: none; }
+  #top_nav {
+    max-width: 480px; }
+  .top {
+    padding-right: 0; }
+    .top_logo div {
+      display: inline-block; }
+    .top_button {
+      display: block; }
+    .top_theme {
+      display: none; }
+    .top_phone {
+      display: none; }
+  #nav_visible {
+    display: none; }
+  .primary {
+    margin-top: 0;
+    height: auto; }
+    .primary_info {
+      padding-bottom: 2rem; }
+    .primary_buttons button {
+      font-size: 14px; }
+    .primary_info {
+      align-items: center; }
+      .primary_info_text {
+        font-size: 1rem;
+        text-align: center; }
+  .kinds_head {
+    margin: 1rem 1rem 0 1rem; }
+  .kinds_block:hover {
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none; }
+  .consulti {
+    margin-top: 0;
+    margin-bottom: 0; }
+    .consulti_info {
+      margin-left: 0; }
+      .consulti_info_text {
+        padding-top: 0; }
+      .consulti_info_img {
+        margin-left: 0;
+        padding: 0;
+        display: none; }
+      .consulti_info_button {
+        width: 100%; }
+  .action {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; }
+    .action_box {
+      height: 120px;
+      width: 130px;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+      position: absolute;
+      right: 0;
+      top: 0; }
+    .action_order {
+      text-align: start; }
+      .action_order_text {
+        padding-left: 1rem; }
+        .action_order_text span {
+          font-size: 0.7rem; }
+        .action_order_text_action span {
+          font-size: 1.5rem;
+          padding-left: 3rem; }
+        .action_order_text_fields {
+          margin-top: 0;
+          flex-direction: column; }
+          .action_order_text_fields_button {
+            width: auto; }
+          .action_order_text_fields_in {
+            border: 1px solid #666666;
+            margin-bottom: 8px;
+            width: 100%;
+            height: 46px; }
+  .slider_block {
+    height: 370px; }
+    .slider_block_2 {
+      display: none; }
+  .slider_item {
+    line-height: 370px;
+    width: 320px; }
+  #reviews .container-fluid {
+    height: 100%;
+    position: relative; }
+  .reviews {
+    width: 100%;
+    height: auto;
+    overflow: hidden; }
+    .reviews p {
+      font-size: 14px; }
+    .reviews_arrow_n, .reviews_arrow_b {
+      display: none; }
+    .reviews_row {
+      width: 1440px;
+      height: auto;
+      position: relative; }
+    .reviews_block {
+      padding: 1rem 0 0 0;
+      max-width: 100%;
+      height: auto; }
+      .reviews_block_slider_0, .reviews_block_slider_1, .reviews_block_slider_2 {
+        display: none; }
+      .reviews_block_slider_items {
+        display: none; }
+      .reviews_block_slider_item {
+        display: none; }
+      .reviews_block_info {
+        width: 100%; }
+  div.contacts {
+    text-align: center; }
+    div.contacts_direct h2 {
+      margin-bottom: 1rem; }
+    div.contacts_direct_buttons {
+      margin-top: 1rem; }
+      div.contacts_direct_buttons .question {
+        margin-left: 0;
+        margin-right: 1rem; }
+    div.contacts_blocks {
+      font-size: 12px;
+      flex-wrap: nowrap;
+      margin-top: 0;
+      display: flex;
+      flex-direction: column;
+      text-align: center; }
+      div.contacts_blocks_author p {
+        color: #66cc66 !important; }
+      div.contacts_blocks_author a {
+        color: white !important; }
+      div.contacts_blocks div {
+        width: 100%; }
+    div.contacts_direct {
+      margin-top: 1rem; }
+    div.contacts .map {
+      padding-right: 0;
+      height: 250px; }
+  /* poups */
+  .popup_call {
+    left: 0;
+    top: 1rem;
+    max-width: 320px;
+    height: auto; }
+    .popup_call input {
+      border: 1px solid #666666; }
+  .close {
+    right: 5px;
+    top: 5px; } }
+
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
   body {
@@ -868,6 +1026,10 @@ footer {
     transform: none; }
   .top {
     padding-right: 0; }
+    .top_theme {
+      display: none; }
+    .top_phone {
+      display: none; }
     .top_logo div {
       display: inline-block; }
     .top_button {
@@ -1001,9 +1163,9 @@ footer {
         width: 100%; }
     div.contacts_direct {
       margin-top: 1rem; }
-    div.contacts .map {
-      padding-right: 0;
-      height: 250px; }
+  .map {
+    padding-right: 0;
+    height: 250px; }
   /* poups */
   .popup_call {
     left: 0;
