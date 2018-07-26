@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Пивной гурман </title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row sign">
+          <div class="sign_cnts">
+            <div class="time">
+                <p><i class="far fa-clock"></i><b> Время работы:</b> пн-вс / 11:00-23:00</p>  
+            </div>
+            <div class="phone">
+              <p>
+                <i class="fas fa-phone"></i>
+                <a href="tel:+789999999999" class="">8(999)999-99-99</a>
+              </p>
+              
+            </div>
+          </div>
+          <div class="sign_btns">
+            <button type="button" class=""><i class="fas fa-arrow-circle-up"></i> Личный кабинет</button>
+            <button type="button" class=""><i class="fas fa-beer"></i> Стать своим</button>
+            <button type="button" class=""><i class="fas fa-lock-open"></i> Зайти</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="container navbar navbar-expand-lg navbar-light ">
+      <a class="navbar-brand" href="#"><img src="img/logo.png" alt="Пивной Гурман"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Асортимент
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Пиво</a>
+              <a class="dropdown-item" href="#">Сидр</a>
+              <a class="dropdown-item" href="#">Медовуха</a>
+              <a class="dropdown-item" href="#">Домашние вина</a>
+              <a class="dropdown-item" href="#">Закуски</a>
+            </div>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link red" href="#offer">Акции</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#products">Ассортимент</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#components">Наши преимущества</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">О нас</a>
+          </li>
+        </ul>
+      </div>
+      <!-- корзина -->
+      <div class="basket">
+        <div class="basket_img">
+        </div>
+          <i style="font-size: 28px; color:#f7d48b; " class="far fa-money-bill-alt"></i>
+        <button type="button" class="basket_btn"> 1500 <i class="fas fa-angle-down"></i></button>
+      </div>
+      <!-- /.basket -->
+    </nav>
+
+    <article>
+      <section id="offer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7 offer_info">
+              <h3>5  литров пива в подарок при покупке от 3000</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat qui recusandae, numquam! Non quas at nemo adipisci magni cumque saepe, atque, beatae impedit, esse doloremque aliquid nulla exercitationem sed sequi.</p>
+              <button class="btns" type="button">Подробнее <i class="fas fa-angle-right"></i></button>
+            </div>
+            <div class="col-lg-5 offer_img"><img src="img/offer_img.png" alt="beer"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="products">
+        <div class="container">
+          <div class="row">
+            <h3>Горячие предложения</h3>
+            <ul class="products_list">
+              <li class="products_list_group">Пиво</li>
+              <li class="products_list_group">Сидр</li>
+              <li class="products_list_group">Медовуха</li>
+              <li class="products_list_group">Домашние вина</li>
+              <li class="products_list_group">закуски</li>
+            </ul>
+          </div>
+          <div class="row products_items">
+            <div class="col-lg-3 products_item">
+              <div class="products_item_img"><img src="img/beer1.png" alt=""></div>
+              <p class="products_item_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum itaque, a exercitationem dolorem non esse!</p>
+              <div class="products_item_btns">
+                <button><i class="fas fa-heart"></i></button>
+                <button><i class="fas fa-shopping-bag"></i></button>
+              </div>
+            </div>
+            <div class="col-lg-3 products_item">
+              <div class="products_item_img"><img src="img/beer2.png" alt=""></div>
+              <p class="products_item_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur soluta error sed, dolorem vel alias.</p>
+              <div class="products_item_btns">
+                <button><i class="fas fa-heart"></i></button>
+                <button><i class="fas fa-shopping-bag"></i></button>
+              </div>
+            </div>
+            <div class="col-lg-3 products_item">
+              <div class="products_item_img"><img src="img/beer3.png" alt=""></div>
+              <p class="products_item_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod sequi nobis temporibus ea possimus doloremque.</p>
+              <div class="products_item_btns">
+                <button><i class="fas fa-heart"></i></button>
+                <button><i class="fas fa-shopping-bag"></i></button>
+              </div>
+            </div>
+            <div class="col-lg-3 products_item">
+              <div class="products_item_img"><img src="img/beer4.png" alt=""></div>
+              <p class="products_item_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt delectus deleniti vitae error quaerat! Odio!</p>
+              <div class="products_item_btns">
+                <button><i class="fas fa-heart"></i></button>
+                <button><i class="fas fa-shopping-bag"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="row subscribe">
+            <div class="col-lg-4 col-xs-12">
+              <button class="btns ">Посмотреть все предложения <i class="fas fa-angle-right"></i></button>
+            </div>
+            <div class="col-lg-8 col-xs-12 mail">
+              <form name="mail" method="post" action="mail.php">
+                <div class="input">
+                  <label for="mail">Подпишись на нашу рассылку</label>
+                  <input type="text" placeholder="Введите свой email " id="mail">
+                  <i class="fab fa-telegram-plane"></i>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+       <section id="components">
+        <div class="container">
+          <div class="row">
+            <h3>Наши преимущества</h3>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 components_item">
+              <div class="components_item_img">
+                <img src="img/component-1.png" alt="">
+              </div>
+              <p>Лицензия на продажу алкаголя онлайн</p>
+            </div>
+            <div class="col-lg-3 components_item">
+              <div class="components_item_img">
+                <img src="img/component-2.png" alt="">
+              </div>
+              <p>Доставка во все районы города</p>
+            </div>
+            <div class="col-lg-3 components_item">
+              <div class="components_item_img">
+                <img src="img/component-32.png" alt="">
+              </div>
+              <p>Накопительная система скидок</p>
+            </div>
+            <div class="col-lg-3 components_item">
+              <div class="components_item_img">
+                <img src="img/component-4.png" alt="">
+              </div>
+              <p>Самая дешевая цена из онлайн сервисов</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="about">
+        <div class="container">
+          <h3>Как и где мы работаем</h3>
+          <div class="row">
+            <div class="col-lg-6 col-xs-12">
+              <h4>Наши услуги </h4>
+              <div class="about_info">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ipsum facilis voluptatibus non rerum explicabo tempora blanditiis optio, suscipit at, placeat harum itaque maiores vitae nobis commodi illo, esse accusantium.</p>
+                <p>Dolores ipsum facilis voluptatibus non rerum explicabo tempora blanditiis optio, suscipit at, placeat harum itaque maiores vitae nobis commodi illo, esse accusantium.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident quas aut numquam dolorem facilis, expedita, rem totam molestias quam voluptatibus laborum suscipit ducimus possimus est atque, vitae eum. Nihil, autem?</p>
+              </div>
+              <button class="btns" type="button">Подробнее <i class="fas fa-angle-right"></i></button>
+            </div>
+            <div class="col-lg-5 offset-lg-1 col-xs-12">
+              <h4>о нас в цифрах </h4>
+              <div class="five">
+                <div class="five_item"><span>5</span><p>Магазинов в СПб и ЛО</p></div>
+                <div class="five_item"><span>5</span><p>Лет работы на рынке</p></div>
+                <div class="five_item"><span>5</span><p>Номинаций и премий</p></div>
+              </div>
+              <h4>мы на карте </h4>
+              <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20287.85750078417!2d49.117628431432884!3d55.79238509280091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb3bb3a22fde65b42!2sTHE+OFFICE+NARGILIA!5e0!3m2!1sru!2sru!4v1531042647577" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 menu">
+            <ul class="menu_groups">
+              <li><a href="#">Пиво</a>
+                <ul>
+                  <li><a href="#">Светлое</a></li>
+                  <li><a href="#">темное</a></li>
+                  <li><a href="#">живое</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Сидр</a>
+                <ul>
+                  <li><a href="#">грушевый</a></li>
+                  <li><a href="#">яблочный</a></li>
+                  <li><a href="#">сливовый</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Медовуха</a>
+                <ul>
+                  <li><a href="#">липовая</a></li>
+                  <li><a href="#">цветочная</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Домашние вина</a>
+                <ul>
+                  <li><a href="#">изобелла</a></li>
+                  <li><a href="#">мускат</a></li>
+                  <li><a href="#">мисе</a></li>
+                </ul>
+              </li>
+              <li><a href="#">закуски</a>
+                <ul>
+                  <li><a href="#">сухарики</a></li>
+                  <li><a href="#">орешки</a></li>
+                  <li><a href="#">рыба</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 social">
+            <p><i class="fas fa-phone"></i><a href="tel:+789999999999" class="phone">8(999)999-99-99</a></p>
+            <p><i class="far fa-clock"></i><b>Время работы</b><br>пн-вс/ 11:00-23:00</p>  
+            <p>
+              <a href="https://vk.com"><i class="fab fa-vk"></i></a>
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
+              <a href="#"><i class="fab fa-telegram"></i></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+
+    
+
+    <!-- Modal -->
+        <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                
+              </div>
+              <div class="modal-body">
+               <div class="row">
+                 
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script>
+      $(document).ready(
+          function() {
+              $("html").niceScroll({cursorcolor:"#000"});
+          }
+      );
+    </script>
+  </body>
+</html>
