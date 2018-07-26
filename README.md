@@ -8,3 +8,4 @@
  
 My works:
 - [Сайт по продаже жалюзи](https://madmaxinsight.github.io/site/) 
+- [Сайт по продаже пива](https://madmaxinsight.github.io/beer/) 
