@@ -7,5 +7,6 @@
 *Занимаюсь разработкой на таких языках, как C/C++/php/JavaScript, также преуспеваю в верстке адативных сайтов на HTML/CSS с использованием библиотех таких библиотек как Bootstrap, AngularJS. Посадка на WordPress также в ассортименте)* 
  
 My works:
+- [Сайт по для детской спортивной школы](https://dcspofficial.ru/) 
 - [Сайт по продаже жалюзи](https://madmaxinsight.github.io/site/) 
 - [Сайт по продаже пива](https://madmaxinsight.github.io/beer/) 
