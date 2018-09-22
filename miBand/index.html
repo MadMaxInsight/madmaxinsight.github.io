@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title> Xiaomi Hey Plus </title>
+    <link rel="shortcut icon" href="http://localhost:3000/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" href="img/logoTop.png" />
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- animate.css -->
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/timeTo.css" rel="stylesheet">
+    <link href="css/slick.css" rel="stylesheet">
+    <link href="css/slick-theme.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body data-spy="scroll">
+    <header>
+      <!-- <div class="dark1"></div> -->
+        <div class="container">
+          <nav class="navbar  navbar-expand-lg navbar-light fixed-top>
+            <a class="navbar-brand" href="#"><div class="logo_box">
+              <img class="logo_1" src="img/logoTop.png" alt=""><img class="logo" src="img/logo.svg" alt="">
+            </div></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link active" href="#main">Акция<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">О трекере</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#galery">Галерея</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#delivery">Доставка</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+    </header>
+    <article>
+      <section id="main">
+        <a href="#" id="popup__toggle" onclick="return false;" data-toggle="modal" data-target="#order_form"><div class="circlephone" style="transform-origin: center;"></div><div class="circle-fill" style="transform-origin: center;"></div><div class="img-circle" style="transform-origin: center;"><div class="img-circleblock" style="transform-origin: center;"></div></div></a>
+        <div class="dark2"></div>
+        <div class="container">
+          <div class="row">
+            <h1 class=" col-xs-12 col-lg-12 wow fadeInDown">Xiaomi Hey Plus<span> NFC</span></h1>
+            <div class="row " style="margin: 0;">
+              <div class="col-xs-12 col-md-5 main_action wow fadeInLeft" data-wow-delay="1s">
+                <h3>Новинка со скидкой 20%</h3>
+                <div id="countdown"></div>
+                <p>До конца акции <br> Старая цена <span style="color: red; text-decoration:line-through;">5000</span> <br>Новая цена <span style="color: red;">3000</span></p>
+                <!-- <a class="btn btn-primary" href="#">Подробнее о трекере</a > -->
+                <div class="main_action_btns">
+                  <button type="button" class="btn btn-primary more_link"><a href="#delivery">Заказать со скидкой</a></button>
+                  <button type="button" class="btn btn-primary more_video" data-toggle="modal" data-target="#moreVideo">Видеообзор трекера</button>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-4 main_img wow fadiIn" >
+                <img class="wow flip" data-wow-delay="1.5s" src="img/main_img.png" height="350" alt="Картинка с трекером Xiaomi Hey Plus">
+              </div>
+              <div class="col-xs-12 col-md-3 main_form wow fadeInRight" data-wow-delay="1s">
+                <h3 class="wow fadeInDown">Успей заказать со скидкой</h3>
+                <form action="send.php" method="post">
+                  <div class="form-group ">
+                    <input name="" type="text" class="form-control" id="exampleInputName" aria-describedby="emailHelp" placeholder="Ваше имя">
+                  </div>
+                  <div class="form-group">
+                    <input name="" type="password" class="form-control" id="exampleInputPhone" placeholder="Ваш номер телефона">
+                  </div>
+                  <div class="form-group">
+                    <input name="" type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Ваш e-mail">
+                  </div>
+                  <button type="submit" class="btn btn-primary offer">Оформить заказ</button>
+                </form>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="like">
+        <div class="dark2"></div>
+
+        <div class="container">
+            <h3 class="wow fadeInDown">Преимущества</h3>
+          <div class="row wow flipInX">
+            <div class="like col-xs-8 offset-xs-2 col-md-4 col-lg-2 ">
+              <div class="like_box">
+                <div class="like_circle">
+                  <img src="img/like-1.png" alt="">
+                </div>
+                <h5>Здоровье</h5>
+                <p>Просмотр данных об активности в реальном времени</p>
+              </div>
+            </div>
+            <div class="like col-xs-8 offset-xs-2 col-md-4 col-lg-2">
+              <div class="like_box">
+                <div class="like_circle">
+                  <img src="img/like-2.png" alt="">
+                </div>
+                <h5>Надежность</h5>
+                <p>Защита от воды с погружением до 50 метров</p>
+              </div>
+            </div>
+            <div class="like col-xs-8 offset-xs-2 col-md-4 col-lg-2">
+              <div class="like_box">
+                <div class="like_circle">
+                  <img src="img/like-3.png" alt="">
+                </div>
+                <h5>NFC-модуль</h5>
+                <p>Безконтактная оплата товаров и услуг</p>
+              </div>
+            </div>
+            <div class="like col-xs-8 offset-xs-2 col-md-4 col-lg-2">
+              <div class="like_box">
+                <div class="like_circle">
+                  <img src="img/like-4.png" alt="">
+                </div>
+                <h5>Цветной экран</h5>
+                <p>Cенсорный AMOLED-дисплей с разрешением 240×120px</p>
+              </div>
+            </div>
+            <div class="like col-xs-8 offset-xs-2 col-md-4 col-lg-2">
+              <div class="like_box">
+                <div class="like_circle">
+                  <img src="img/like-5.png" alt="">
+                </div>
+                  <h5>Bluetooth 4.2</h5>
+                  <p>Средняя автономность 20 дней</p>
+              </div>
+            </div>
+            <div class="like col-xs-8 offset-xs-2 col-md-4 col-lg-2">
+              <div class="like_box">
+                <div class="like_circle">
+                  <img src="img/like-6.png" alt="">
+                </div>
+                  <h5>Шагометр</h5>
+                  <p>Автоматический мониторинг качества сна и подсчет шагов</p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <div class="dark2">
+          <img class="about_bgimg" src="img/forvarya.jpg" alt="">
+        </div>
+        <div class="container">
+          <div class="row d-flex flex-column ">
+            <h3 class="wow fadeInDown">Про браслет</h3>
+            <div class="about_block row">
+              <div class="about_block_txt about_block_txt_1 col-xs-12 col-md-6 offset-1 d-flex flex-column wow fadeInLeft">
+                <h4 style="text-align: left;">Технические характеристики</h4>
+                <p>Поддержка NFC и Android Pay</p>
+                <p>Сенсорный AMOLED-дисплей c диагональю 0.95 дюймов  с разрешением 240×120 px, плотностью 282 PPI</p>
+                <p>Батарея 120 mAh, время зарядки 2 часа, средняя автономность 18 дней</p>
+                <p>Датчик сердцебиения (отслеживание в реальном времени) PPG с высокоточным трехосевым сенсором , гироскоп, акселерометр</p>
+                <p>За точность отслеживания активности отвечает алгоритм Anti-motion Skylark</p>
+                <p>Защита от воды с погружением до 50 метров</p>
+                <p>Bluetooth 4.2</p>
+              </div>
+              <div class="about_block_img about_block_img_1 col-xs-12 col-md-3 offset-1 wow fadeInRight">
+                <img src="img/about_1.png" height="350" alt="">
+              </div>
+            </div>
+
+            <div class="about_block row">
+              <div class="about_block_img col-xs-12 col-md-3 offset-1 wow fadeInLeft">
+                <img src="img/about_2.png" height="350" alt="">
+              </div>
+              <div class="about_block_txt d-flex flex-column col-xs-12 col-md-6 offset-1 wow fadeInRight">
+                <h4 style="text-align: left;">Особенности</h4>
+                <p>Xiaomi Hey Plus по своему функционалу практически схож с Mi Band 3, но отличия все-таки есть. Он также имеет поддержку отображения уведомлений со смартфона, управления звонками (идентификатор звонящего), фитнес-программы, мониторинг активности, пульсометр, умный будильник.</p>
+                <p>Смартбэнд может отображать до 10 уведомлений и 10 звонков на дисплее одновременно, каждое сообщение ограничено 300 символами. В фитнес-возможности входят отслеживание плавания, ходьбы, бега, есть контроль сна.</p>
+                <p>Умный гаджет работает в паре с фирменным приложением Hey Plus, есть и поддержка Mi Home.</p>
+              </div>
+            </div>
+            <div class="about_block row">
+              <div class="about_block_txt about_block_price col-xs-6 col-md-6 offset-md-2 d-flex flex-column wow fadeInLeft">
+                <h4 style="text-align: left;">Цена</h4>
+                <p>Только у нас вы можете приобрести данный браслет по самой низкой цене в СПб.</p>
+                <p>Сейчас у нас действует акция и Вы можете купить Xiaomi HeyPlus Smart Bracelet за 3000 что на 20% дешевле, вместо 5000. </p>
+              </div>
+              <div class="about_block_btn about_block_price_btn col-md-4 col-xs-6 wow fadeInRight" >
+                <p>Купить по скидке 30%</p>
+                <button type="button" class="btn btn-primary about_link offer"><a href="#delivery">Оформить заказ</a></button>
+              </div>
+            </div>
+          </div>
+          <h3 id="galery" class="wow fadeInDown" style="text-align: center;">Фотогалерея</h3>
+          <div class="d-flex justify-content-center wow zoomIn" style="position: relative;">
+            <div class="about_block_slider">
+              <div><img src="img/slide1.jpg" alt=""></div>
+              <div><img src="img/slide2.jpg" alt=""></div>
+              <div><img src="img/slide3.jpg" alt=""></div>
+              <div><img src="img/slide4.jpg" alt=""></div>
+              <div><img src="img/slide5.jpg" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="delivery">
+        <div class="dark2"></div>
+        <div class="container">
+          <div class="row delivery justify-content-center">
+            <div class="col-lg-7 col-xs-12">
+              <h3 class="wow fadeInDown">Приобретение товара</h3>
+              <p class="wow fadeInDown" data-wow-delay="1.5s">Прямая доставка в отделение Почты России в вашем городе</p>
+              <div class="delivery_form wow fadeInDown" data-wow-delay="1s">
+                <form>
+                  <div class="form-row">
+                    <div class="form-group col-md-12">
+                      <label for="ruInputName">Ваше имя</label>
+                      <input name="" type="text" class="form-control" id="ruInputName" aria-describedby="emailHelp" placeholder="Ваше имя">
+                    </div>
+                    <div class="form-group col-md-12">
+                      <label for="ruInputPhone">Ваш телефон</label>
+                      <input name="" type="text" class="form-control" id="ruInputPhone" placeholder="Ваш номер телефона">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-12">
+                      <label for="spbInputEmail">e-mail</label>
+                      <input name="" type="email" class="form-control" id="spbInputEmail" aria-describedby="emailHelp" placeholder="Ваш e-mail">
+                    </div>
+                  </div>
+                  <div class="collapse" id="collapseExample">
+                    <div class="form-row">
+                        <div class="form-group col-md-8">
+                          <label for="inputStreet">Улица</label>
+                          <input name="" type="text" class="form-control" id="inputStreet" placeholder="ул.Озерковая">
+                        </div>
+                        <div class="form-group col-md-2">
+                          <label for="inputHouse">Дом</label>
+                          <input name="" type="text" class="form-control" id="inputHouse" placeholder="35">
+                        </div>
+                        <div class="form-group col-md-2">
+                          <label for="inputFlat">Квартира</label>
+                          <input name="" type="text" class="form-control" id="inputFlat" placeholder="29">
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-7">
+                          <label for="inputCity">Город</label>
+                          <input name="" type="text" class="form-control" id="inputCity" placeholder="Ваш город">
+                        </div>
+                        <div class="form-group col-md-5">
+                          <label for="inputIndex">Почтовый интекс</label>
+                          <input name="" type="text" class="form-control" id="inputIndex" placeholder="198514">
+                        </div>
+                      </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-5">
+                      <button type="submit" class="btn btn-primary offer">Подтвердить заказ</button>
+                      <small id="emailHelp" class="form-text text-muted">Сейчас на товар действует скидка 30%.</small>
+                    </div>
+                    <div class="form-group col-md-5 offset-md-2">
+                      <button class="adr_btn btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Указать адрес доставки</button>
+                      <small id="emailHelp" class="form-text text-muted">Нажмите, чтобы отобразить поля ввода адреса.</small>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+    <footer>
+      <div class="dark2"></div>
+      <div class="container">
+        <div class="row align-items-end">
+          <div class="col-md-4  col-xs-12 mb-5">
+            <div class="footer_logo">
+              <img class="logo_1" src="img/logoTop.png" alt=""><img class="logo" src="img/logo.svg" alt="">
+              <p>Продажа трекеров со скидкой 30% и бесплатной доставкой</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-xs-12 text-center">
+            <p>Адрес нашего магазина:<br>г.Санкт-Петербург, пр.Стачек, 34</p>
+            <p class="footer_policy"><a data-toggle="modal" data-target="#policy">Политика конфиденциальности</a></p>
+          </div>
+          <div class="col-md-4 col-xs-12 footer_contacts">
+            <p>Остались вопросы?<br>Наши контакты:</p>
+            <p class="footer_tel">
+              <i class="fas fa-phone"></i>
+              <a href="tel:+79042623459">+7(904)262-34-59</a></p>
+            <p>
+              <i class="far fa-envelope"></i>
+              <a href="example@gmail.com" class="">maxvarvarin3@gmail.com</a>
+            </p>
+<!--             <p>
+              <i class="fab fa-vk"></i>
+              <a href="https://vk.com" class="">Наша группа в ВК</a>
+            </p> -->
+            <p>
+              <i class="fab fa-instagram"></i>
+              <a href="https://instagram.com" class="">@xiaomi_hey_plus</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <a href="#" data-target="#modalOrder" data-toggle="modal" id="popup__toggle" onclick="return false;"><div class="circlephone" style="transform-origin: center;"></div><div class="circle-fill" style="transform-origin: center;"></div><div class="img-circle" style="transform-origin: center;"><div class="img-circleblock" style="transform-origin: center;"></div></div></a>
+    </footer>
+<!-- Modal Видео-->
+<div class="modal fade" id="moreVideo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JvG6pfN04wA?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ModalOrder -->
+<div id="modalOrder" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 style="color:black;" class="modal-title" id="order_form_title">Отсавьте данные для связи</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form action="send.php" method="post">
+        <div class="modal-body">
+            <div class="form-group ">
+              <input name="" type="text" class="form-control" id="exampleInputName" aria-describedby="emailHelp" placeholder="Ваше имя">
+            </div>
+            <div class="form-group">
+              <input name="" type="password" class="form-control" id="exampleInputPhone" placeholder="Ваш номер телефона">
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary offer">Отставить заявку</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Modal конфиденциальность -->
+<div class="modal fade" id="policy" tabindex="-1" role="dialog" aria-labelledby="policyTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content ">
+      <div class="modal-header bg-info">
+        <h5 class="modal-title" id="policyTitle">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre>
+г. Москва                                  «11» августа 2018 г.
+
+Настоящая Политика конфиденциальности персональных данных (далее – Политика конфиденциальности) действует в отношении всей информации, которую Интернет-магазин «Xiaomi_hey_plus»,
+
+расположенный на доменном имени www.xiaomiheyplus.ru, может получить о Пользователе во время использования сайта www.xiaomiheyplus.ru, программ и продуктов Xiaomi_hey_plus.
+
+1. ОПРЕДЕЛЕНИЕ ТЕРМИНОВ
+
+1.1 В настоящей Политике конфиденциальности используются следующие термины:
+
+1.1.1.  «Администрация сайта www.xiaomiheyplus.ru (далее – Администрация сайта) » – уполномоченные сотрудники на управления сайтом, действующие от имени WebCrimeaStudio, которые организуют и (или) осуществляет обработку персональных данных, а также определяет цели обработки персональных данных, состав персональных данных, подлежащих обработке, действия (операции), совершаемые с персональными данными.
+
+1.1.2. «Персональные данные» - любая информация, относящаяся к прямо или косвенно определенному или определяемому физическому лицу (субъекту персональных данных).
+
+1.1.3. «Обработка персональных данных» - любое действие (операция) или совокупность действий (операций), совершаемых с использованием средств автоматизации или без использования таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных.
+
+1.1.4. «Конфиденциальность персональных данных» - обязательное для соблюдения Оператором или иным получившим доступ к персональным данным лицом требование не допускать их распространения без согласия субъекта персональных данных или наличия иного законного основания.
+
+1.1.5. «Пользователь сайта www.xiaomiheyplus.ru (далее ? Пользователь)» – лицо, имеющее доступ к Сайту, посредством сети Интернет и использующее Сайт www.xiaomiheyplus.ru.
+
+1.1.6. «Cookies» — небольшой фрагмент данных, отправленный веб-сервером и хранимый на компьютере пользователя, который веб-клиент или веб-браузер каждый раз пересылает веб-серверу в HTTP-запросе при попытке открыть страницу соответствующего сайта.
+
+1.1.7. «IP-адрес» — уникальный сетевой адрес узла в компьютерной сети, построенной по протоколу IP.
+
+2. ОБЩИЕ ПОЛОЖЕНИЯ
+
+2.1. Использование Пользователем сайта www.xiaomiheyplus.ru означает согласие с настоящей Политикой конфиденциальности и условиями обработки персональных данных Пользователя.
+
+2.2. В случае несогласия с условиями Политики конфиденциальности Пользователь должен прекратить использование сайта www.xiaomiheyplus.ru.
+
+2.3.Настоящая Политика конфиденциальности применяется только к сайту www.xiaomiheyplus.ru. Интернет-магазин не контролирует и не несет ответственность за сайты третьих лиц, на которые Пользователь может перейти по ссылкам, доступным на сайте www.xiaomiheyplus.ru.
+
+2.4. Администрация сайта не проверяет достоверность персональных данных, предоставляемых Пользователем сайта www.xiaomiheyplus.ru.
+
+ 
+
+3. ПРЕДМЕТ ПОЛИТИКИ КОНФИДЕНЦИАЛЬНОСТИ
+
+ 
+
+3.1. Настоящая Политика конфиденциальности устанавливает обязательства Администрации сайта www.xiaomiheyplus.ru по неразглашению и обеспечению режима защиты конфиденциальности персональных данных, которые Пользователь предоставляет по запросу Администрации сайта при регистрации на сайте www.xiaomiheyplus.ru или при оформлении заказа для приобретения Товара.
+
+3.2. Персональные данные, разрешённые к обработке в рамках настоящей Политики конфиденциальности, предоставляются Пользователем путём заполнения регистрационной формы на Сайте www.xiaomiheyplus.ru в разделе Название раздела и включают в себя следующую информацию:
+
+3.2.1. фамилию, имя, отчество Пользователя;
+
+3.2.2. контактный телефон Пользователя;
+
+3.2.3. адрес электронной почты (e-mail);
+
+3.2.4. адрес доставки Товара;
+
+3.2.5. место жительство Пользователя.
+
+3.3. Интернет-магазин защищает Данные, которые автоматически передаются в процессе просмотра рекламных блоков и при посещении страниц, на которых установлен статистический скрипт системы ("пиксель"):
+
+IP адрес;
+информация из cookies;
+информация о браузере (или иной программе, которая осуществляет доступ к показу рекламы);
+время доступа;
+адрес страницы, на которой расположен рекламный блок;
+реферер (адрес предыдущей страницы).
+3.3.1. Отключение cookies может повлечь невозможность доступа к частям сайта www.xiaomiheyplus.ru, требующим авторизации.
+
+3.3.2. Интернет-магазин осуществляет сбор статистики об IP-адресах своих посетителей. Данная информация используется с целью выявления и решения технических проблем, для контроля законности проводимых финансовых платежей.
+
+3.4. Любая иная персональная информация неоговоренная выше (история покупок, используемые браузеры и операционные системы и т.д.) подлежит надежному хранению и нераспространению, за исключением случаев, предусмотренных в п.п. 5.2. и 5.3. настоящей Политики конфиденциальности.
+
+4. ЦЕЛИ СБОРА ПЕРСОНАЛЬНОЙ ИНФОРМАЦИИ ПОЛЬЗОВАТЕЛЯ
+
+4.1. Персональные данные Пользователя Администрация сайта www.xiaomiheyplus.ru может использовать в целях:
+
+4.1.1. Идентификации Пользователя, зарегистрированного на сайте www.xiaomiheyplus.ru, для оформления заказа и (или) заключения Договора купли-продажи товара дистанционным способом с Название www.xiaomiheyplus.ru.
+
+4.1.2. Предоставления Пользователю доступа к персонализированным ресурсам Сайта www.xiaomiheyplus.ru.
+
+4.1.3. Установления с Пользователем обратной связи, включая направление уведомлений, запросов, касающихся использования Сайта www.xiaomiheyplus.ru, оказания услуг, обработка запросов и заявок от Пользователя.
+
+4.1.4. Определения места нахождения Пользователя для обеспечения безопасности, предотвращения мошенничества.
+
+4.1.5. Подтверждения достоверности и полноты персональных данных, предоставленных Пользователем.
+
+4.1.6. Создания учетной записи для совершения покупок, если Пользователь дал согласие на создание учетной записи.
+
+4.1.7. Уведомления Пользователя Сайта www.xiaomiheyplus.ru о состоянии Заказа.
+
+4.1.8. Обработки и получения платежей, подтверждения налога или налоговых льгот, оспаривания платежа, определения права на получение кредитной линии Пользователем.
+
+4.1.9. Предоставления Пользователю эффективной клиентской и технической поддержки при возникновении проблем связанных с использованием Сайта www.xiaomiheyplus.ru.
+
+4.1.10. Предоставления Пользователю с его согласия, обновлений продукции, специальных предложений, информации о ценах, новостной рассылки и иных сведений от имени www.xiaomiheyplus.ru или от имени партнеров www.xiaomiheyplus.ru.
+
+4.1.11. Осуществления рекламной деятельности с согласия Пользователя.
+
+4.1.12. Предоставления доступа Пользователю на сайты или сервисы партнеров www.xiaomiheyplus.ru с целью получения продуктов, обновлений и услуг.
+
+5. СПОСОБЫ И СРОКИ ОБРАБОТКИ ПЕРСОНАЛЬНОЙ ИНФОРМАЦИИ
+
+5.1. Обработка персональных данных Пользователя осуществляется без ограничения срока, любым законным способом, в том числе в информационных системах персональных данных с использованием средств автоматизации или без использования таких средств.
+
+5.2. Пользователь соглашается с тем, что Администрация сайта вправе передавать персональные данные третьим лицам, в частности, курьерским службам, организациями почтовой связи, операторам электросвязи, исключительно в целях выполнения заказа Пользователя, оформленного на Сайте  «Xiaomi_hey_plus», включая доставку Товара.
+
+5.3. Персональные данные Пользователя могут быть переданы уполномоченным органам государственной власти Российской Федерации только по основаниям и в порядке, установленным законодательством Российской Федерации.
+
+5.4. При утрате или разглашении персональных данных Администрация сайта информирует Пользователя об утрате или разглашении персональных данных.
+
+5.5. Администрация сайта принимает необходимые организационные и технические меры для защиты персональной информации Пользователя от неправомерного или случайного доступа, уничтожения, изменения, блокирования, копирования, распространения, а также от иных неправомерных действий третьих лиц.
+
+5.6. Администрация сайта совместно с Пользователем принимает все необходимые меры по предотвращению убытков или иных отрицательных последствий, вызванных утратой или разглашением персональных данных Пользователя.
+
+6. ОБЯЗАТЕЛЬСТВА СТОРОН
+
+6.1. Пользователь обязан:
+
+6.1.1. Предоставить информацию о персональных данных, необходимую для пользования Сайтом www.xiaomiheyplus.ru.
+
+6.1.2. Обновить, дополнить предоставленную информацию о персональных данных в случае изменения данной информации.
+
+6.2. Администрация сайта обязана:
+
+6.2.1. Использовать полученную информацию исключительно для целей, указанных в п. 4 настоящей Политики конфиденциальности.
+
+6.2.2. Обеспечить хранение конфиденциальной информации в тайне, не разглашать без предварительного письменного разрешения Пользователя, а также не осуществлять продажу, обмен, опубликование, либо разглашение иными возможными способами переданных персональных данных Пользователя, за исключением п.п. 5.2. и 5.3. настоящей Политики Конфиденциальности.
+
+6.2.3. Принимать меры предосторожности для защиты конфиденциальности персональных данных Пользователя согласно порядку, обычно используемого для защиты такого рода информации в существующем деловом обороте.
+
+6.2.4. Осуществить блокирование персональных данных, относящихся к соответствующему Пользователю, с момента обращения или запроса Пользователя или его законного представителя либо уполномоченного органа по защите прав субъектов персональных данных на период проверки, в случае выявления недостоверных персональных данных или неправомерных действий.
+</pre>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- конец попапов -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.time-to.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script>
+      $(document).ready(
+          function() {
+              $("html").niceScroll({cursorcolor:"#000"});
+          }
+      );
+       
+      $(".nav-item").on("click","a", function (event) {
+          event.preventDefault();
+          var id  = $(this).attr('href'),
+          top = $(id).offset().top;
+          // top-=150;
+          $('body,html').animate({scrollTop: top}, 1500);
+        });
+    
+        $('#countdown').timeTo({
+        timeTo: new Date(new Date('Thu Sep 29 2018 14:04:00 GMT+0300 (Москва, стандартное время)')),
+        displayDays: 2,
+        theme: "black",
+        displayCaptions: true,
+        fontSize: 32,
+        captionSize: 12
+      });
+    
+      $('.about_block_slider').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          dots: true,
+          infinite: true,
+          autoplaySpeed: 2000,
+          prevArrow: '<i id="prev" class="fas fa-chevron-circle-left slider_prev" aria-hidden="true">',
+          nextArrow: '<i id="next" class="fas fa-chevron-circle-right slider_next" aria-hidden="true"></i>',
+          adaptiveHeight: true
+        });
+          
+    </script>
+    <script>
+      $(document).ready(function() {
+  
+        var header = $("header"); 
+        var scrollPrev = 0 
+        
+        $(window).scroll(function() {
+          var scrolled = $(window).scrollTop(); 
+          var firstScrollUp = false;  
+          var firstScrollDown = false; 
+          if ( scrolled > 0 ) {
+            if ( scrolled > scrollPrev ) {
+              firstScrollUp = false; 
+              if ( scrolled < header.height() + header.offset().top ) {
+                if ( firstScrollDown === false ) {
+                  var topPosition = header.offset().top;
+                  header.css({
+                    "top": topPosition + "px"
+                  });
+                  firstScrollDown = true;
+                }
+                header.css({
+                  "position": "absolute"
+                });
+              } else {
+                header.css({
+                  "position": "fixed",
+                  "top": "-" + header.height() + "px"
+                });
+              }
+            } else {
+              firstScrollDown = false; 
+              if ( scrolled > header.offset().top ) {
+                if ( firstScrollUp === false ) {
+                  var topPosition = header.offset().top; 
+                  header.css({
+                    "top": topPosition + "px"
+                  });
+                  firstScrollUp = true;
+                }
+                header.css({
+                  "position": "absolute"
+                });
+              } else {
+                header.removeAttr("style");
+              }
+            }
+            scrollPrev = scrolled;
+          } 
+        });   
+        $('a.nav-link').click(function(){
+          $('a.active').removeClass('active');
+          $(this).addClass('active');
+        });
+      });
+    </script>
+  </body>
+</html>
