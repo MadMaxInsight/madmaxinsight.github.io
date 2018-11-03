@@ -11,3 +11,5 @@ My works:
 - [Сайт по для детской спортивной школы](https://dcspofficial.ru/) 
 - [Сайт по продаже жалюзи](https://madmaxinsight.github.io/site/) 
 - [Сайт по продаже пива](https://madmaxinsight.github.io/beer/) 
+- [Продающий лендинг фитнес трекеров](https://madmaxinsight.github.io/miBand/)
+
