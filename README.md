@@ -12,4 +12,5 @@ My works:
 - [Сайт по продаже жалюзи](https://madmaxinsight.github.io/site/) 
 - [Сайт по продаже пива](https://madmaxinsight.github.io/beer/) 
 - [Продающий лендинг фитнес трекеров](https://madmaxinsight.github.io/miBand/)
+- [Студия](https://madmaxinsight.github.io/good-production.ru/)
 
