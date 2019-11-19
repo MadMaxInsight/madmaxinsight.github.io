@@ -1,0 +1,63 @@
+.head-post__item h1 {
+  font-family: 'Tn', sans-serif; }
+
+body,
+p,
+.contacts__form-container input,
+.contacts__form-container textarea {
+  font-family: 'Rg', sans-serif; }
+
+/* Bold Font */
+.logo,
+.navigation__link,
+.head-post__button,
+.section__header,
+.portfolio__filter-item,
+.contacts__form-container input::-webkit-input-placeholder,
+.contacts__form-container textarea::-webkit-input-placeholder,
+.contacts__form-container button,
+.portfolio__content-button {
+  font-family: 'Bld', sans-serif; }
+.logo,
+.navigation__link,
+.head-post__button,
+.section__header,
+.portfolio__filter-item,
+.contacts__form-container input::-moz-placeholder,
+.contacts__form-container textarea::-moz-placeholder,
+.contacts__form-container button,
+.portfolio__content-button {
+  font-family: 'Bld', sans-serif; }
+.logo,
+.navigation__link,
+.head-post__button,
+.section__header,
+.portfolio__filter-item,
+.contacts__form-container input:-ms-input-placeholder,
+.contacts__form-container textarea:-ms-input-placeholder,
+.contacts__form-container button,
+.portfolio__content-button {
+  font-family: 'Bld', sans-serif; }
+.logo,
+.navigation__link,
+.head-post__button,
+.section__header,
+.portfolio__filter-item,
+.contacts__form-container input::-ms-input-placeholder,
+.contacts__form-container textarea::-ms-input-placeholder,
+.contacts__form-container button,
+.portfolio__content-button {
+  font-family: 'Bld', sans-serif; }
+.logo,
+.navigation__link,
+.head-post__button,
+.section__header,
+.portfolio__filter-item,
+.contacts__form-container input::placeholder,
+.contacts__form-container textarea::placeholder,
+.contacts__form-container button,
+.portfolio__content-button {
+  font-family: 'Bld', sans-serif; }
+
+.head-post__item span {
+  font-family: 'Blck', sans-serif; }

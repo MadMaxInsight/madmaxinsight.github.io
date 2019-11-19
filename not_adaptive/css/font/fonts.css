@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "OpSnBld";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../../fonts/OpenSans/OpenSansBold.eot") format("embedded-opentype"), url("../../fonts/OpenSans/OpenSansBold.woff2") format("woff2"), url("../../fonts/OpenSans/OpenSansBold.woff") format("woff"), url("../../fonts/OpenSans/OpenSansBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Rg";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../../fonts/OpenSans/OpenSansRegular.eot") format("embedded-opentype"), url("../../fonts/OpenSans/OpenSansRegular.woff2") format("woff2"), url("../../fonts/OpenSans/OpenSansRegular.woff") format("woff"), url("../../fonts/OpenSans/OpenSansRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Lt";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../../fonts/OpenSans/OpenSansLight.eot") format("embedded-opentype"), url("../../fonts/OpenSans/OpenSansLight.woff2") format("woff2"), url("../../fonts/OpenSans/OpenSansLight.woff") format("woff"), url("../../fonts/OpenSans/OpenSansLight.ttf") format("truetype"); }
+
+
+
+@font-face {
+  font-family: "Fa";
+  src: url("../../libs/font-awesome-4.7.0/fonts/fontawesome-webfont.eot") format("embedded-opentype"), url("../../libs/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2") format("woff2"), url("../../libs/font-awesome-4.7.0/fonts/fontawesome-webfont.woff") format("woff"), url("../../libs/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Lavanderia';
+  src: url("../../fonts/LavanderiaRegular/LavanderiaRegular.eot") format("embedded-opentype"), url("../../fonts/LavanderiaRegular/LavanderiaRegular.woff2") format("woff2"), url("../../fonts/LavanderiaRegular/LavanderiaRegular.woff") format("woff"), url("../../fonts/LavanderiaRegular/LavanderiaRegular.ttf") format("truetype"), url("../../fonts/LavanderiaRegular/LavanderiaRegular.svg#LavanderiaRegular") format("svg"); }

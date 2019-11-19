@@ -13,4 +13,5 @@ My works:
 - [Сайт по продаже пива](https://madmaxinsight.github.io/beer/) 
 - [Продающий лендинг фитнес трекеров](https://madmaxinsight.github.io/miBand/)
 - [Студия](https://madmaxinsight.github.io/good-production.ru/)
+- [В процессе not_adaptive](https://madmaxinsight.github.io/not_adaptive/)
 
