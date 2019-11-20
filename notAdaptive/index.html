@@ -9,8 +9,9 @@
 	<link rel="stylesheet" type="text/css" href="css/libs.min.css">
 	<link rel="stylesheet" type="text/css" href="css/fonts.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">	
+	<link rel="stylesheet" href="css/aos.css">
 	<link rel="stylesheet" href="css/main.css">	
-	
+	<link rel="stylesheet" href="css/max.css">	
 </head>
 
 <body>
@@ -41,10 +42,17 @@
 		<div class="container">
 			<div class="row">
 				<div class="header__content">
-					<h1>Музыка. <strong>Бизнес.</strong> Облако.</h1>
-					<p class="header__description">Мубиклауд - сервис доставки лицензионной музыки и<br> инструментарий для аудиомаркетинга <strong>ресторана.</strong></p>
-					<img src="img/header/header-background.png" alt="Header" class="header__background">
-					<a href="#" class="theme-button header__button">Тест-плей на 3 дня</a>
+					<div class="content__text-wrapper">
+						<h1 data-aos="fade-right" data-aos-easing="linear" data-aos-duration="800">Музыка. <strong>Бизнес.</strong> Облако.</h1>
+						<h2 class="header__description" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="800">Мубиклауд - сервис доставки лицензионной музыки и инструментарий для аудиомаркетинга <strong>ресторана.</strong></h2>
+						<div class="header__btn" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000">
+							<a href="#" class="theme-button header__button">Тест-плей на 3 дня</a>
+
+						</div>
+					</div>
+					<div class="content__img-wrapper" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000">
+						<img src="img/header/header-background.png" alt="Header" class="header__background">
+					</div>
 				</div>
 			</div>
 		</div>
@@ -54,16 +62,16 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-md-6 col-sm-12">
-					<div class="about__image">
+					<div class="about__image" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="800">
 						<img src="img/about/about-image.png" alt="About">
 					</div>
 				</div>
-				<div class="col-lg-6 col-md-6 col-sm-12">
+				<div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="800">
 					<h2>Несколько кейсов - <strong>одно решение</strong>.</h2>
 					<p>Доступ к сервису позволит без отчислений в РАО и ВОИС публично воспроизводить музыку на объектах предприятия, создавать плейлисты в пару кликов, отбирать готовые подборки, настраивать графики проигрывания в календаре либо доверить аудиомеркетинг  музыкальным специалистам Мубиклауд. </p>
 				</div>
 			</div>
-			<div class="row row__shadow features">
+			<div class="row row__shadow features" data-aos="fade" data-aos-easing="linear" data-aos-duration="800">
 				<div class="features-item">
 					<div class="features-item__image">
 						<img src="img/features/icon1.png" alt="Features">
@@ -103,9 +111,9 @@
 	<section class="mockups">
 		<div class="container">
 			<div class="row">
-				<h2><strong>Любовь</strong> может быть слепой, но она <strong>не глухая.</strong></h2>
-				<p>Запуск музыкального оформления займет от 25 минут. Правильно настроенная фоновая музыка способна увеличить средний чек<br> в ресторане на 25-35%, и на 13-20% поднять продажи в сфере ритейла.</p>
-				<img src="img/mockups/mockups.png" alt="mockups">
+				<h2 data-aos="fade-right" data-aos-easing="linear" data-aos-duration="800"><strong>Любовь</strong> может быть слепой, но она <strong>не глухая.</strong></h2>
+				<p data-aos="fade-right" data-aos-easing="linear" data-aos-duration="800">Запуск музыкального оформления займет от 25 минут. Правильно настроенная фоновая музыка способна увеличить средний чек<br> в ресторане на 25-35%, и на 13-20% поднять продажи в сфере ритейла.</p>
+				<img src="img/mockups/mockups.png" alt="mockups" data-aos="zoom-in-up" data-aos-easing="linear" data-aos-duration="1200">
 			</div>
 			<div class="row mockups__button-group">
 				<a href="#" class="theme-button">Подключить</a>
@@ -121,61 +129,63 @@
 				<h2>Тарифы</h2>
 				<p>Тарификация Мубиклауд зависит от сферы деятельности предприятия, количества подключемых объектов, их размеров и того, чьи специалисты будут заниматься настройкой и поддержкой музыкальной программы</p>
 			</div>
-			<div class="row row__shadow ">
-				<div class="range-control">
-					<input type="range" min="1" max="3" step="1">
-					<div class="range-points">
-						<div class="range-point"></div>
-						<div class="range-point"></div>
-						<div class="range-point"></div>
+			<div class="row row__shadow" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1200">
+				<div class="container">
+					<div class="range-control">
+						<!-- <div class="range-point range-point__first"></div> -->
+						<input type="range" min="0" max="2" step="1">
+						<div class="range-points">
+							<div class="range-point"></div>
+							<div class="range-point"></div>
+							<div class="range-point"></div>
+						</div>
+						
 					</div>
+
 					
-				</div>
+					<div class="tariffs-list">
+						<div class="tariffs-list__item">
+							<span class="tariffs-list__title">Тест-плей</span>
+							<p>Бесплатный доступ<br> на 3 дня для любых<br> сфер бизнеса</p>
+							<a href="#" class="theme-button theme-button_transparent">Попробовать</a>
+						</div>
 
-				
-				<div class="tariffs-list">
-					<div class="tariffs-list__item">
-						<span class="tariffs-list__title">Тест-плей</span>
-						<p>Бесплатный доступ<br> на 3 дня для любых<br> сфер бизнеса</p>
-						<a href="#" class="theme-button theme-button_transparent">Попробовать</a>
-					</div>
+						<div class="tariffs-list__item">
+							<span class="tariffs-list__title">Рестораны и питание</span>
+							<ul>
+								<li>Пиццерия</li>
+								<li>Кафе, Столовая</li>
+								<li>Быстрое питание</li>
+								<li>Бар, Паб</li>
+								<li>Закусочная</li>
+							</ul>
+							<a href="#" class="theme-button">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspЦены&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+						</div>
 
-					<div class="tariffs-list__item">
-						<span class="tariffs-list__title">Рестораны и питание</span>
-						<ul>
-							<li>Пиццерия</li>
-							<li>Кафе, Столовая</li>
-							<li>Быстрое питание</li>
-							<li>Бар, Паб</li>
-							<li>Закусочная</li>
+						<div class="tariffs-list__item tariffs-list__item_selected">
+							<span class="tariffs-list__title">Торговые предприятия</span>
+							<ul>
+								<li>Супермаркет</li>
+								<li>Шоппинг-молл</li>
+								<li>Автосалон</li>
+								<li>Бутик</li>
+								<li>Гипермаркет</li>
+							</ul>
+							<a href="#" class="theme-button">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspЦены&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+						</div>
+						<div class="tariffs-list__item">
+							<span class="tariffs-list__title">Спорт и развлечения</span>
+							<ul>
+								<li>Фитнес-центор</li>
+								<li>Тренажерный зал</li>
+								<li>Бассейн, Боулинг,</li>
+								<li>Бильярд, Кинотеатр,</li>
+								<li>Салон красоты</li>
 						</ul>
-						<a href="#" class="theme-button">Цены</a>
+						<a href="#" class="theme-button">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspЦены&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
 					</div>
-
-					<div class="tariffs-list__item tariffs-list__item_selected">
-						<span class="tariffs-list__title">Торговые предприятия</span>
-						<ul>
-							<li>Супермаркет</li>
-							<li>Шоппинг-молл</li>
-							<li>Автосалон</li>
-							<li>Бутик</li>
-							<li>Гипермаркет</li>
-						</ul>
-						<a href="#" class="theme-button">Цены</a>
 					</div>
-					<div class="tariffs-list__item">
-						<span class="tariffs-list__title">Спорт и развлечения</span>
-						<ul>
-							<li>Фитнес-центор</li>
-							<li>Тренажерный зал</li>
-							<li>Бассейн, Боулинг,</li>
-							<li>Бильярд, Кинотеатр,</li>
-							<li>Салон красоты</li>
-					</ul>
-					<a href="#" class="theme-button">Цены</a>
 				</div>
-				</div>
-				
 			</div>			
 		</div>
 	</section>
@@ -183,16 +193,16 @@
 	<section class="clients">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6 col-md-6 col-sm-12">
+				<div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="800">
 					<h3>Много объектов - <strong>один</strong> инструмент.</h3>
 					<p>Централизованное управление фоновой музыкой для всех объектов сети позволит оперативно из офиса вносить изменения в плейлисты и сетку вещания,  получить единый музыкальный стиль компании, а при необходимости  воспроизводить музыку таргетированно, </p>
 				</div>
-				<div class="col-lg-6 col-md-6 col-sm-12">
+				<div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="800">
 					<h3>Наши <strong>пользователи</strong> такие же, как и Вы. </h3>
 					<p>Корпоративные клиенты всех форм и размеров используют Мубиклауд для оптимизации расходов на музыкальное оформление, увеличения продаж и создания музыкального стиля предприятия.</p>
 				</div>
 			</div>
-			<div class="row clients__row">
+			<div class="row clients__row" data-aos="fade" data-aos-easing="linear" data-aos-duration="800">
 				<span>Более 700 корпоративных клиентов</span>
 				<ul class="clients__list">
 					<li><img src="img/clients/client1.png" alt="client1"></li>
@@ -208,10 +218,10 @@
 
 	<section class="questions">
 		<div class="container">
-			<div class="row justify-content-center question__head">
+			<div class="row justify-content-center question__head" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="800">
 				<h2>Остались <strong>вопросы?</strong></h2>
 			</div>
-			<div class="row">
+			<div class="row" data-aos="fade" data-aos-easing="linear" data-aos-duration="800">
 				<div class="col-lg-6 col-md-6 col-sm-12 question__item">
 					<span class="question-item__title">Зачем платить за фоновую музыку?</span>
 					<p class="question-item__text">При публичном исполнении музыкальных произведений происходит использование прав нескольких правообладателей: авторов, исполнителей и изготовителей фонограмм, или их правопреемников. В соответствии с Гражданским Кодексом РФ, публичное исполнение произведения осуществляется с выплатой вознаграждения правообладателям.</p>
@@ -245,7 +255,7 @@
 	<section class="try">
 		<div class="container">
 			<div class="row justify-content-center">
-				<div class="col-lg-8 col-md-8 col-sm-12">
+				<div class="col-lg-8 col-md-8 col-sm-12" data-aos="zoom-in-up" data-aos-easing="linear" data-aos-duration="800">
 					<span>Для простого запуска фоновой музыки сервис не требует специальных навыков и знаний.</span>
 					<span>Попробуйте Мубиклауд для своего бизнеса и <strong>почувствуйте разницу.</strong></span>
 				</div>
@@ -306,9 +316,13 @@
 		</section>
 	</footer>
 
-	
+
 
 	<script src="js/libs.min.js"></script>
 	<script src="js/common.js"></script>
+	<script src="js/aos.js"></script>
+	<script>AOS.init();</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/max.js"></script>
 </body>
 </html>
