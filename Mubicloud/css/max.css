@@ -3,6 +3,9 @@ body * {
   transition: 0.3s;
 }
 /* header */
+.typed-cursor {
+  color: #00e1c3;
+}
 .header__content {
   height: 100vh;
   display: -webkit-box;
@@ -29,9 +32,12 @@ body * {
   -ms-flex-direction: column;
   flex-direction: column;
 }
+.content__img-wrapper{
+  margin: 0 5% 0 7%;
+}
 .header__background {
   margin: 0;
-  width: 55vw;
+  width: 45vw;
 }
 .header__description {
   font-weight: normal;
@@ -41,6 +47,46 @@ body * {
 .header__btn {
   margin-top: 5vh;
 }
+/* headre-wave */
+.wave {
+  opacity: .4;
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  background: #00e1c3;
+  width: 43vw;
+  height: 43vw;
+  /* margin-left: -250px; */
+  /* margin-top: -250px; */
+  transform-origin: 50% 48%;
+  border-radius: 43%;
+  animation: drift 30s infinite linear;
+}
+
+.wave.-three {
+  animation: drift 10s infinite linear;
+}
+
+.wave.-two {
+  animation: drift 70s infinite linear;
+  opacity: .1;
+  background: #0c6cee;
+}
+
+@keyframes drift {
+  from { transform: rotate(0deg); }
+  from { transform: rotate(360deg); }
+}
+
+.wave-wrapper{
+    position: absolute;
+    right: 55%;
+    top: 9%;
+    z-index: -1;
+}
+
+
+
 /* input-range */
 .range-control input[type="range"] {
   position: relative;
@@ -87,7 +133,7 @@ input[type="range"]::-moz-focus-outer {
   height: 28px;
   border: 0;
   background: #4a3ffc;
-  background-image: url("https://raw.githubusercontent.com/MadMaxInsight/madmaxinsight.github.io/master/notAdaptive/img/%D0%BF%D0%BE%D0%BB%D0%B7%D1%83%D0%BD%D0%BE%D0%BA.png");
+  background-image: url("../img/toggler.png");
   background-size: contain;
   background-position: top center;
   border-radius: 100%;
@@ -183,9 +229,6 @@ input[type="range"]::-moz-range-thumb {
 }
 
 /* navbar */
-.navbar {
-  background: #fafcff;
-}
 .navbar__menu li {
   padding: 10px 0;
 }
@@ -243,3 +286,5 @@ input[type="range"]::-moz-range-thumb {
 .features-item:last-child:before {
   content: none;
 }
+
+

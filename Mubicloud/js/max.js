@@ -1,3 +1,11 @@
+AOS.init();
+var options = {
+  strings: ['магазина','кафе','магазина','кафе','фитнес центра','автосалона','шоппинг-молла'],
+  typeSpeed: 90,
+  loop: true,
+};
+var typed = new Typed('.typed-text', options);
+
 var tariffsItems = $(".tariffs-list__item");
 tariffsItem1 = $(".tariffs-list__item").eq(1);
 tariffsItem2 = $(".tariffs-list__item").eq(2);
