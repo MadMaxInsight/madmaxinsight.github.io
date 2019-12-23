@@ -13,5 +13,5 @@ My works:
 - [Сайт по продаже пива](https://madmaxinsight.github.io/beer/) 
 - [Продающий лендинг фитнес трекеров](https://madmaxinsight.github.io/miBand/)
 - [Студия](https://madmaxinsight.github.io/good-production.ru/)
-- [В процессе Mubicloud](https://madmaxinsight.github.io/Mubicloud/)
+- [Верстка фрон-энд части музыкального стартапа](https://madmaxinsight.github.io/Mubicloud/)
 
