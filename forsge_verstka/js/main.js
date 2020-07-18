@@ -21,7 +21,7 @@ function carousel_init() {
       numVisible: 5
     });
     slick_init();
-  } else if ($(window).width() < 601) {
+  } else if ($(window).width() < 612) {
     slick_init();
   } else {
     $(".carousel").carousel({
@@ -37,27 +37,12 @@ $(".carousel-nav .next-slide").click(function() {
   $(".carousel").carousel("next");
 });
 function slick_init(slides = 1, center = true) {
-  console.log(slides);
   $(".slick-slider").slick({
     dots: true,
     infinite: true,
     speed: 300,
     slidesToShow: slides,
     centerMode: center,
-    variableWidth: true,
-    prevArrow:
-      '<div class="prev-slide"><img src="img/arrow-right_card.png" alt="prev slide"></div>',
-    nextArrow:
-      '<div class="next-slide"><img src="img/arrow-right_card.png" alt="next slide"></div>'
-  });
-}
-function slick_init2() {
-  $(".slick-slider").slick({
-    dots: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-    centerMode: true,
     variableWidth: true,
     prevArrow:
       '<div class="prev-slide"><img src="img/arrow-right_card.png" alt="prev slide"></div>',
