@@ -362,6 +362,7 @@ header {
 }
 .advantages-wrapper {
   margin-top: 77px;
+  width: 100%;
 }
 .advantages-bg-round{
   position: absolute;
