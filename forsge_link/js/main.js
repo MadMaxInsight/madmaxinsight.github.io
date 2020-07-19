@@ -113,13 +113,14 @@ $("#menu-triger").click(function() {
     $(this).toggleClass("nav-link__mobile");
   });
   $(".nav-menu").toggleClass("nav-menu__open");
-  // if ($(".nav-menu").hasClass("nav-menu__open")) {
-  //   disableScroll();
-  // } else {
-  //   enableScroll();
-  // }
+  if ($(".nav-menu").hasClass("nav-menu__open")) {
+    disableScroll();
+  } else {
+    enableScroll();
+  }
 });
 $(".nav-link__mobile").on("click", function(e) {
+  enableScroll();
   e.preventDefault();
   // $("#menu-triger").trigger("click");
   $(".nav-menu").removeClass("nav-menu__open");
@@ -137,4 +138,7 @@ $(".nav-link__mobile").each(function() {
   $(this).removeClass("nav-link__mobile");
 });
 
+$(".nav-btn").click(function() {
+  window.location.href = "thanks-you-page.html";
+});
 // end
