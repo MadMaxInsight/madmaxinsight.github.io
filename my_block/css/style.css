@@ -38,8 +38,13 @@ body {
 }
 
 .promo-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   height: 100vh;
   width: 98%;
@@ -52,30 +57,47 @@ body {
 .promo__title-wrapp,
 .timer__circle,
 .promo__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   /* width: 100%; */
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   /* position: relative; */
 }
 .promo__desc-box {
   height: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 .promo__video iframe {
+  -webkit-box-shadow: #151419;
   box-shadow: #151419;
   /* width: calc(300px + 30%); */
   /* height: calc(150px + 15%); */
   width: 630px;
   height: 360px;
+  -webkit-box-shadow: 0 0 10px rgb(1 1 1);
   box-shadow: 0 0 10px rgb(1 1 1);
 }
 .promo__logo {
   width: 70%;
 }
 .promo__logo-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 .promo__desc-txt {
@@ -87,7 +109,10 @@ body {
 }
 .promo__timer {
   margin-top: 4%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   width: 52%;
 }
@@ -124,6 +149,7 @@ body {
   font-size: 32px;
   margin-top: 10%;
   width: 50%;
+  -webkit-box-shadow: 0px 0px 5px 0px #b43d90;
   box-shadow: 0px 0px 5px 0px #b43d90;
   border: 2px solid #b43d90;
   padding: 6px;
@@ -139,6 +165,8 @@ body {
   margin-bottom: 10px;
 }
 .promo__socials-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .promo_social-icon {
@@ -152,6 +180,7 @@ body {
 }
 .promo_social-icon:hover {
   cursor: pointer;
+  -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 @media (max-width: 992px) {
@@ -160,7 +189,12 @@ body {
     top: 2vh;
   }
   .promo-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     height: 100%;
     padding-top: 13vh;
