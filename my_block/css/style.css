@@ -73,6 +73,9 @@ body {
   align-items: center;
   /* position: relative; */
 }
+.promo__video-box {
+  padding: 0 4%;
+}
 .promo__desc-box {
   height: 100%;
   -webkit-box-pack: center;
@@ -85,7 +88,9 @@ body {
   /* width: calc(300px + 30%); */
   /* height: calc(150px + 15%); */
   width: 630px;
-  height: 360px;
+  width: 45vw;
+  min-height: 360px;
+  height: 28vw;
   -webkit-box-shadow: 0 0 10px rgb(1 1 1);
   box-shadow: 0 0 10px rgb(1 1 1);
 }
@@ -210,6 +215,17 @@ body {
   }
   .promo__socials {
     margin-top: 4%;
+  }
+}
+@media (min-width: 421px) and (max-width: 992px) {
+  .promo-wrapper {
+    padding-top: 20vh;
+  }
+  .promo__video iframe {
+    width: 90vw;
+  }
+  .promo__logo {
+    width: 60%;
   }
 }
 
