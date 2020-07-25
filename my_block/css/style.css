@@ -233,6 +233,8 @@ body {
   .promo__video iframe {
     width: 90vw;
     height: 64vw;
+    min-height: unset;
+    max-height: 40vh;
   }
   .promo__desc-txt {
     font-size: 18px;
