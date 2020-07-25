@@ -127,6 +127,9 @@ body {
   border: 2px solid #b43d90;
   padding: 6px;
 }
+.promo__btn:hover {
+  background: #b43d90;
+}
 .promo__socials {
   margin-top: 10%;
 }
