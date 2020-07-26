@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Block</title>
   <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.css?ver=1.0.0">
 </head>
 
@@ -57,7 +58,7 @@
             </div>
           </div> -->
         </div>
-        <a href="#" rel="nofolow" class="promo__btn">Join for free</a>
+        <a id="promo-btn" href="#modal-window" rel="nofolow" class="various promo__btn">Join for free</a>
         <div class="promo__socials">
           <span class="promo__socials-desc">Share this event</span>
           <div class="promo__socials-wrapper">
@@ -68,12 +69,47 @@
         </div>
       </div>
     </div>
-
-
   </div>
 
+  <div id="modal-window" class="modal">
+    <div class="modal-wrapper">
+      <div class="modal__boby">
+        <div class="modal__header">
+          <h4 class="modal__header-title">I will watch live stream:</h4>
+          <hr class="title__underline">
+        </div>
+        <div class="modal__content">
+          <form action="" class="modal__form">
+            <div class="form__line">
+              <label for="Mail" class="modal__form-label">Mail</label>
+              <div class="modal__input-wrapper">
+                <input type="hidden" name="Mail">
+                <!-- <input id="Mail" name="Mail" type="checkbox" class="modal__input--checkbox"> -->
+              </div>
+            </div>
+            <div class="form__line">
+              <label for="Telegram" class="modal__form-label">Telegram</label>
+              <div class="modal__input-wrapper ">
+                <input type="hidden" name="Telegram" test='' value="0">
+                <!-- <input id="Telegram" name="Telegram" type="checkbox" class="modal__input--checkbox"> -->
+              </div>
+            </div>
+            <div class="form__line">
+              <label for="Id_forsage" class="modal__form-label">Id forsage</label>
+              <div class="modal__input-wrapper">
+                <input type="hidden" name="Id_forsage">
+                <!-- <input id="Id_forsage" name="Id_forsage" type="checkbox" class="modal__input--checkbox"> -->
+              </div>
+            </div>
+            <button action="#" method="post" type="submit" class="modal__submit promo__btn">Confirm</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 

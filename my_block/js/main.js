@@ -27,3 +27,23 @@ let countDown = new Date("Aug 5, 2020 22:00:00").getTime(),
     //  'IT'S MY BIRTHDAY!;
     //}
   }, second);
+$("#promo-btn").fancybox({
+  // modal: true,
+  maxWidth: 800,
+  maxHeight: 600,
+  fitToView: false,
+  autoSize: false,
+  closeClick: false,
+  touch: false
+  // afterShow: function() {
+  //   console.log("modal");
+  //   $(".modal__submit").css("border", "none");
+  // }
+});
+
+$(".modal__input-wrapper").on("click tap", function() {
+  $(this).toggleClass("modal__input-wrapper--checked");
+  var hiddenField = $(this).find('input[type="hidden"]');
+  var val = hiddenField.val();
+  hiddenField.val(val === "true" ? "false" : "true");
+});
