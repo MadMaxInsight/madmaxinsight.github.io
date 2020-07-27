@@ -79,7 +79,7 @@
           <hr class="title__underline">
         </div>
         <div class="modal__content">
-          <form action="" class="modal__form">
+          <form action="#" method="post" class="modal__form">
             <div class="form__line">
               <label for="Mail" class="modal__form-label">Mail</label>
               <div class="modal__input-wrapper">
@@ -90,7 +90,7 @@
             <div class="form__line">
               <label for="Telegram" class="modal__form-label">Telegram</label>
               <div class="modal__input-wrapper ">
-                <input type="hidden" name="Telegram" test='' value="0">
+                <input type="hidden" name="Telegram">
                 <!-- <input id="Telegram" name="Telegram" type="checkbox" class="modal__input--checkbox"> -->
               </div>
             </div>
@@ -101,13 +101,32 @@
                 <!-- <input id="Id_forsage" name="Id_forsage" type="checkbox" class="modal__input--checkbox"> -->
               </div>
             </div>
-            <button action="#" method="post" type="submit" class="modal__submit promo__btn">Confirm</button>
+            <div class="form__confirm-wrapper">
+              <input id="form-confirm" type="checkbox" class="form__confirm">
+              <label class="form__confirm-txt" for="form-confirm">I consent to the processing of data and use for
+                marketing
+                purposes without
+                transferring to third parties</label>
+            </div>
+            <button type="submit" class="modal__submit promo__btn">Confirm</button>
           </form>
         </div>
       </div>
     </div>
   </div>
-
+  <div id="modal-window-2" class="modal">
+    <div class="modal-wrapper">
+      <div class="modal__boby">
+        <div class="modal__header">
+          <h4 class="modal__header-title">Thank you!</h4>
+          <hr class="title__underline">
+        </div>
+        <div class="modal__content">
+        </div>
+      </div>
+    </div>
+  </div>
+  <a href="#modal-window-2" class="thanks-modal_hidden"></a>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script src="js/main.js"></script>

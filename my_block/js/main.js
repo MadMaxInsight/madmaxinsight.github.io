@@ -28,17 +28,20 @@ let countDown = new Date("Aug 5, 2020 22:00:00").getTime(),
     //}
   }, second);
 $("#promo-btn").fancybox({
-  // modal: true,
   maxWidth: 800,
   maxHeight: 600,
   fitToView: false,
   autoSize: false,
   closeClick: false,
   touch: false
-  // afterShow: function() {
-  //   console.log("modal");
-  //   $(".modal__submit").css("border", "none");
-  // }
+});
+$("#modal-window-2").fancybox({
+  maxWidth: 800,
+  maxHeight: 600,
+  fitToView: false,
+  autoSize: false,
+  closeClick: false,
+  touch: false
 });
 
 $(".modal__input-wrapper").on("click tap", function() {
@@ -46,4 +49,36 @@ $(".modal__input-wrapper").on("click tap", function() {
   var hiddenField = $(this).find('input[type="hidden"]');
   var val = hiddenField.val();
   hiddenField.val(val === "true" ? "false" : "true");
+});
+function thanks() {
+  $.fancybox.close();
+  // $.fancybox("#feedback_form");
+  $("#modal-window-2").trigger("click");
+  // $.fancybox("#modal-window-2");
+  // $.fancybox.open({ href: "#modal-window-2" });
+  // $("#modal-window-2").fancybox();
+}
+$(".modal__submit").on("click", function(e) {
+  e.preventDefault();
+  var confirm = $("#form-confirm").prop("checked");
+  if (confirm) {
+    var data = $(this)
+      .parent()
+      .serialize();
+    var url = $(this)
+      .parent()
+      .attr("action");
+    $.ajax({
+      type: "POST",
+      url: url,
+      data: data,
+      dataType: "json",
+      success: thanks()
+    });
+  } else {
+    $("#form-confirm").addClass("warning");
+  }
+});
+$("#form-confirm").click(function() {
+  $(this).removeClass("warning");
 });
