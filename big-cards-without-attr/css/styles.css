@@ -3216,7 +3216,9 @@ body.compensate-for-scrollbar {
 .big-card__wrapper .fancybox-slide--html .fancybox-button {
   right: 10%;
   top: -10px;
+  visibility: hidden;
 }
+
 .big-card__wrapper .slick-next {
   right: 5%;
 }

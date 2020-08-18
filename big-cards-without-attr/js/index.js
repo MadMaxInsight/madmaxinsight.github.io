@@ -183,6 +183,11 @@ document.addEventListener("DOMContentLoaded", function() {
   var slickCounter = 1;
   $(".modal-wrapper__big").fancybox({
     touch: false,
+    // beforeShow: function() {
+    //   if (slickCounter == 1) {
+    //     $(".fancybox-slide--html .fancybox-close-small").hide();
+    //   }
+    // },
     afterShow: function() {
       if (slickCounter == 1) {
         $(".big-card__wrapper").slick({
@@ -190,9 +195,7 @@ document.addEventListener("DOMContentLoaded", function() {
           speed: 300,
           slidesToShow: 1,
           centerMode: true,
-          centerPadding: 30,
-          baseClass: "big-card__fancybox",
-          slideClass: "big-card__fancybox2"
+          centerPadding: 30
         });
         $(".targets__slider--big").slick({
           infinite: true,
@@ -206,6 +209,10 @@ document.addEventListener("DOMContentLoaded", function() {
         });
         slickCounter++;
       }
+      $(".fancybox-slide--html .fancybox-close-small").css(
+        "visibility",
+        "visible"
+      );
     }
   });
   /* 
