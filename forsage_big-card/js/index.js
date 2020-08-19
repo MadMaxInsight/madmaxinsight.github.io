@@ -104,7 +104,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // system message
   console.log("Page loaded. v1.0.0");
-  $(".carousel").carousel("next");
 
   // filter
   $('input[name="dropp"]').on("change", function(e) {
@@ -143,6 +142,10 @@ document.addEventListener("DOMContentLoaded", function() {
       .find(".filter__dropdown")
       .toggleClass("show");
   });
+
+  $(document).on("opened", ".remodal", function() {
+    // $(".regular").slick("reinit");
+  });
   // slider inside target-card
   $(".targets__slider").slick({
     infinite: true,
@@ -150,47 +153,80 @@ document.addEventListener("DOMContentLoaded", function() {
     slidesToShow: 1
   });
 
-  $("#big-card").fancybox({
-    // maxWidth: 800,
-    // maxHeight: 600,
-    // fitToView: false,
-    // autoSize: true,
-    // closeClick: false,
+  /* gp */
+  // var parrent = document.querySelector(".big-card__wrapper");
+  // var elem = document.querySelector("#big-card");
+
+  // function cloneCards() {
+  //   for (i = 0; i < 6; i++) {
+  //     var cardId = "#big-card--" + (i + 1);
+  //     var clone = elem.cloneNode(true);
+  //     clone.id = cardId;
+  //     $(clone)
+  //       .find(".targets__slider--big")
+  //       .slick({
+  //         infinite: true,
+  //         maxWidth: 350,
+  //         speed: 300,
+  //         // centerMode: true,
+  //         slidesToShow: 1,
+  //         dots: true,
+  //         responsive: true,
+  //         touch: false
+  //       });
+  //     parrent.appendChild(clone);
+  //   }
+  // }
+
+  // cloneCards();
+  // elem.remove();
+  var slickCounter = 1;
+  $(".modal-wrapper__big").fancybox({
     touch: false,
-    // afterLoad: function() {
-    //   $(".targets__slider--big").slick({
-    //     infinite: true,
-    //     speed: 300,
-    //     slidesToShow: 1,
-    //     dots: true,
-    //     dots: true,
-    //     responsive: true
-    //   });
+    // beforeShow: function() {
+    //   if (slickCounter == 1) {
+    //     $(".fancybox-slide--html .fancybox-close-small").hide();
+    //   }
     // },
     afterShow: function() {
-      $(".targets__slider--big").slick({
-        infinite: true,
-        maxWidth: 350,
-        speed: 300,
-        slidesToShow: 1,
-        dots: true,
-        dots: true,
-        responsive: true
-      });
+      if (slickCounter == 1) {
+        $(".big-card__wrapper").slick({
+          infinite: true,
+          speed: 300,
+          slidesToShow: 1,
+          centerMode: true,
+          centerPadding: 30
+        });
+        $(".targets__slider--big").slick({
+          infinite: true,
+          maxWidth: 350,
+          speed: 300,
+          slidesToShow: 1,
+          dots: true,
+          responsive: true,
+          touch: false,
+          draggable: false
+        });
+        slickCounter++;
+      }
+      $(".fancybox-slide--html .fancybox-close-small").css(
+        "visibility",
+        "visible"
+      );
     }
   });
-
+  /* 
+  // имитация открытия и закрытия
+  $(".modal-wrapper__big").trigger("click");
+  setTimeout(() => {
+    $(".targets__slider--big .slick-next").trigger("click");
+    setTimeout(() => {
+      $(".fancybox-close-small").trigger("click");
+    }, 100);
+  }, 100);
+ */
   $(".filter__body .target__card .card__bottom").on("click", function() {
-    $("#big-card").trigger("click");
-  });
-  // modal product card
-  $("#card").fancybox({
-    maxWidth: 800,
-    maxHeight: 600,
-    fitToView: false,
-    autoSize: false,
-    closeClick: false,
-    touch: false
+    $(".modal-wrapper__big").trigger("click");
   });
 
   // $(".targets__slider--big").slick({
@@ -200,4 +236,12 @@ document.addEventListener("DOMContentLoaded", function() {
   //   dots: true
   // });
   // $(".targets__slider--big").slickNext();
+
+  // $(".big-card__wrapper").slick({
+  //   infinite: true,
+  //   speed: 300,
+  //   slidesToShow: 1,
+  //   centerMode: true,
+  //   centerPadding: 30
+  // });
 });

@@ -41,29 +41,10 @@
 
 
 
+
 <!-- </section> -->
-<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
-<script>
-    // var app = new Vue({
-    //     el: '#app',
-    //     data: {
-    //         message: 'Привет, Vue.js!',
-    //         show: false
-    //     },
-    //     methods: {
-    //         showModal: function () {
-    //             this.show = this.show ? false : true;
-    //         }
-    //     }
-    // })
 
-
-</script>
-
-
-<!--  -->
-
-<body>
+<body id="test">
     <header class="header">
         <div class="header-wrap">
             <div class="header-logo">
@@ -241,6 +222,167 @@
                         </div>
                     </div>
                     <div class="filter__body targets__cards-wrapper">
+                        <div id="big-card" class="big-card" v-if="show">
+                            <!-- <div class="big-card__close"><img src="img/new_blocks/popup-card/close.png" alt="close-icon"></div> -->
+                            <div class="target__card">
+                                <div class="card__left">
+                                    <!-- <div class="target__head"> -->
+                                    <div class="target__tittle d-flex">My dream</div>
+                                    <div class="target__peoples d-flex">
+                                        <img class="peoples__icon" src="img/new_blocks/popup-card/peoples-icon.png"
+                                            alt="peoples-icon">
+                                        <span class="steps__header steps__header--ml">
+                                            25 people found this dream
+                                        </span>
+                                    </div>
+                                    <hr class="card__line">
+                                    <!-- </div> -->
+
+                                    <div class="target__txt">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
+                                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                            nostrud
+                                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                            aute irure
+                                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                            pariatur.
+                                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                            deserunt
+                                            mollit anim id est laborum.</p>
+                                    </div>
+                                    <hr class="card__line mt-0">
+                                    <!-- date & project-link -->
+                                    <div class="target__txt-column column--half">
+                                        <div class="target__txt-row">
+                                            <span class="target__mark">Start date:</span>
+                                            <span class="target__value">01.01.2020</span>
+                                        </div>
+                                        <div class="target__txt-row">
+                                            <span class="target__mark">End date:</span>
+                                            <span class="target__value">17.07.2000</span>
+                                        </div>
+                                    </div>
+                                    <div class="target__txt-column column--half">
+                                        <div class="target__txt-row">
+                                            <span class="target__mark">Link to support the project:</span>
+                                        </div>
+                                        <div class="target__txt-row">
+                                            <a href="#"
+                                                class="target__link target__link--project">https://forsage.io/pt15fg</a>
+                                            <a href="#" class="d-flex">
+                                                <img class="target__img-copy"
+                                                    src="img/new_blocks/popup-card/copy-icon.png" alt="copy-icon">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- links -->
+                                    <div class="target__txt-column target__adout-dream">
+                                        <span class="target__mark">Links about this dream</span>
+                                        <a href="#" class="target__link">Presentation</a>
+                                        <a href="#" class="target__link">YouTube Video</a>
+                                        <a href="#" class="target__link">Business Plan</a>
+                                    </div>
+                                    <div class="target__txt-column target__contact-links">
+                                        <span class="target__mark">Contact links</span>
+                                        <a href="#" class="target__link">http://instagram.com/coolguy</a>
+                                        <a href="#" class="target__link">https://facebook.co,/Alex</a>
+                                        <a href="#" class="target__link">https://mynewsocks.com</a>
+                                    </div>
+                                    <hr class="card__line mt-0">
+                                    <div class="target__txt-row target__cocials">
+                                        <div class="card__socials">
+                                            <div class="socials__item">
+                                                <a href="#">
+                                                    <img src="img/socials/1@1X.png" alt="social icon"
+                                                        class="socials__icon">
+                                                </a>
+                                            </div>
+                                            <div class="socials__item">
+                                                <a href="#">
+                                                    <img src="img/socials/2@1X.png" alt="social icon"
+                                                        class="socials__icon">
+                                                </a>
+                                            </div>
+                                            <div class="socials__item">
+                                                <a href="#">
+                                                    <img src="img/socials/3@1X.png" alt="social icon"
+                                                        class="socials__icon">
+                                                </a>
+                                            </div>
+                                            <div class="socials__item">
+                                                <a href="#">
+                                                    <img src="img/socials/1@1X.png" alt="social icon"
+                                                        class="socials__icon">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="card__socials">
+                                            <div class="socials__item">
+                                                <a href="#">
+                                                    <img src="img/new_blocks/popup-card/like.png" alt="social icon"
+                                                        class="socials__icon">
+                                                </a>
+                                            </div>
+                                            <div class="socials__item">
+                                                <a href="#">
+                                                    <img src="img/new_blocks/popup-card/comment.png" alt="social icon"
+                                                        class="socials__icon">
+                                                </a>
+                                            </div>
+                                            <div class="socials__item">
+                                                <a href="#">
+                                                    <img src="img/new_blocks/popup-card/share.png" alt="social icon"
+                                                        class="socials__icon">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- rigth side -->
+                                <div class="card__rigth">
+                                    <div class="steps__head">
+                                        <div class="targets__slider--big slick-slider">
+                                            <img src="img/new_blocks/popup-card/img@1X.jpeg" alt=""
+                                                class="slider__item">
+                                            <img src="img/new_blocks/img@1X (2).jpeg" alt="" class="slider__item">
+                                            <img src="img/new_blocks/popup-card/img@1X.jpeg" alt=""
+                                                class="slider__item">
+                                        </div>
+                                        <div class="card__target-progress">
+                                            <div class="progress__pr-bar"></div>
+                                            <div class="progress__value">
+                                                <span class="progress__digit">90</span>
+                                                <span class="progress__procent">%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="steps__desc">
+                                        <div class="target__txt-row">
+                                            <span class="steps__header">steps</span>
+                                        </div>
+                                        <div class="target__txt-row">
+                                            <span class="steps__title">STEP №1: Buy island</span>
+                                        </div>
+                                        <div class="target__txt-row">
+                                            <span class="target__mark">Cost:</span>
+                                            <span class="target__value">15 000$</span>
+                                        </div>
+                                        <div class="target__txt-row">
+                                            <span class="target__mark">Status:</span>
+                                            <span class="target__value">Done</span>
+                                        </div>
+                                        <div class="target__txt-row">
+                                            <span class="target__mark">Proof:</span>
+                                            <a href="#" class="target__link">link or uploade file</a>
+                                        </div>
+                                        <hr class="card__line">
+                                        <!-- <div class="steps__dots">
+                                            </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="target__card">
                             <div class="card__top">
                                 <div class="targets__slider slick-slider">
@@ -256,7 +398,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card__bottom">
+                            <div class="card__bottom" v-on:click="showModal">
                                 <div class="target__tittle">My dream</div>
                                 <div class="target__txt">A 1350K home that I own Free & Clear and a 1200K Investmentment
                                     Fund</div>
@@ -1701,1005 +1843,6 @@
                     </div>
                 </div>
                 <div id="Notice"></div>
-                <div class="modal-wrapper__big ">
-                    <div class="big-card__wrapper">
-                        <div id="big-card--1" class="big-card">
-                            <!-- <div class="big-card__close"><img src="img/new_blocks/popup-card/close.png" alt="close-icon"></div> -->
-                            <div class="target__card">
-                                <div class="card__left">
-                                    <!-- <div class="target__head"> -->
-                                    <div class="target__tittle d-flex">My dream</div>
-                                    <div class="target__peoples d-flex">
-                                        <img class="peoples__icon" src="img/new_blocks/popup-card/peoples-icon.png"
-                                            alt="peoples-icon">
-                                        <span class="steps__header steps__header--ml">
-                                            25 people found this dream
-                                        </span>
-                                    </div>
-                                    <hr class="card__line">
-                                    <!-- </div> -->
-
-                                    <div class="target__txt">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor
-                                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                            nostrud
-                                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                                            aute
-                                            irure
-                                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                            pariatur.
-                                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                            deserunt
-                                            mollit anim id est laborum.</p>
-                                    </div>
-                                    <hr class="card__line mt-0">
-                                    <!-- date & project-link -->
-                                    <div class="target__txt-column column--half">
-                                        <div class="target__txt-row">
-                                            <span class="target__mark">Start date:</span>
-                                            <span class="target__value">01.01.2020</span>
-                                        </div>
-                                        <div class="target__txt-row">
-                                            <span class="target__mark">End date:</span>
-                                            <span class="target__value">17.07.2000</span>
-                                        </div>
-                                    </div>
-                                    <div class="target__txt-column column--half">
-                                        <div class="target__txt-row">
-                                            <span class="target__mark">Link to support the project:</span>
-                                        </div>
-                                        <div class="target__txt-row">
-                                            <a href="#"
-                                                class="target__link target__link--project">https://forsage.io/pt15fg</a>
-                                            <a href="#" class="d-flex">
-                                                <img class="target__img-copy"
-                                                    src="img/new_blocks/popup-card/copy-icon.png" alt="copy-icon">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <!-- links -->
-                                    <div class="target__txt-column target__adout-dream">
-                                        <span class="target__mark">Links about this dream</span>
-                                        <a href="#" class="target__link">Presentation</a>
-                                        <a href="#" class="target__link">YouTube Video</a>
-                                        <a href="#" class="target__link">Business Plan</a>
-                                    </div>
-                                    <div class="target__txt-column target__contact-links">
-                                        <span class="target__mark">Contact links</span>
-                                        <a href="#" class="target__link">http://instagram.com/coolguy</a>
-                                        <a href="#" class="target__link">https://facebook.co,/Alex</a>
-                                        <a href="#" class="target__link">https://mynewsocks.com</a>
-                                    </div>
-                                    <hr class="card__line mt-0">
-                                    <div class="target__txt-row target__cocials">
-                                        <div class="card__socials">
-                                            <div class="socials__item">
-                                                <a href="#">
-                                                    <img src="img/socials/1@1X.png" alt="social icon"
-                                                        class="socials__icon">
-                                                </a>
-                                            </div>
-                                            <div class="socials__item">
-                                                <a href="#">
-                                                    <img src="img/socials/2@1X.png" alt="social icon"
-                                                        class="socials__icon">
-                                                </a>
-                                            </div>
-                                            <div class="socials__item">
-                                                <a href="#">
-                                                    <img src="img/socials/3@1X.png" alt="social icon"
-                                                        class="socials__icon">
-                                                </a>
-                                            </div>
-                                            <div class="socials__item">
-                                                <a href="#">
-                                                    <img src="img/socials/1@1X.png" alt="social icon"
-                                                        class="socials__icon">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="card__socials">
-                                            <div class="socials__item">
-                                                <a href="#">
-                                                    <img src="img/new_blocks/popup-card/like.png" alt="social icon"
-                                                        class="socials__icon">
-                                                    <span class="socials__counter">1000</span>
-                                                </a>
-                                            </div>
-                                            <div class="socials__item">
-                                                <a href="#">
-                                                    <img src="img/new_blocks/popup-card/comment.png" alt="social icon"
-                                                        class="socials__icon">
-                                                    <span class="socials__counter">1000</span>
-                                                </a>
-                                            </div>
-                                            <div class="socials__item">
-                                                <a href="#">
-                                                    <img src="img/new_blocks/popup-card/share.png" alt="social icon"
-                                                        class="socials__icon">
-                                                    <span class="socials__counter">1000</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- rigth side -->
-                                <div class="card__rigth">
-                                    <div class="steps__head">
-                                        <div class="targets__slider--big slick-slider">
-                                            <img src="img/new_blocks/popup-card/img@1X.jpeg" alt=""
-                                                class="slider__item">
-                                            <img src="img/new_blocks/img@1X (2).jpeg" alt="" class="slider__item">
-                                            <img src="img/new_blocks/popup-card/img@1X.jpeg" alt=""
-                                                class="slider__item">
-                                        </div>
-                                        <div class="card__target-progress">
-                                            <div class="progress__pr-bar"></div>
-                                            <div class="progress__value">
-                                                <span class="progress__digit">90</span>
-                                                <span class="progress__procent">%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="steps__desc">
-                                        <div class="target__txt-row">
-                                            <span class="steps__header">steps</span>
-                                        </div>
-                                        <div class="target__txt-row">
-                                            <span class="steps__title">STEP №1: Buy island</span>
-                                        </div>
-                                        <div class="target__txt-row">
-                                            <span class="target__mark">Cost:</span>
-                                            <span class="target__value">15 000$</span>
-                                        </div>
-                                        <div class="target__txt-row">
-                                            <span class="target__mark">Status:</span>
-                                            <span class="target__value">Done</span>
-                                        </div>
-                                        <div class="target__txt-row">
-                                            <span class="target__mark">Proof:</span>
-                                            <a href="#" class="target__link">link or uploade file</a>
-                                        </div>
-                                        <hr class="card__line">
-                                        <!-- <div class="steps__dots">
-                                            </div> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="big-card--2" class="big-card">
-                            <!-- <div class="big-card__close"><img src="img/new_blocks/popup-card/close.png" alt="close-icon"></div> -->
-                            <div class="target__card">
-                                <div class="card__left">
-                                    <!-- <div class="target__head"> -->
-                                    <div class="target__tittle d-flex">My dream</div>
-                                    <div class="target__peoples d-flex">
-                                        <img class="peoples__icon" src="img/new_blocks/popup-card/peoples-icon.png"
-                                            alt="peoples-icon">
-                                        <span class="steps__header steps__header--ml">
-                                            25 people found this dream
-                                        </span>
-                                    </div>
-                                    <hr class="card__line">
-                                    <!-- </div> -->
-
-                                    <div class="target__txt">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor
-                                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                            nostrud
-                                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                                            aute
-                                            irure
-                                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                            pariatur.
-                                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                            deserunt
-                                            mollit anim id est laborum.</p>
-                                    </div>
-                                    <hr class="card__line mt-0">
-                                    <!-- date & project-link -->
-                                    <div class="target__txt-column column--half">
-                                        <div class="target__txt-row">
-                                            <span class="target__mark">Start date:</span>
-                                            <span class="target__value">01.01.2020</span>
-                                        </div>
-                                        <div class="target__txt-row">
-                                            <span class="target__mark">End date:</span>
-                                            <span class="target__value">17.07.2000</span>
-                                        </div>
-                                    </div>
-                                    <div class="target__txt-column column--half">
-                                        <div class="target__txt-row">
-                                            <span class="target__mark">Link to support the project:</span>
-                                        </div>
-                                        <div class="target__txt-row">
-                                            <a href="#"
-                                                class="target__link target__link--project">https://forsage.io/pt15fg</a>
-                                            <a href="#" class="d-flex">
-                                                <img class="target__img-copy"
-                                                    src="img/new_blocks/popup-card/copy-icon.png" alt="copy-icon">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <!-- links -->
-                                    <div class="target__txt-column target__adout-dream">
-                                        <span class="target__mark">Links about this dream</span>
-                                        <a href="#" class="target__link">Presentation</a>
-                                        <a href="#" class="target__link">YouTube Video</a>
-                                        <a href="#" class="target__link">Business Plan</a>
-                                    </div>
-                                    <div class="target__txt-column target__contact-links">
-                                        <span class="target__mark">Contact links</span>
-                                        <a href="#" class="target__link">http://instagram.com/coolguy</a>
-                                        <a href="#" class="target__link">https://facebook.co,/Alex</a>
-                                        <a href="#" class="target__link">https://mynewsocks.com</a>
-                                    </div>
-                                    <hr class="card__line mt-0">
-                                    <div class="target__txt-row target__cocials">
-                                        <div class="card__socials">
-                                            <div class="socials__item">
-                                                <a href="#">
-                                                    <img src="img/socials/1@1X.png" alt="social icon"
-                                                        class="socials__icon">
-                                                </a>
-                                            </div>
-                                            <div class="socials__item">
-                                                <a href="#">
-                                                    <img src="img/socials/2@1X.png" alt="social icon"
-                                                        class="socials__icon">
-                                                </a>
-                                            </div>
-                                            <div class="socials__item">
-                                                <a href="#">
-                                                    <img src="img/socials/3@1X.png" alt="social icon"
-                                                        class="socials__icon">
-                                                </a>
-                                            </div>
-                                            <div class="socials__item">
-                                                <a href="#">
-                                                    <img src="img/socials/1@1X.png" alt="social icon"
-                                                        class="socials__icon">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="card__socials">
-                                            <div class="socials__item">
-                                                <a href="#">
-                                                    <img src="img/new_blocks/popup-card/like.png" alt="social icon"
-                                                        class="socials__icon">
-                                                    <span class="socials__counter">1000</span>
-                                                </a>
-                                            </div>
-                                            <div class="socials__item">
-                                                <a href="#">
-                                                    <img src="img/new_blocks/popup-card/comment.png" alt="social icon"
-                                                        class="socials__icon">
-                                                    <span class="socials__counter">1000</span>
-                                                </a>
-                                            </div>
-                                            <div class="socials__item">
-                                                <a href="#">
-                                                    <img src="img/new_blocks/popup-card/share.png" alt="social icon"
-                                                        class="socials__icon">
-                                                    <span class="socials__counter">1000</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- rigth side -->
-                                <div class="card__rigth">
-                                    <div class="steps__head">
-                                        <div class="targets__slider--big slick-slider">
-                                            <img src="img/new_blocks/popup-card/img@1X.jpeg" alt=""
-                                                class="slider__item">
-                                            <img src="img/new_blocks/img@1X (2).jpeg" alt="" class="slider__item">
-                                            <img src="img/new_blocks/popup-card/img@1X.jpeg" alt=""
-                                                class="slider__item">
-                                        </div>
-                                        <div class="card__target-progress">
-                                            <div class="progress__pr-bar"></div>
-                                            <div class="progress__value">
-                                                <span class="progress__digit">90</span>
-                                                <span class="progress__procent">%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="steps__desc">
-                                        <div class="target__txt-row">
-                                            <span class="steps__header">steps</span>
-                                        </div>
-                                        <div class="target__txt-row">
-                                            <span class="steps__title">STEP №1: Buy island</span>
-                                        </div>
-                                        <div class="target__txt-row">
-                                            <span class="target__mark">Cost:</span>
-                                            <span class="target__value">15 000$</span>
-                                        </div>
-                                        <div class="target__txt-row">
-                                            <span class="target__mark">Status:</span>
-                                            <span class="target__value">Done</span>
-                                        </div>
-                                        <div class="target__txt-row">
-                                            <span class="target__mark">Proof:</span>
-                                            <a href="#" class="target__link">link or uploade file</a>
-                                        </div>
-                                        <hr class="card__line">
-                                        <!-- <div class="steps__dots">
-                                            </div> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="big-card--3" class="big-card">
-                            <!-- <div class="big-card__close"><img src="img/new_blocks/popup-card/close.png" alt="close-icon"></div> -->
-                            <div class="target__card">
-                                <div class="card__left">
-                                    <!-- <div class="target__head"> -->
-                                    <div class="target__tittle d-flex">My dream</div>
-                                    <div class="target__peoples d-flex">
-                                        <img class="peoples__icon" src="img/new_blocks/popup-card/peoples-icon.png"
-                                            alt="peoples-icon">
-                                        <span class="steps__header steps__header--ml">
-                                            25 people found this dream
-                                        </span>
-                                    </div>
-                                    <hr class="card__line">
-                                    <!-- </div> -->
-
-                                    <div class="target__txt">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor
-                                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                            nostrud
-                                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                                            aute
-                                            irure
-                                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                            pariatur.
-                                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                            deserunt
-                                            mollit anim id est laborum.</p>
-                                    </div>
-                                    <hr class="card__line mt-0">
-                                    <!-- date & project-link -->
-                                    <div class="target__txt-column column--half">
-                                        <div class="target__txt-row">
-                                            <span class="target__mark">Start date:</span>
-                                            <span class="target__value">01.01.2020</span>
-                                        </div>
-                                        <div class="target__txt-row">
-                                            <span class="target__mark">End date:</span>
-                                            <span class="target__value">17.07.2000</span>
-                                        </div>
-                                    </div>
-                                    <div class="target__txt-column column--half">
-                                        <div class="target__txt-row">
-                                            <span class="target__mark">Link to support the project:</span>
-                                        </div>
-                                        <div class="target__txt-row">
-                                            <a href="#"
-                                                class="target__link target__link--project">https://forsage.io/pt15fg</a>
-                                            <a href="#" class="d-flex">
-                                                <img class="target__img-copy"
-                                                    src="img/new_blocks/popup-card/copy-icon.png" alt="copy-icon">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <!-- links -->
-                                    <div class="target__txt-column target__adout-dream">
-                                        <span class="target__mark">Links about this dream</span>
-                                        <a href="#" class="target__link">Presentation</a>
-                                        <a href="#" class="target__link">YouTube Video</a>
-                                        <a href="#" class="target__link">Business Plan</a>
-                                    </div>
-                                    <div class="target__txt-column target__contact-links">
-                                        <span class="target__mark">Contact links</span>
-                                        <a href="#" class="target__link">http://instagram.com/coolguy</a>
-                                        <a href="#" class="target__link">https://facebook.co,/Alex</a>
-                                        <a href="#" class="target__link">https://mynewsocks.com</a>
-                                    </div>
-                                    <hr class="card__line mt-0">
-                                    <div class="target__txt-row target__cocials">
-                                        <div class="card__socials">
-                                            <div class="socials__item">
-                                                <a href="#">
-                                                    <img src="img/socials/1@1X.png" alt="social icon"
-                                                        class="socials__icon">
-                                                </a>
-                                            </div>
-                                            <div class="socials__item">
-                                                <a href="#">
-                                                    <img src="img/socials/2@1X.png" alt="social icon"
-                                                        class="socials__icon">
-                                                </a>
-                                            </div>
-                                            <div class="socials__item">
-                                                <a href="#">
-                                                    <img src="img/socials/3@1X.png" alt="social icon"
-                                                        class="socials__icon">
-                                                </a>
-                                            </div>
-                                            <div class="socials__item">
-                                                <a href="#">
-                                                    <img src="img/socials/1@1X.png" alt="social icon"
-                                                        class="socials__icon">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="card__socials">
-                                            <div class="socials__item">
-                                                <a href="#">
-                                                    <img src="img/new_blocks/popup-card/like.png" alt="social icon"
-                                                        class="socials__icon">
-                                                    <span class="socials__counter">1000</span>
-                                                </a>
-                                            </div>
-                                            <div class="socials__item">
-                                                <a href="#">
-                                                    <img src="img/new_blocks/popup-card/comment.png" alt="social icon"
-                                                        class="socials__icon">
-                                                    <span class="socials__counter">1000</span>
-                                                </a>
-                                            </div>
-                                            <div class="socials__item">
-                                                <a href="#">
-                                                    <img src="img/new_blocks/popup-card/share.png" alt="social icon"
-                                                        class="socials__icon">
-                                                    <span class="socials__counter">1000</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- rigth side -->
-                                <div class="card__rigth">
-                                    <div class="steps__head">
-                                        <div class="targets__slider--big slick-slider">
-                                            <img src="img/new_blocks/popup-card/img@1X.jpeg" alt=""
-                                                class="slider__item">
-                                            <img src="img/new_blocks/img@1X (2).jpeg" alt="" class="slider__item">
-                                            <img src="img/new_blocks/popup-card/img@1X.jpeg" alt=""
-                                                class="slider__item">
-                                        </div>
-                                        <div class="card__target-progress">
-                                            <div class="progress__pr-bar"></div>
-                                            <div class="progress__value">
-                                                <span class="progress__digit">90</span>
-                                                <span class="progress__procent">%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="steps__desc">
-                                        <div class="target__txt-row">
-                                            <span class="steps__header">steps</span>
-                                        </div>
-                                        <div class="target__txt-row">
-                                            <span class="steps__title">STEP №1: Buy island</span>
-                                        </div>
-                                        <div class="target__txt-row">
-                                            <span class="target__mark">Cost:</span>
-                                            <span class="target__value">15 000$</span>
-                                        </div>
-                                        <div class="target__txt-row">
-                                            <span class="target__mark">Status:</span>
-                                            <span class="target__value">Done</span>
-                                        </div>
-                                        <div class="target__txt-row">
-                                            <span class="target__mark">Proof:</span>
-                                            <a href="#" class="target__link">link or uploade file</a>
-                                        </div>
-                                        <hr class="card__line">
-                                        <!-- <div class="steps__dots">
-                                            </div> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="big-card--4" class="big-card">
-                            <!-- <div class="big-card__close"><img src="img/new_blocks/popup-card/close.png" alt="close-icon"></div> -->
-                            <div class="target__card">
-                                <div class="card__left">
-                                    <!-- <div class="target__head"> -->
-                                    <div class="target__tittle d-flex">My dream</div>
-                                    <div class="target__peoples d-flex">
-                                        <img class="peoples__icon" src="img/new_blocks/popup-card/peoples-icon.png"
-                                            alt="peoples-icon">
-                                        <span class="steps__header steps__header--ml">
-                                            25 people found this dream
-                                        </span>
-                                    </div>
-                                    <hr class="card__line">
-                                    <!-- </div> -->
-
-                                    <div class="target__txt">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor
-                                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                            nostrud
-                                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                                            aute
-                                            irure
-                                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                            pariatur.
-                                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                            deserunt
-                                            mollit anim id est laborum.</p>
-                                    </div>
-                                    <hr class="card__line mt-0">
-                                    <!-- date & project-link -->
-                                    <div class="target__txt-column column--half">
-                                        <div class="target__txt-row">
-                                            <span class="target__mark">Start date:</span>
-                                            <span class="target__value">01.01.2020</span>
-                                        </div>
-                                        <div class="target__txt-row">
-                                            <span class="target__mark">End date:</span>
-                                            <span class="target__value">17.07.2000</span>
-                                        </div>
-                                    </div>
-                                    <div class="target__txt-column column--half">
-                                        <div class="target__txt-row">
-                                            <span class="target__mark">Link to support the project:</span>
-                                        </div>
-                                        <div class="target__txt-row">
-                                            <a href="#"
-                                                class="target__link target__link--project">https://forsage.io/pt15fg</a>
-                                            <a href="#" class="d-flex">
-                                                <img class="target__img-copy"
-                                                    src="img/new_blocks/popup-card/copy-icon.png" alt="copy-icon">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <!-- links -->
-                                    <div class="target__txt-column target__adout-dream">
-                                        <span class="target__mark">Links about this dream</span>
-                                        <a href="#" class="target__link">Presentation</a>
-                                        <a href="#" class="target__link">YouTube Video</a>
-                                        <a href="#" class="target__link">Business Plan</a>
-                                    </div>
-                                    <div class="target__txt-column target__contact-links">
-                                        <span class="target__mark">Contact links</span>
-                                        <a href="#" class="target__link">http://instagram.com/coolguy</a>
-                                        <a href="#" class="target__link">https://facebook.co,/Alex</a>
-                                        <a href="#" class="target__link">https://mynewsocks.com</a>
-                                    </div>
-                                    <hr class="card__line mt-0">
-                                    <div class="target__txt-row target__cocials">
-                                        <div class="card__socials">
-                                            <div class="socials__item">
-                                                <a href="#">
-                                                    <img src="img/socials/1@1X.png" alt="social icon"
-                                                        class="socials__icon">
-                                                </a>
-                                            </div>
-                                            <div class="socials__item">
-                                                <a href="#">
-                                                    <img src="img/socials/2@1X.png" alt="social icon"
-                                                        class="socials__icon">
-                                                </a>
-                                            </div>
-                                            <div class="socials__item">
-                                                <a href="#">
-                                                    <img src="img/socials/3@1X.png" alt="social icon"
-                                                        class="socials__icon">
-                                                </a>
-                                            </div>
-                                            <div class="socials__item">
-                                                <a href="#">
-                                                    <img src="img/socials/1@1X.png" alt="social icon"
-                                                        class="socials__icon">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="card__socials">
-                                            <div class="socials__item">
-                                                <a href="#">
-                                                    <img src="img/new_blocks/popup-card/like.png" alt="social icon"
-                                                        class="socials__icon">
-                                                    <span class="socials__counter">1000</span>
-                                                </a>
-                                            </div>
-                                            <div class="socials__item">
-                                                <a href="#">
-                                                    <img src="img/new_blocks/popup-card/comment.png" alt="social icon"
-                                                        class="socials__icon">
-                                                    <span class="socials__counter">1000</span>
-                                                </a>
-                                            </div>
-                                            <div class="socials__item">
-                                                <a href="#">
-                                                    <img src="img/new_blocks/popup-card/share.png" alt="social icon"
-                                                        class="socials__icon">
-                                                    <span class="socials__counter">1000</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- rigth side -->
-                                <div class="card__rigth">
-                                    <div class="steps__head">
-                                        <div class="targets__slider--big slick-slider">
-                                            <img src="img/new_blocks/popup-card/img@1X.jpeg" alt=""
-                                                class="slider__item">
-                                            <img src="img/new_blocks/img@1X (2).jpeg" alt="" class="slider__item">
-                                            <img src="img/new_blocks/popup-card/img@1X.jpeg" alt=""
-                                                class="slider__item">
-                                        </div>
-                                        <div class="card__target-progress">
-                                            <div class="progress__pr-bar"></div>
-                                            <div class="progress__value">
-                                                <span class="progress__digit">90</span>
-                                                <span class="progress__procent">%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="steps__desc">
-                                        <div class="target__txt-row">
-                                            <span class="steps__header">steps</span>
-                                        </div>
-                                        <div class="target__txt-row">
-                                            <span class="steps__title">STEP №1: Buy island</span>
-                                        </div>
-                                        <div class="target__txt-row">
-                                            <span class="target__mark">Cost:</span>
-                                            <span class="target__value">15 000$</span>
-                                        </div>
-                                        <div class="target__txt-row">
-                                            <span class="target__mark">Status:</span>
-                                            <span class="target__value">Done</span>
-                                        </div>
-                                        <div class="target__txt-row">
-                                            <span class="target__mark">Proof:</span>
-                                            <a href="#" class="target__link">link or uploade file</a>
-                                        </div>
-                                        <hr class="card__line">
-                                        <!-- <div class="steps__dots">
-                                            </div> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="big-card--5" class="big-card">
-                            <!-- <div class="big-card__close"><img src="img/new_blocks/popup-card/close.png" alt="close-icon"></div> -->
-                            <div class="target__card">
-                                <div class="card__left">
-                                    <!-- <div class="target__head"> -->
-                                    <div class="target__tittle d-flex">My dream</div>
-                                    <div class="target__peoples d-flex">
-                                        <img class="peoples__icon" src="img/new_blocks/popup-card/peoples-icon.png"
-                                            alt="peoples-icon">
-                                        <span class="steps__header steps__header--ml">
-                                            25 people found this dream
-                                        </span>
-                                    </div>
-                                    <hr class="card__line">
-                                    <!-- </div> -->
-
-                                    <div class="target__txt">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor
-                                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                            nostrud
-                                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                                            aute
-                                            irure
-                                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                            pariatur.
-                                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                            deserunt
-                                            mollit anim id est laborum.</p>
-                                    </div>
-                                    <hr class="card__line mt-0">
-                                    <!-- date & project-link -->
-                                    <div class="target__txt-column column--half">
-                                        <div class="target__txt-row">
-                                            <span class="target__mark">Start date:</span>
-                                            <span class="target__value">01.01.2020</span>
-                                        </div>
-                                        <div class="target__txt-row">
-                                            <span class="target__mark">End date:</span>
-                                            <span class="target__value">17.07.2000</span>
-                                        </div>
-                                    </div>
-                                    <div class="target__txt-column column--half">
-                                        <div class="target__txt-row">
-                                            <span class="target__mark">Link to support the project:</span>
-                                        </div>
-                                        <div class="target__txt-row">
-                                            <a href="#"
-                                                class="target__link target__link--project">https://forsage.io/pt15fg</a>
-                                            <a href="#" class="d-flex">
-                                                <img class="target__img-copy"
-                                                    src="img/new_blocks/popup-card/copy-icon.png" alt="copy-icon">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <!-- links -->
-                                    <div class="target__txt-column target__adout-dream">
-                                        <span class="target__mark">Links about this dream</span>
-                                        <a href="#" class="target__link">Presentation</a>
-                                        <a href="#" class="target__link">YouTube Video</a>
-                                        <a href="#" class="target__link">Business Plan</a>
-                                    </div>
-                                    <div class="target__txt-column target__contact-links">
-                                        <span class="target__mark">Contact links</span>
-                                        <a href="#" class="target__link">http://instagram.com/coolguy</a>
-                                        <a href="#" class="target__link">https://facebook.co,/Alex</a>
-                                        <a href="#" class="target__link">https://mynewsocks.com</a>
-                                    </div>
-                                    <hr class="card__line mt-0">
-                                    <div class="target__txt-row target__cocials">
-                                        <div class="card__socials">
-                                            <div class="socials__item">
-                                                <a href="#">
-                                                    <img src="img/socials/1@1X.png" alt="social icon"
-                                                        class="socials__icon">
-                                                </a>
-                                            </div>
-                                            <div class="socials__item">
-                                                <a href="#">
-                                                    <img src="img/socials/2@1X.png" alt="social icon"
-                                                        class="socials__icon">
-                                                </a>
-                                            </div>
-                                            <div class="socials__item">
-                                                <a href="#">
-                                                    <img src="img/socials/3@1X.png" alt="social icon"
-                                                        class="socials__icon">
-                                                </a>
-                                            </div>
-                                            <div class="socials__item">
-                                                <a href="#">
-                                                    <img src="img/socials/1@1X.png" alt="social icon"
-                                                        class="socials__icon">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="card__socials">
-                                            <div class="socials__item">
-                                                <a href="#">
-                                                    <img src="img/new_blocks/popup-card/like.png" alt="social icon"
-                                                        class="socials__icon">
-                                                    <span class="socials__counter">1000</span>
-                                                </a>
-                                            </div>
-                                            <div class="socials__item">
-                                                <a href="#">
-                                                    <img src="img/new_blocks/popup-card/comment.png" alt="social icon"
-                                                        class="socials__icon">
-                                                    <span class="socials__counter">1000</span>
-                                                </a>
-                                            </div>
-                                            <div class="socials__item">
-                                                <a href="#">
-                                                    <img src="img/new_blocks/popup-card/share.png" alt="social icon"
-                                                        class="socials__icon">
-                                                    <span class="socials__counter">1000</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- rigth side -->
-                                <div class="card__rigth">
-                                    <div class="steps__head">
-                                        <div class="targets__slider--big slick-slider">
-                                            <img src="img/new_blocks/popup-card/img@1X.jpeg" alt=""
-                                                class="slider__item">
-                                            <img src="img/new_blocks/img@1X (2).jpeg" alt="" class="slider__item">
-                                            <img src="img/new_blocks/popup-card/img@1X.jpeg" alt=""
-                                                class="slider__item">
-                                        </div>
-                                        <div class="card__target-progress">
-                                            <div class="progress__pr-bar"></div>
-                                            <div class="progress__value">
-                                                <span class="progress__digit">90</span>
-                                                <span class="progress__procent">%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="steps__desc">
-                                        <div class="target__txt-row">
-                                            <span class="steps__header">steps</span>
-                                        </div>
-                                        <div class="target__txt-row">
-                                            <span class="steps__title">STEP №1: Buy island</span>
-                                        </div>
-                                        <div class="target__txt-row">
-                                            <span class="target__mark">Cost:</span>
-                                            <span class="target__value">15 000$</span>
-                                        </div>
-                                        <div class="target__txt-row">
-                                            <span class="target__mark">Status:</span>
-                                            <span class="target__value">Done</span>
-                                        </div>
-                                        <div class="target__txt-row">
-                                            <span class="target__mark">Proof:</span>
-                                            <a href="#" class="target__link">link or uploade file</a>
-                                        </div>
-                                        <hr class="card__line">
-                                        <!-- <div class="steps__dots">
-                                            </div> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="big-card--6" class="big-card">
-                            <!-- <div class="big-card__close"><img src="img/new_blocks/popup-card/close.png" alt="close-icon"></div> -->
-                            <div class="target__card">
-                                <div class="card__left">
-                                    <!-- <div class="target__head"> -->
-                                    <div class="target__tittle d-flex">My dream</div>
-                                    <div class="target__peoples d-flex">
-                                        <img class="peoples__icon" src="img/new_blocks/popup-card/peoples-icon.png"
-                                            alt="peoples-icon">
-                                        <span class="steps__header steps__header--ml">
-                                            25 people found this dream
-                                        </span>
-                                    </div>
-                                    <hr class="card__line">
-                                    <!-- </div> -->
-
-                                    <div class="target__txt">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor
-                                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                            nostrud
-                                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                                            aute
-                                            irure
-                                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                            pariatur.
-                                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                            deserunt
-                                            mollit anim id est laborum.</p>
-                                    </div>
-                                    <hr class="card__line mt-0">
-                                    <!-- date & project-link -->
-                                    <div class="target__txt-column column--half">
-                                        <div class="target__txt-row">
-                                            <span class="target__mark">Start date:</span>
-                                            <span class="target__value">01.01.2020</span>
-                                        </div>
-                                        <div class="target__txt-row">
-                                            <span class="target__mark">End date:</span>
-                                            <span class="target__value">17.07.2000</span>
-                                        </div>
-                                    </div>
-                                    <div class="target__txt-column column--half">
-                                        <div class="target__txt-row">
-                                            <span class="target__mark">Link to support the project:</span>
-                                        </div>
-                                        <div class="target__txt-row">
-                                            <a href="#"
-                                                class="target__link target__link--project">https://forsage.io/pt15fg</a>
-                                            <a href="#" class="d-flex">
-                                                <img class="target__img-copy"
-                                                    src="img/new_blocks/popup-card/copy-icon.png" alt="copy-icon">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <!-- links -->
-                                    <div class="target__txt-column target__adout-dream">
-                                        <span class="target__mark">Links about this dream</span>
-                                        <a href="#" class="target__link">Presentation</a>
-                                        <a href="#" class="target__link">YouTube Video</a>
-                                        <a href="#" class="target__link">Business Plan</a>
-                                    </div>
-                                    <div class="target__txt-column target__contact-links">
-                                        <span class="target__mark">Contact links</span>
-                                        <a href="#" class="target__link">http://instagram.com/coolguy</a>
-                                        <a href="#" class="target__link">https://facebook.co,/Alex</a>
-                                        <a href="#" class="target__link">https://mynewsocks.com</a>
-                                    </div>
-                                    <hr class="card__line mt-0">
-                                    <div class="target__txt-row target__cocials">
-                                        <div class="card__socials">
-                                            <div class="socials__item">
-                                                <a href="#">
-                                                    <img src="img/socials/1@1X.png" alt="social icon"
-                                                        class="socials__icon">
-                                                </a>
-                                            </div>
-                                            <div class="socials__item">
-                                                <a href="#">
-                                                    <img src="img/socials/2@1X.png" alt="social icon"
-                                                        class="socials__icon">
-                                                </a>
-                                            </div>
-                                            <div class="socials__item">
-                                                <a href="#">
-                                                    <img src="img/socials/3@1X.png" alt="social icon"
-                                                        class="socials__icon">
-                                                </a>
-                                            </div>
-                                            <div class="socials__item">
-                                                <a href="#">
-                                                    <img src="img/socials/1@1X.png" alt="social icon"
-                                                        class="socials__icon">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="card__socials">
-                                            <div class="socials__item">
-                                                <a href="#">
-                                                    <img src="img/new_blocks/popup-card/like.png" alt="social icon"
-                                                        class="socials__icon">
-                                                    <span class="socials__counter">1000</span>
-                                                </a>
-                                            </div>
-                                            <div class="socials__item">
-                                                <a href="#">
-                                                    <img src="img/new_blocks/popup-card/comment.png" alt="social icon"
-                                                        class="socials__icon">
-                                                    <span class="socials__counter">1000</span>
-                                                </a>
-                                            </div>
-                                            <div class="socials__item">
-                                                <a href="#">
-                                                    <img src="img/new_blocks/popup-card/share.png" alt="social icon"
-                                                        class="socials__icon">
-                                                    <span class="socials__counter">1000</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- rigth side -->
-                                <div class="card__rigth">
-                                    <div class="steps__head">
-                                        <div class="targets__slider--big slick-slider">
-                                            <img src="img/new_blocks/popup-card/img@1X.jpeg" alt=""
-                                                class="slider__item">
-                                            <img src="img/new_blocks/img@1X (2).jpeg" alt="" class="slider__item">
-                                            <img src="img/new_blocks/popup-card/img@1X.jpeg" alt=""
-                                                class="slider__item">
-                                        </div>
-                                        <div class="card__target-progress">
-                                            <div class="progress__pr-bar"></div>
-                                            <div class="progress__value">
-                                                <span class="progress__digit">90</span>
-                                                <span class="progress__procent">%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="steps__desc">
-                                        <div class="target__txt-row">
-                                            <span class="steps__header">steps</span>
-                                        </div>
-                                        <div class="target__txt-row">
-                                            <span class="steps__title">STEP №1: Buy island</span>
-                                        </div>
-                                        <div class="target__txt-row">
-                                            <span class="target__mark">Cost:</span>
-                                            <span class="target__value">15 000$</span>
-                                        </div>
-                                        <div class="target__txt-row">
-                                            <span class="target__mark">Status:</span>
-                                            <span class="target__value">Done</span>
-                                        </div>
-                                        <div class="target__txt-row">
-                                            <span class="target__mark">Proof:</span>
-                                            <a href="#" class="target__link">link or uploade file</a>
-                                        </div>
-                                        <hr class="card__line">
-                                        <!-- <div class="steps__dots">
-                                            </div> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-
-
-                <!-- scripts -->
                 <script data-cfasync="false"
                     src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
                 <script>
@@ -2777,6 +1920,10 @@
                 <script src="assets/fullpage/fullpage.extensions.min.js"></script>
                 <script src="assets/revealator/fm.revealator.jquery.js"></script>
                 <script src="js/index.js"></script>
+
+                <!-- vue.js connect   -->
+                <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+                <script src="js/with-vue.js"></script>
 
                 <script src="js/common.js?v=1588455189"></script>
                 <script type="text/javascript">
