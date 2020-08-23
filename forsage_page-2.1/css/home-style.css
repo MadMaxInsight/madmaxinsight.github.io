@@ -13,7 +13,7 @@ body {
   background: #08081e;
   font-family: Montserrat;
   -webkit-font-smoothing: subpixel-antialiased;
-  -webkit-font-smoothing: none;
+/*   -webkit-font-smoothing: none; */
   -webkit-text-stroke: 1px transparent;
   position: relative;
   color: #fff;
