@@ -12,8 +12,8 @@
 body {
   background: #08081e;
   font-family: Montserrat;
+  -webkit-font-smoothing: auto;
   -webkit-font-smoothing: subpixel-antialiased;
-  -webkit-font-smoothing: none;
   -webkit-text-stroke: 1px transparent;
   position: relative;
   color: #fff;
@@ -66,8 +66,12 @@ a:hover {
   border-radius: 150px;
 }
 .nav-item a.nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 8px 10px 8px 30px;
 }
 .nav-item:hover {
@@ -151,6 +155,7 @@ a:hover {
 .page-wrapper {
   /* width: 80%; */
   padding-left: 20%;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(132, 84, 245, 0.2)), to(rgba(132, 84, 245, 0)));
   background: linear-gradient(90deg, rgba(132, 84, 245, 0.2) 0%, rgba(132, 84, 245, 0) 100%);
   /* background: linear-gradient(
     90deg,
@@ -205,13 +210,7 @@ a:hover {
 /* videos */
 
 .form-wrapper {
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#008bd9),
-    to(#00c193)
-  );
+  background: -webkit-gradient(linear, left top, right top, from(#008bd9), to(#00c193));
   background: linear-gradient(90deg, #008bd9, #00c193);
 }
 .video-wrapper {
@@ -289,9 +288,15 @@ a:hover {
 
 .video-txt__btn {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 137px;
   height: 45px;
   /* padding: 11px 21px; */
@@ -320,17 +325,27 @@ a:hover {
 
 .section_header {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 4px;
   margin-bottom: 4px;
 }
 .section_header-icon,
 .box-line {
   width: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .section_header-icon img {
   height: 10px;
@@ -375,8 +390,12 @@ section .instruction .box-content {
 .form_half {
   width: 50%;
   padding-left: 60px;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .form_half:first-child {
   border-right: 1px solid rgba(255, 255, 255, 0.3);
@@ -417,9 +436,15 @@ section .instruction .box-content {
 }
 .form_btn {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 137px;
   height: 45px;
   font-size: 14px;
