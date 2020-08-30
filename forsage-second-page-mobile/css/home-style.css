@@ -811,6 +811,11 @@ section .instruction .box-content {
 }
 
 @media (max-width: 640px) {
+  .logo img {
+    width: 126px;
+    height: 41px;
+  }
+
   .nav-item .nav-link {
     font-size: 22px;
   }
