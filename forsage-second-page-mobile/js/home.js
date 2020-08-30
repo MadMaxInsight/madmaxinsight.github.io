@@ -50,7 +50,8 @@ $(document).ready(function() {
     slick_init();
   });
   function slick_init() {
-    if ($(window).width() < 421) {
+    // if ($(window).width() < 421) {
+    if ($(window).width() < 641) {
       $(".form").prepend($(".instruction-desc__wrapper"));
       $(".instruction-desc__wrapper").addClass("moved");
       $(".box-content").slick({
@@ -63,6 +64,9 @@ $(document).ready(function() {
         lazyLoad: true,
         slidesToShow: 1
       });
+    } else {
+      // $(".box-content.slick-initialized").unslick();
+      // $(".box-content")[0].slick.unslick();
     }
   }
 });
