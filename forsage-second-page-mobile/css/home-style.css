@@ -824,6 +824,9 @@ section .instruction .box-content {
     font-size: 12px;
     width: 160px;
     height: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
   }
 
   .menu-open .mobile-menu-btn {
@@ -880,7 +883,7 @@ section .instruction .box-content {
 
   .video-wrapper::after {
     content: "";
-    background: linear-gradient(180.45deg, #bd213000 13.46%, #2e1f63 49.77%);
+    background: linear-gradient(180.45deg, #bd213000 13.46%, #25194d 49.77%);
     height: 100.8%;
     height: 100%;
     width: 100%;
@@ -944,11 +947,11 @@ section .instruction .box-content {
   }
 
   .video-wrapper.mh-46::after {
-    background: linear-gradient(180.45deg, #bd213000 10.46%, #2e1f63 38%);
+    background: linear-gradient(180.45deg, #bd213000 10.46%, #25194d 38%);
   }
 
   .video-wrapper.mh-51::after {
-    background: linear-gradient(180.45deg, #bd213000 13.46%, #2e1f63 39%);
+    background: linear-gradient(180.45deg, #bd213000 13.46%, #25194d 39%);
   }
 
   
@@ -958,11 +961,11 @@ section .instruction .box-content {
     margin-bottom: 20%;
   } */
   .video-wrapper.mh-60::after {
-    background: linear-gradient(180.45deg, #bd213000 13.46%, #2e1f63 40%);
+    background: linear-gradient(180.45deg, #bd213000 13.46%, #25194d 40%);
   }
 
   .video-wrapper.mh-74::after {
-    background: linear-gradient(180.45deg, #bd213000 13.46%, #2e1f63 40%);
+    background: linear-gradient(180.45deg, #bd213000 13.46%, #25194d 40%);
   }
 
   .video-box__without-text {
