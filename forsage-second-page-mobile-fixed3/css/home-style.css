@@ -828,6 +828,15 @@ section .instruction .box-content {
     margin: 0 10px;
   }
 
+  .page-wrapper {
+    /* background: none; */
+    background: -webkit-gradient(linear, left top, right top, from(rgba(132, 84, 245, 0.11)), to(rgba(132, 84, 245, 0)));
+    background: linear-gradient(90deg, rgba(132, 84, 245, 0.11) 0%, rgba(132, 84, 245, 0) 100%);
+    background: -webkit-gradient(linear, left top, right top, from(rgb(132 84 245 / 11%)), to(rgba(132, 84, 245, 0)));
+    background: linear-gradient(90deg, rgb(132 84 245 / 11%) 0%, rgba(132, 84, 245, 0) 100%);
+
+  }
+
   .logo img {
     width: 126px;
     height: 41px;
@@ -847,6 +856,10 @@ section .instruction .box-content {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    text-align: center;
+  }
+
+  .btn-wrapper--centered {
     text-align: center;
   }
 
