@@ -9,7 +9,7 @@
 
 ## Этот репозиторий служит хранилищем моих HTML-макетов
 То с чего все начиналось:
-- [Сайт по продаже жалюзи](https://madmaxinsight.github.io/site/) 
+- [Сайт по продаже жалюзи](https://madmaxinsight.github.io/jalousie/) 
 - [Сайт по продаже пива](https://madmaxinsight.github.io/beer/) 
 - [Продающий лендинг фитнес трекеров](https://madmaxinsight.github.io/miBand/)
 
