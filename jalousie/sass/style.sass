@@ -1,0 +1,890 @@
+@import "fonts"
+$text-color: rgb(102, 102, 102)   
+$green: #66cc66
+$orange: rgb(255, 153, 51)
+$white: rgb(255, 255, 255)
+%hover
+  cursor: pointer
+  transition: 0.3s
+  transform: scale(1.1, 1.1)
+
+
+html
+  font-size: 18px
+  font-family: 'PFDinTextCondPro'
+  width: 100%
+
+nav
+  background-color: darken($white, 5)
+
+section
+  position: relative
+  width: 100%
+
+.row 
+  margin-left: 0
+  margin-right: 0
+.container-fluid
+  max-width: 1280px
+  position: relative
+  // margin: 0
+  padding: 0
+
+.buttons
+  // font-size: 0.9rem
+  background-color: rgba(0,0,0, 0) 
+  font-weight: 750
+  border-radius: 0.8px
+  text-decoration: none
+  text-transform: uppercase
+  padding: 10px
+  border: 3px solid $orange
+  &:hover
+    @extend %hover
+    
+
+
+.top
+  padding-bottom: 1rem
+  padding-top: 1rem
+  position: relative
+  &_logo
+    height: 43px
+    // width: auto
+    font-size: 43px
+    display: inline-block
+    position: relative
+    text-align: center
+    vertical-align: middle
+
+  &_theme
+    font-family: 'PFDinTextCondPro'
+    color:  $text-color
+    font-size: 1rem
+    font-weight: 600
+    line-height: 1rem
+    text-align: right
+    text-align: center
+    text-transform: uppercase
+
+    span
+      padding: 2px
+      display: block
+      font-size: 0.8rem
+      font-weight: 500
+      text-transform: none
+  &_phone
+    
+    right: 0
+    position: relative
+    display: flex
+    justify-content: flex-end
+    padding: 0
+  &-tel
+    display: inline-block
+    padding-right: 0px
+    font-family: 'PFDinTextCondPro'
+    color:  $text-color
+    font-size: 1.3rem
+    line-height: 1.3rem
+    letter-spacing: 0.2rem
+    font-weight: 600
+    vertical-align: middle
+    text-align: center
+    text-decoration: none
+    small
+      display: block
+      letter-spacing: 0rem
+      font-size: 0.8rem
+      line-height: 1.2
+      opacity: 0.8
+
+    &-icon
+      display: inline-block
+      height: 1.3rem
+      width: 20px
+
+  
+.nav
+  position: relative
+  &_bg
+
+    height: 100%
+    background-color: darken($white, 5)
+    position: absolute
+    width: 100%//ZZZZZZZZZZ
+    left: -50% //HZZZZZZZZ
+
+
+
+
+  &-items
+    z-index: 14
+    // max-width: 110px
+    height: 3.2rem
+    margin: 0 
+    padding: 0
+    
+    
+  &-item
+    margin: 0
+    padding: 0 0.6rem
+    display: inline-flex
+    align-items: center
+    text-align: center
+    height: 100%
+
+     
+    ul
+      position: absolute
+      display: none
+      white-space: nowrap
+      padding: 0 
+      flex-direction: column
+      list-style-type: none
+      top: 100%
+      left: 0
+      height: 3.2rem
+
+
+      li   
+        border: 0.1px solid darken($white, 30)
+        width: 100%
+        background-color: darken($white, 20)
+    
+
+
+      li 
+       a
+        text-align: left
+        // margin-left: 0
+        padding: 0 1rem
+        height: 100%
+        width: 100%
+        font-size: 0.9rem
+        text-decoration: none
+        text-transform: uppercase
+        color: $text-color
+        &:hover
+          cursor: pointer
+          color: $white
+          background-color: $green
+
+    a
+      height: 100%
+      line-height: 3.2rem
+      display: block
+      text-align: center
+      text-decoration: none
+      text-transform: uppercase
+      color: $text-color
+    &:hover
+      cursor: pointer
+      color: $white
+      background-color: $green
+      transform: scale(1.1, 1.1)
+
+  &-item:hover
+    display: relative
+    ul
+      display: flex
+
+.primary
+  position: relative
+  height: 24rem
+  z-index: 2
+  &_smoke
+    margin: 0
+    padding: 0
+    position: absolute
+    top: 0
+    z-index: 1
+    height: 100%
+    width: 100%
+    background-color: white
+    opacity: 0.4
+    img
+      display: absolute
+      height: 100%
+      width: 100% 
+  p
+    z-index: auto
+    margin-top: 4.5rem
+    margin-bottom: 10px
+    position: relative
+    text-decoration: none
+    text-transform: uppercase
+    color: $text-color
+    font-size: 1rem 
+    font-weight: bold
+  span
+    z-index: auto
+
+    color: $orange  
+  &_info
+    padding-top: 2rem
+    padding-bottom: 5rem
+    z-index: 7
+    width: auto
+    padding-left: 0
+    display: flex
+    justify-content: center
+    align-items: flex-start
+    flex-direction: column
+    &_text
+      margin-top: 0.5rem
+      padding: 3px 6px
+      font-family: ﻿'PFDinTextCondPro', 'PFDinTextCondPro-Bold'
+      color: $white
+      background-color: $green
+      font-size: 1.5rem 
+      font-weight: 750
+      // height: 2.7rem
+      // line-height: 2.7rem
+      text-transform: uppercase
+  &_buttons
+    position: relative
+    display: flex
+    flex-direction: row
+    flex-wrap: nowrap
+    &_call
+      margin-right: 2rem
+      color: $white
+      border: 2.5px solid $orange
+      background-color: $orange
+      &:hover
+        background-color: $green
+        transition: 0.3s
+        color: $text-color
+        border: 2.5px solid $green
+
+    &_chose
+      color: $orange
+      &:hover
+        background-color: $orange
+        color: $text-color
+
+.kinds
+  text-decoration: none
+  text-transform: uppercase
+  &_head
+    font-size: 1.4rem
+    font-weight: 900
+    color: $text-color
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 1.7rem
+
+  &_blocks
+    color: $text-color
+    text-decoration: none
+    text-transform: uppercase
+
+  &_block
+    // max-width: 280px
+    border-radius: 0.9px
+    border: 2px solid rgba(0,0,0, 0.0)
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    padding: 1rem
+    &:hover
+      border-radius: 0.9px
+      border: 2px solid $green
+      transform: scale(1.1, 1.1)
+      transition: 0.3s
+
+
+
+    &_img
+      padding: 0
+      height: 200px
+      width: 100%
+    &_name
+      position: relative
+      display: inline-block
+      text-align: center
+      width: auto
+      font-size: 0.8rem
+      line-height: 0.8rem
+      font-weight: 600
+
+
+
+    &_buttons
+      position: relative
+      width: 100%
+      // padding: 2px 0
+      // height: 3rem
+      display: flex
+      justify-content: space-between
+      align-items: center
+      // background-color: red
+      font-size: 0.7rem
+      
+
+
+
+    &_button
+
+      &_more
+        position: relative
+        padding-left: 1.5rem
+        padding-right: 2rem
+        width: 47%
+        text-align: center
+        color: $green
+        border: 2px solid $green
+
+        &:hover
+          background-color: $green
+          color: $white
+
+      &_order
+        position: relative
+        padding-left: 2rem
+        padding-right: 2rem
+        width: 47%
+        text-align: center
+        color: $white
+        border: 2px solid $green
+        background-color: $green
+        &:hover
+          background-color: $green
+          color: $white
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px)
+  .kinds_block_button
+    &s
+      flex-direction: column
+    &_more
+      width: 50%
+      margin-bottom: 0.3rem
+    &_order
+      width: 50%
+
+.consulti
+  margin-top: 2rem 
+  margin-bottom: 4rem
+  &_info
+    height: auto
+    position: relative
+    display: flex
+    align-items: center
+    flex-direction: column
+    justify-content: center
+    align-items: flex-start
+
+    &_text
+      padding-top: 2rem
+      p
+        margin-top: 1rem
+        font-size: 1rem
+        color: $text-color
+      span
+        color: $orange
+        font-size: 1.2rem
+        text-transform: uppercase
+        font-weight: bold
+
+
+
+
+    &_button
+      padding: 0.8rem 2rem
+      width: auto
+      margin-left: 0s
+      position: relative
+      display: block
+      color: $orange
+      &:hover
+        color: $text-color
+        background-color: $orange
+
+
+
+
+
+
+
+    &_img
+      display: flex
+      justify-content: center
+      align-items: center
+      img
+        margin-top: 2rem
+        height: 170px
+        width: auto
+.slider
+  position: relative
+  margin-top: 2rem
+  margin-left: 0
+  margin-right: 0
+  &_block
+    right: -1.5px
+    padding: 0
+    height: 570px 
+    width: 1280px
+    box-sizing: border-box
+    // border: 2px solid black
+    position: relative
+    overflow: hidden
+    &_2
+      display: flex
+      height: 100px
+      width: 100%
+      justify-content: space-between
+      padding: 0.3rem 0
+      &_item
+        cursor: pointer
+        line-height: 100px
+        text-align: center
+        height: 100%
+        width: 120px
+  &_items
+    width: auto
+    height: 100%
+    position: absolute
+    left: 0
+    display: flex
+    box-sizing: border-box
+
+  &_item
+    box-sizing: border-box
+    text-align: center
+    padding: 0 0
+    margin-left: 0
+    letter-spacing: 0
+    display: inline-block
+    line-height: 570px
+    width: 1280px
+    height: 100%
+    transform: translateX(-1280px*0)
+    transition: 0.4s
+    background-size: cover
+
+
+#arrow
+  &_b
+    z-index: 3
+    top: 50%
+    left: 2px
+    position: absolute
+    display: block
+    height: 30px
+    width: 30px
+    background-image: url('../images/back.svg')
+    opacity: 0.3
+    &:hover
+      cursor: pointer
+      transform: scale(1.5)
+
+  &_n
+    z-index: 3
+    top: 50%
+    right: 2px
+    position: absolute
+    display: block
+    height: 30px
+    width: 30px
+    background-image: url('../images/next.svg')
+    opacity: 0.3
+    &:hover
+      cursor: pointer
+      transform: scale(1.5) 
+#stop
+  &_b
+    z-index: 2
+    top: 0
+    left: -25%
+    position: absolute
+    display: none
+    margin: 0
+    padding: 0
+    height: 100%
+    width: 500px
+    background: radial-gradient($green , rgba(0,0,0,0.0) 50% )
+  &_n
+    z-index: 2
+    top: 0
+    right: -25%
+    position: absolute
+    display: none
+    margin: 0
+    padding: 0
+    height: 100%
+    width: 500px
+    background: radial-gradient($green , rgba(0,0,0,0.0) 50% )
+
+.action
+  height: 265px
+  margin: 2rem 0
+  &_box
+    background-image: url(../images/box.png)
+    background-size: contain
+    padding: 0
+  &_order
+    padding: 0
+    display: flex
+    flex-direction: column
+    &_text
+      &_action
+        margin-bottom: 2rem
+      p
+        color: $text-color
+
+      span
+        font-size: 1.3rem
+        color: $orange
+        text-transform: uppercase
+        font-weight: bold
+      &_fields
+        margin-top: 2rem
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        text-align: center
+        &_wrap
+          position: relative
+        &_in
+          position: relative
+
+          height: 100%
+          width: 305px
+          padding-left: 2.5rem
+          font-size: 0.8rem
+          &_name
+            top: 30%
+            left: 0
+            margin-left: 0.6rem
+            position: absolute
+            width: 1rem
+            height: 1rem
+            color: $text-color
+            opacity: 0.8
+          &_tel
+            top: 30%
+            left: 0
+            margin-left: 0.6rem
+            position: absolute
+            width: 1rem
+            height: 1rem
+            color: $text-color
+            opacity: 0.5
+            
+
+        &_button  
+          width: 305px
+          color: $white
+          background-color: $orange
+#reviews
+  background-color: #fcfcfc
+  width: 100%
+  padding-bottom: 1rem
+.reviews
+  background-color: #f8f8f8
+  width: 1100px
+  height: 319px
+  // padding: 0
+  position: relative 
+  overflow: hidden
+  &_row
+    display: flex
+    position: absolute
+    left: 0
+    width: 3300px
+    flex-direction: row
+    margin: 0
+    transition: 0.4s
+  &_head
+    width: 100%
+    text-align: center
+    text-decoration: none
+    text-transform: uppercase
+    font-size: 1.4rem
+    font-weight: 900
+    color: $text-color
+    margin: 1.7rem 0
+  &_arrow_b
+    z-index: 3
+    top: 45%
+    left: 2px
+    position: absolute
+    display: block
+    height: 30px
+    width: 30px
+    background-image: url('../images/back.svg')
+    opacity: 0.3
+    &:hover
+      cursor: pointer
+      transform: scale(1.5)  
+  &_arrow_n
+    z-index: 3
+    top: 45%
+    right: 2px
+    position: absolute
+    display: block
+    height: 30px
+    width: 30px
+    background-image: url('../images/next.svg')
+    opacity: 0.3
+    &:hover
+      cursor: pointer
+      transform: scale(1.5)
+  &_block
+    max-width: 1100px
+    padding: 1.5rem 2rem
+    &_slider
+      &_0,&_1,&_2  
+        display: block
+        overflow: hidden
+        position: relative
+        height: 260px
+        max-width: 370px
+        padding: 0
+      
+       
+      
+      &_items
+        position: absolute
+        display: flex
+        flex-direction: row
+        height: 100%
+        padding: 0
+        margin: 0 
+        left: 0
+        top: 0 
+        transition: 0.4s
+        background-size: cover
+
+      &_item
+        // margin-right: -2px
+        text-align: center
+        line-height: 260px
+        display: inline-block
+        position: relative
+        height: 260px
+        width: 370px
+       
+    &_info
+      &_man
+        height: 90px
+        display: flex
+        flex-direction: column
+        p
+          font-weight: 600
+          margin-bottom: 13px
+        a 
+          color: rgba(102, 153, 204, 255)
+      img
+        float: left
+        height: 90px
+        width: 90px
+        border-radius: 50%
+        margin-right: 1rem
+      audio
+        width: 100%
+      p
+        color: $text-color
+.dots
+  width: 100%
+  position: relative
+  display: flex
+  justify-content: center
+.dot
+  margin-right: 10px
+  margin-top: 1rem
+  height: 13px
+  width: 13px
+  border-radius: 50%
+  background-color: #cccccc
+  &:hover
+    background-color: $green
+    cursor: pointer
+  &_active
+    margin-right: 10px
+    margin-top: 1rem
+    height: 13px
+    width: 13px
+    border-radius: 50%
+    background-color: $green
+    &:hover
+      background-color: $green
+      cursor: pointer
+footer
+  width: 100% 
+  background-color: #666666
+  .contacts
+    padding-top: 3rem
+    color: #cccccc
+    position: relative
+    .map
+      padding: 0
+      padding-right: 3rem
+    &_direct
+      text-transform: uppercase
+      padding: 0
+      h2
+        color: white
+        margin-top: 0
+        margin-bottom: 3rem
+      p 
+        margin-bottom: 2px
+      a
+        text-transform: none
+        text-decoration: none
+        color: white  
+      &_ico
+        margin-right: 5px
+        height: 14px
+        width: 10px
+        // fill: #cccccc
+        fill: red
+      &_buttons
+        margin-top: 4rem
+        display: flex
+        flex-direction: row
+        justify-content: start
+        align-items: center
+        a
+          height: 38px
+          width: 38px
+          border-radius: 50%
+          padding: 12px
+          background-color: #cccccc
+          text-align: center
+          padding-top: 11px
+          margin-right: 1rem
+          margin-left: 0
+          &:hover
+            background-color: white
+            @extend %hover
+          img
+            height: 100%
+            width: 100%
+        .question
+          color: #cccccc
+          margin-left: 1rem
+          padding: 10px 48px
+          border-color: #cccccc 
+          &:hover
+            color: white
+            border-color: white 
+    &_blocks
+      display: flex
+      position: relative
+      flex-direction: row
+      justify-content: space-between
+      align-items: flex-start
+      color: #cccccc
+      margin-top: 2.5rem
+      &_ooo
+        p
+          &:first-child
+            color: white
+            font-weight: bold
+      &_policy
+        text-align: center
+        p 
+          margin-bottom: 2px
+        a
+          color: #cccccc
+          text-decoration: underline
+      &_author
+        @extend .contacts_blocks_ooo
+        p
+          span
+            text-transform: uppercase
+            font-weight: bold
+          a
+            text-decoration: none 
+            color: #cccccc
+
+/* popaps */
+.popup
+  display: none
+  z-index: 99
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(black, 0.7)
+  &_call
+    position: relative
+    padding: 1.5rem 2rem
+    left: 35%
+    top: 10rem 
+    width: 362px
+    height: 375px
+    background-color: white
+    p 
+      text-align: center
+      font-size: 1.3rem
+      text-transform: uppercase
+      color: $text-color
+      font-weight: bold
+      margin: 1rem 0.8rem
+    &_form
+      padding-top: 1rem
+      height: 210px
+      position: relative
+      display: flex
+      justify-content: space-between
+      flex-direction: column
+      // align-items: center
+
+      &_wrap
+        position: relative
+        &_in
+          position: relative
+          height: 53px
+          width: 100%
+          padding-left: 2.5rem
+          font-size: 0.8rem
+          &_name
+            top: 30%
+            left: 0
+            margin-left: 0.6rem
+            position: absolute
+            width: 1rem
+            height: 1rem
+            color: $text-color
+            opacity: 0.8
+          &_tel
+            top: 30%
+            left: 0
+            margin-left: 0.6rem
+            position: absolute
+            width: 1rem
+            height: 1rem
+            color: $text-color
+            opacity: 0.5
+        &_button
+          width: 100%
+          line-height: 1.5rem
+          color: white
+          background-color: $orange
+          &:hover
+            background-color:  $green
+            border-color: $green
+            transform: none
+.close
+  position: absolute
+  color: $text-color
+  top: -25px
+  right: -15px
+  height: 20px
+  width: 15px
+  text-align: center
+  font-weight: bold
+  font-size: 20px
+  line-height: 20px
+  background-color: rgba(red, 0)
+  border: none
+  transform: scale(1.5)
+  &:hover
+    cursor: pointer
+    color: red
+
