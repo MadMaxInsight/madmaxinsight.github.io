@@ -1,0 +1,291 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,700;1,900&display=swap");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: none;
+}
+
+html {
+  font-size: 16px;
+  cursor: none;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+body.loading {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.container {
+  padding: 0 3%;
+  margin: 0 auto;
+}
+
+/** Header **/
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 3%;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.header--active {
+  display: block;
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+}
+
+.nav__lang-switcher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__lang-switcher .lang {
+  display: none;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  padding: 8px 16px;
+}
+
+.nav__lang-switcher .lang:hover {
+  color: #cbcbcb;
+}
+
+.nav__lang-switcher .lang.active {
+  display: block;
+}
+
+.menu__item {
+  text-transform: uppercase;
+  padding: 8px 16px;
+}
+
+.menu__item:hover {
+  color: #cbcbcb;
+}
+
+/** Preloader **/
+.preloader {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  z-index: 900;
+}
+
+.preloader .involta-title__text {
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 30vh;
+  font-weight: 900;
+  background-image: url("/assets/images/involta-title-background.jpg");
+  background-size: contain;
+  -webkit-animation: animation-pulse 25s infinite;
+          animation: animation-pulse 25s infinite;
+}
+
+@-webkit-keyframes animation-pulse {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -300% 0;
+  }
+}
+
+@keyframes animation-pulse {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -300% 0;
+  }
+}
+
+/** Cursor & Scroll Btn **/
+.cursor {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  z-index: 99999;
+  -webkit-transition: height 0.2s ease-in-out, width 0.2s ease-in-out;
+  transition: height 0.2s ease-in-out, width 0.2s ease-in-out;
+  opacity: 0;
+}
+
+.cursor.triggered {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+}
+
+.scroll-arrow {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 140px;
+  bottom: 12vh;
+  right: 3%;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.scroll-arrow__text {
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  margin-right: 4px;
+}
+
+.scroll-arrow__line {
+  display: block;
+  width: calc(70px - 0.6rem);
+  height: 1px;
+  background-color: #383838;
+}
+
+.scroll-arrow__img {
+  display: block;
+  height: 24px;
+  padding-top: 2px;
+}
+
+/** Main & Animation logic **/
+.screen {
+  height: 100vh;
+  width: 100vw;
+  background-color: #000;
+  top: 0;
+  left: 0;
+  padding-top: 10%;
+}
+
+.screen--active {
+  display: block;
+}
+
+.screen-2 {
+  background: red;
+}
+
+.screen-3 {
+  background: yellow;
+}
+
+/** Screen "About" **/
+.about-wrapper {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.about__promo, .about__desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  opacity: 1;
+}
+
+.about .promo__header img {
+  height: 40vh;
+}
+
+.about .promo__desc {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-style: italic;
+  margin-top: 2rem;
+}
+
+.about .desc__header {
+  font-size: 2.5rem;
+  font-weight: 200;
+  font-style: italic;
+  -webkit-transform: translateX(-5%);
+          transform: translateX(-5%);
+  margin-bottom: 2rem;
+}
+
+.about .desc__paragraph {
+  font-size: 1rem;
+  font-weight: 100;
+  margin-bottom: 2rem;
+  width: 80%;
+}
+/*# sourceMappingURL=style.css.map */

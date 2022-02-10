@@ -1,0 +1,205 @@
+@import "./fonts.sass"
+
+@mixin align-content
+    display: flex
+    align-items: center
+    justify-content: space-between
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    cursor: none
+
+html
+    font-size: 16px
+    cursor: none
+
+body
+    background: #000
+    color: #fff
+    font-family: 'Montserrat', sans-serif
+    overflow-x: hidden
+    position: relative
+    &.loading
+        overflow: hidden
+        height: 100vh
+
+.container
+    padding: 0 3%
+    margin: 0 auto
+
+/** Header **/    
+.header
+    @include align-content
+    padding: 20px 3%
+    position: fixed
+    width: 100%
+    z-index: 100
+    &--active
+        display: block
+    &__nav
+        display: flex
+
+.nav
+    &__menu
+        display: flex
+        text-decoration: none
+        list-style: none
+    &__lang-switcher
+        display: flex
+        align-items: center
+        .lang
+            display: none
+            text-transform: uppercase
+            color: #fff
+            text-decoration: none
+            height: 100%
+            width: 100%
+            padding: 8px 16px
+            &:hover
+                color: #cbcbcb
+
+            &.active
+                display: block
+
+.menu
+    &__item
+        text-transform: uppercase
+        padding: 8px 16px
+        &:hover
+            // cursor: pointer
+            color: #cbcbcb
+
+    &--active
+        // ...
+
+/** Preloader **/
+.preloader
+    height: 100vh
+    width: 100vw
+    display: flex
+    align-items: center
+    justify-content: center
+    position: absolute
+    z-index: 900
+    // background-color: unset !important
+    .involta-title
+        &__text
+            -webkit-background-clip: text
+            background-clip: text
+            color: transparent
+            font-size: 30vh
+            font-weight: 900
+            background-image: url("/assets/images/involta-title-background.jpg")
+            background-size: contain
+            animation: animation-pulse 25s infinite
+
+@keyframes animation-pulse
+    0%
+        background-position: 0 0
+
+    100%
+        background-position: -300% 0
+
+/** Cursor & Scroll Btn **/
+.cursor
+    position: absolute
+    width: 30px
+    height: 30px
+    border-radius: 50%
+    border: 1px solid #fff
+    pointer-events: none
+    mix-blend-mode: difference
+    z-index: 99999
+    transition: height 0.2s ease-in-out, width 0.2s ease-in-out
+    opacity: 0
+
+    &.triggered
+        width: 50px
+        height: 50px
+        background-color: #fff
+
+.scroll-arrow
+    position: fixed
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 140px
+    bottom: 12vh
+    right: 3%
+    transform: rotate(90deg)
+
+    &__text
+        text-transform: uppercase
+        font-size: 0.6rem
+        margin-right: 4px
+
+    &__line
+        display: block
+        width: calc(70px - 0.6rem)
+        height: 1px
+        background-color: #383838
+    &__img
+        display: block
+        height: 24px
+        padding-top: 2px
+
+/** Main & Animation logic **/
+.screen
+    height: 100vh
+    width: 100vw
+    background-color: #000
+    top: 0
+    left: 0
+    padding-top: 10%
+    &--active
+        display: block
+    &-1
+
+    &-2
+        background: red
+    &-3
+        background: yellow
+.main
+    // position: fixed
+    // height: 100vh
+    // width: 100vw
+    // background-color: #000
+    &-wrapper
+        // height: 100%
+        // width: 100%
+        // position: relative
+
+/** Screen "About" **/
+.about
+    &-wrapper
+        height: 100vh
+        width: 100%
+        @include align-content
+        align-items: flex-start
+    &__promo,&__desc
+        display: flex
+        flex-direction: column
+        width: 50%
+        opacity: 1
+    .promo
+        &__header
+            img
+                height: 40vh
+        &__desc
+            text-transform: uppercase
+            font-size: 1rem
+            font-style: italic
+            margin-top: 2rem
+    .desc
+        &__header
+            font-size: 2.5rem
+            font-weight: 200
+            font-style: italic
+            transform: translateX(-5%)
+            margin-bottom: 2rem
+        &__paragraph
+            font-size: 1rem
+            font-weight: 100
+            margin-bottom: 2rem
+            width: 80%
