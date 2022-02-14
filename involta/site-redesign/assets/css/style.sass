@@ -1,0 +1,382 @@
+@import "./fonts.sass"
+
+@mixin align-content
+    display: flex
+    align-items: center
+    justify-content: space-between
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html
+    font-size: 16px
+    scroll-behavior: smooth
+
+body
+    background: #000
+    // color: #fff
+    font-family: 'Montserrat', sans-serif
+    overflow-x: hidden
+    position: relative
+    &.loading
+        overflow: hidden
+        height: 100vh
+
+.container
+    padding: 0 3%
+    margin: 0 auto
+
+/** Header **/    
+.header
+    @include align-content
+    padding: 20px 3%
+    position: fixed
+    width: 100%
+    z-index: 100
+    &__logo
+        & svg
+            fill: #fff
+    &--active
+        display: block
+    &__nav
+        display: flex
+    &--dark
+        & svg
+            fill: #000
+        & .menu__item, a.lang
+            color: #000
+
+.nav
+    &__menu
+        display: flex
+        text-decoration: none
+        list-style: none
+    &__lang-switcher
+        display: flex
+        align-items: center
+        .lang
+            display: none
+            text-transform: uppercase
+            color: #fff
+            text-decoration: none
+            height: 100%
+            width: 100%
+            padding: 8px 16px
+            &:hover
+                color: #cbcbcb
+            &.active
+                display: block
+            &--dark
+                color: #000
+
+.menu
+    &__item
+        text-transform: uppercase
+        padding: 8px 16px
+        font-size: 14px
+        color: #fff
+        &:hover
+            color: #cbcbcb
+        &--black
+            color: #000
+
+    &--active
+        // ...
+
+/** Preloader **/
+.preloader
+    height: 100vh
+    width: 100vw
+    display: flex
+    align-items: center
+    justify-content: center
+    position: absolute
+    z-index: 900
+    background-color: #000
+    // background-color: unset !important
+    .involta-title
+        &__text
+            -webkit-background-clip: text
+            background-clip: text
+            color: transparent
+            font-size: 32vh
+            font-weight: 900
+            background-image: url("../images/involta-title-background.png")
+            background-size: cover
+            animation: animation-pulse 25s infinite
+
+@keyframes animation-pulse
+    0%
+        background-position: 0 0
+
+    100%
+        background-position: 800% 0
+
+/** Cursor & Scroll Btn **/
+.cursor
+    position: absolute
+    width: 30px
+    height: 30px
+    border-radius: 50%
+    border: 1px solid #fff
+    pointer-events: none
+    mix-blend-mode: difference
+    z-index: 99999
+    transition: height 0.2s ease-in-out, width 0.2s ease-in-out
+    opacity: 0
+    &--black
+        border-color: #000
+    &.triggered
+        width: 50px
+        height: 50px
+        background-color: #fff
+
+.scroll-arrow
+    position: fixed
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 140px
+    bottom: 12vh
+    right: 3%
+    transform: rotate(90deg)
+
+    &__text
+        text-transform: uppercase
+        font-size: 0.75rem
+        margin-right: 4px
+        color: #fff
+
+    &__line
+        display: block
+        width: calc(70px - 0.6rem)
+        height: 1px
+        background-color: #383838
+    &__img
+        display: block
+        height: 24px
+        padding-top: 2px
+
+/** Main & Animation logic **/
+.screen
+    position: relative
+    height: 100vh
+    width: 100vw
+    top: 0
+    left: 0
+
+/** Screen "About" **/
+.about
+    color: #fff
+    cursor: none
+    // z-index: 2
+    &__bg
+        position: absolute
+        top: 0
+        left: 0
+        opacity: 0.09
+        display: grid
+        grid-template-columns: 1fr 1fr
+        z-index: -1
+    .bg__item
+        width: 50vw
+        height: 50vh
+
+        // width: 100%
+        // height: 100%
+
+    &-wrapper
+        z-index: 1
+        height: 100vh
+        width: 100%
+        @include align-content
+        align-items: flex-start
+        padding-top: 10%
+    &__promo,&__desc
+        display: flex
+        flex-direction: column
+        width: 50%
+        opacity: 1
+    .promo
+        &__header
+            img
+                height: 40vh
+        &__desc
+            text-transform: uppercase
+            font-size: 1rem
+            font-style: italic
+            margin-top: 2rem
+    .desc
+        &__header
+            font-size: 3rem
+            font-weight: 200
+            font-style: italic
+            transform: translateX(-5%)
+            margin-bottom: 2rem
+        &__paragraph
+            font-size: 1rem
+            font-weight: 100
+            margin-bottom: 2rem
+            width: 80%
+
+/**  Screen "Involta GO" **/
+.involta-go
+    background-color: #fff
+    overflow: hidden
+    height: auto
+    min-height: 100vh
+    &__green-preloader
+        background-color: #B4DB4D
+        position: absolute
+        right: -52vw
+        top: -100vw
+        height: 200vw
+        width: 200vw
+        border-radius: 50%
+        z-index: 8888
+        transform-origin: center center
+    &__content
+        position: relative
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        padding: 20% 0 12%
+        & div:not(.involta-go__browser-bg)
+            z-index: 2
+    &__logo
+        // width: calc( 260vw * 100 / 1440 )
+        width: 45vw
+        margin-bottom: 27px
+        & svg
+            width: 100%
+    &__cards
+        position: relative
+        .cards
+            &__wrapper
+                display: flex
+                justify-content: center
+            &__item
+                background: #F1F5FA
+                border-radius: 20px
+                padding: 32px 24px
+                width: 390px
+                &:first-of-type
+                    margin-right: 20px
+                &:last-of-type
+                    margin-left: 20px
+            &__title
+                text-transform: uppercase
+                font-weight: 800
+                font-size: 1.4rem
+                color: #474747
+                margin-bottom: 0.8rem
+            &__desc
+                font-weight: 300
+                font-size: 0.9rem
+                color: #000
+                line-height: 165%
+
+    &__browser-bg
+        width: 94%
+        // height: 820px
+        height: 100%
+        position: fixed
+        // bottom: 0
+        top: 15vh
+        // transform: translateY(15vh)
+        display: flex
+        justify-content: center
+        z-index: 1
+        pointer-events: none
+        .browser-bg
+            &__wrapper
+                position: relative
+                width: 70%
+                box-shadow: 0px 21px 100px rgba(18, 22, 27, 0.16)
+                border-radius: 28px
+                background: #FFF
+            &__control-btns
+                position: absolute
+                left: 24px
+                top: 20px
+                display: flex
+                .control-btn
+                    height: 12px
+                    width: 12px
+                    background-color: grey
+                    opacity: 0.5
+                    border-radius: 50%
+                    margin-right: 10px
+                    &--red
+                        background-color: #FF0000
+                    &--orange
+                        background-color: #FFA800
+                    &--green
+                        background-color: #04BC00
+
+    &__search
+        width: 70%
+        display: flex
+        justify-content: center
+        margin-bottom: 48px
+        position: relative
+
+    &__slider
+        position: fixed
+        top: 23vh
+        .slider
+            &__items
+                display: flex
+                justify-content: center
+                width: 62vw
+            &__item
+                display: none
+                border-radius: 30px
+                width: 100%
+                &:first-of-type
+                    display: block
+
+.search
+    &__phrase
+        display: flex
+        flex-direction: column
+        position: absolute
+        osition: absolute
+        bottom: 100%
+        left: 7%
+        & span
+            font-size: 0.8rem
+            color: #474747
+            text-align: center
+            font-weight: 300
+            text-align: center
+            margin-bottom: 10px
+        & img
+            height: 58px
+    &-bar
+        width: 70%
+        position: relative
+        &__input
+            border: 1px solid rgba(0, 0, 0, 0.2)
+            border-radius: 30px
+            font-size: 1.2rem
+            padding: 15px 30px
+            width: 100%
+            &::placeholder
+                font-family: "Montserrat"
+                font-weight: 300
+                color: rgba(0, 0, 0, 0.35)
+        &__btns
+            position: absolute
+            top: 0
+            right: 30px
+            height: 100%
+            display: flex
+            align-items: center
+            .btns__icon
+                & img
+                    height: 26px
+                    width: 26px
+                    margin-left: 14px
