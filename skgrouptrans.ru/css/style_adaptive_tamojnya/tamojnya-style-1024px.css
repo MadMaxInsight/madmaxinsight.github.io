@@ -1,0 +1,145 @@
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 0 6%;
+  }
+  .grid {
+    padding: 0px 6%;
+  }
+  .logo {
+    width: 390px;
+  }
+  .logo-image {
+    width: 155px;
+  }
+  .logo-name {
+    font-size: 18px;
+  }
+  .header__number {
+    font-size: 20px;
+  }
+  .header__menu {
+    font-size: 16px;
+  }
+  .button {
+    font-size: 16px;
+  }
+  .main-screen {
+    background-position: 39% 50%;
+  }
+  .advantage__name-size {
+    width: 165px;
+  }
+  /* О компании */
+  .block-header {
+    font-size: 50px;
+  }
+  .block-header:after {
+    width: 100px;
+    height: 53px;
+    top: -16px;
+  }
+  .about__purpose > p {
+    font-size: 15px;
+  }
+  .sliders .slider-about {
+    width: 400px;
+    margin-right: 14px;
+  }
+  .sliders .slider-about:before {
+    width: 400px;
+    height: 269px;
+    bottom: 15px;
+    left: 12px;
+  }
+  .sliders .slider-about > img {
+    width: 100%;
+  }
+  .stages__name:after {
+    content: '';
+    position: absolute;
+    background-image: url(../../img/about/crosses_for_header.png);
+    background-size: cover;
+    z-index: 2;
+    width: 100px;
+    height: 53px;
+    top: -21px;
+    right: 114px;
+  }
+  .stages__description-right:before,
+  .stages__description-left:before {
+    display: none;
+  }
+  .stages__description-right:after,
+  .stages__description-left:after {
+    display: none;
+  }
+  .stages-footer__description {
+    font-size: 18px;
+  }
+  /* Индивидуальная консультация */
+  .consultation {
+    background-color: #2B2B51;
+    padding: 60px 0 10px;
+  }
+  .consultation__name {
+    -webkit-text-stroke: 2px white;
+  }
+  .consultation-br {
+    display: none;
+  }
+  .consultation .block-header {
+    font-size: 38px;
+  }
+  .consultation .block-header > span:after {
+    right: -132px;
+  }
+  .consultation-form {
+    background-color: transparent;
+    margin: 0;
+    padding: 42px 4px 57px 4px;
+    box-shadow: none;
+  }
+  .consultation-form:before {
+    display: none;
+  }
+  .consultation-form__description {
+    font-size: 19px;
+    text-align: center;
+  }
+  .consultation-form__description span:after {
+    display: none;
+  }
+  .consultation .form-tamojnya {
+    flex-direction: column;
+  }
+  .consultation .form-tamojnya__whats {
+    margin-left: 0px;
+    margin-top: 36px;
+  }
+  .consultation .form__name,
+  .consultation .form__phone,
+  .consultation .form__email,
+  .consultation .form__button,
+  .consultation .form__whats {
+    width: 307px;
+  }
+  .consultation .form__whats:after {
+    display: none;
+  }
+  .footer-logo__name {
+    font-size: 16px;
+    width: 275px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1500px) and (min-width: 1024px) {
+  .consultation .form__name,
+  .consultation .form__phone,
+  .consultation .form__email,
+  .consultation .form__button,
+  .consultation .form__whats {
+    width: 305px;
+  }
+  .consultation-form__description {
+    font-size: 20px;
+  }
+}

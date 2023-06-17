@@ -1,0 +1,6 @@
+User-agent: *               
+Allow: *         
+
+Sitemap: https://skgrouptrans.ru/sitemap.xml
+
+Host: https://skgrouptrans.ru/

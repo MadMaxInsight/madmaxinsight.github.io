@@ -1,0 +1,134 @@
+@media screen and (max-width: 320px) {
+  .preloader .logo-name {
+    font-size: 12px;
+  }
+  .block-header > span:after {
+    top: 27px;
+    right: -27px;
+  }
+  .logo-image {
+    width: 56px;
+  }
+  .header__menu {
+    font-size: 14px;
+  }
+  .main-screen .body {
+    padding-top: 95px;
+    padding-bottom: 35px;
+  }
+  .main-screen .main-body__name {
+    font-size: 10px;
+  }
+  .main-screen .main-body__description {
+    font-size: 22px;
+    line-height: 24px;
+  }
+  .main-screen .main-footer .advantage__name {
+    font-size: 14px;
+    margin: 3px 0 3px 0;
+    width: 100%;
+  }
+  .main-screen .main-footer .advantage__name:before {
+    background-image: url(../../img/main_screen/Rectangle_adaptive.png);
+    width: 11px;
+    height: 11px;
+    left: -20px;
+    top: 5px;
+  }
+  .main-screen .main-footer .advantage__name-wsize:before {
+    top: 15px;
+  }
+  .main-screen .main-footer__advantage {
+    margin-left: 23px;
+  }
+  .menu-active__content {
+    padding: 38% 0 14%;
+  }
+  .menu-active__wrapper {
+    right: -8vw;
+    top: 62px;
+  }
+  .about .block-header {
+    font-size: 29px;
+  }
+  .about__name > span:after {
+    content: '';
+    position: absolute;
+    background-image: url(../../img/about/crosses_for_header.png);
+    background-size: cover;
+    z-index: 2;
+    width: 47px;
+    height: 26px;
+    top: -9px;
+    right: -27px;
+  }
+  /* Наши преимущества */
+  .excellence__name > span:after {
+    content: '';
+    position: absolute;
+    background-image: url(../../img/about/crosses_for_header.png);
+    background-size: cover;
+    z-index: 2;
+    width: 47px;
+    height: 26px;
+    top: 29px;
+    right: -23px;
+  }
+  .excellence .slick-list {
+    padding: 20px;
+  }
+  .excellence__description {
+    left: -19px;
+    width: 100%;
+  }
+  .reviews__cards {
+    width: 100%;
+    left: -6vw;
+  }
+  .reviews__cards .slick-list {
+    height: 349px;
+    padding: 0 20px;
+  }
+  .reviews .comment {
+    width: 99%;
+    padding: 0px 17px 38px 17px;
+    height: 320px;
+  }
+  .reviews .reviews__majaro {
+    padding: 22px 17px 38px 17px;
+  }
+  .question__name {
+    font-size: 21px;
+    line-height: 34px;
+  }
+  .question__name > span:before {
+    top: -11px;
+    right: -69px;
+  }
+  .footer-services__description > a {
+    font-size: 16px;
+  }
+  .footer-contact__phone {
+    font-size: 16px;
+  }
+  .footer-contact__politics {
+    font-size: 16px;
+  }
+  .footer-logo__name {
+    width: 140px;
+  }
+  .contact__name > span:after {
+    content: '';
+    position: absolute;
+    background-image: url(../../img/about/crosses_for_header.png);
+    background-size: cover;
+    z-index: 2;
+    width: 47px;
+    height: 26px;
+    top: -9px;
+    right: -27px;
+  }
+  .services-card {
+    height: 380px;
+  }
+}

@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таможенное оформление и аутсорсинг ВЭД | SK Group Trans 2021</title>
+    <link rel="icon" href="./img/favicon/favicon-120x120.png" type="image/x-icon">
+    <!-- Стили -->
+    <link rel="stylesheet" href="./css/style_smaller.css">
+    <link rel="stylesheet" href="./css/style_adaptive_main/main-style-1024px.css">
+    <link rel="stylesheet" href="./css/style_adaptive_main/main-style-768px.css">
+    <link rel="stylesheet" href="./css/style_adaptive_main/main-style-420px.css">
+    <link rel="stylesheet" href="./css/style_adaptive_main/main-style-375px.css">
+    <link rel="stylesheet" href="./css/style_adaptive_main/main-style-320px.css">
+    <!-- <link rel="stylesheet" href="./css/slick-slider/slick-theme.css" /> -->
+    <link rel="stylesheet" href="./css/slick-slider/slick-slider.css" />
+</head>
+<!-- <Preloader> -->
+<div class="preloader js-progress">
+    <div class="preloader__inner">
+        <div class="logo">
+            <img src="./img/main_screen/logo_big.png" alt="logo" class="logo-image">
+            <div class="logo-name">ВЭД<br>Логистика<br>Таможенное оформление</div>
+        </div>
+    </div>
+    <div class="preloader__loader js-progress__loader"></div>
+</div>
+<style>
+    .preloader {
+        z-index: 99999;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 105vw;
+        height: 100vh;
+        background: #2B2B51;
+    }
+
+    .preloader .logo {
+        width: auto;
+    }
+
+    .preloader__inner {
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.75;
+        z-index: 2;
+    }
+
+    @media screen and (max-width:420px) {
+        .preloader .logo-image {
+            width: 90px;
+            margin-right: 8px;
+        }
+
+        .preloader .logo-name {
+            font-size: 14px;
+        }
+    }
+
+    .preloader.is-done {
+        opacity: 0;
+        transition: opacity 0.6s cubic-bezier(0.4, 0, 0, 1);
+    }
+
+    .preloader__loader {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #1c1c35;
+        z-index: 1;
+        transform: translateX(-99%);
+    }
+</style>
+<!-- <Preloader/> -->
+
+<body>
+    <div class="menu-active__content active-content backdrop-blur">
+        <div class="menu-active__wrapper">
+            <div class="menu-active__close header__menu">Закрыть</div>
+            <span class="menu__span"></span>
+        </div>
+
+        <div class="active-content__wrapper">
+            <nav class="active-content__points" id="menu">
+                <a href="#about">
+                    <div class="points points__about">
+                        <div class="points__name">О компании</div>
+                        <div class="points__number">01</div>
+                    </div>
+                </a>
+                <a href="#excellence">
+                    <div class="points points__whyWe">
+                        <div class="points__name">Почему мы</div>
+                        <div class="points__number">02</div>
+                    </div>
+                </a>
+                <a href="#services">
+                    <div class="points points__services">
+                        <div class="points__name">Услуги</div>
+                        <div class="points__number">03</div>
+                    </div>
+                </a>
+                <a href="#reviews">
+                    <div class="points points__reviews">
+                        <div class="points__name">Отзывы</div>
+                        <div class="points__number">04</div>
+                    </div>
+                </a>
+                <a href="#question">
+                    <div class="points points__online">
+                        <div class="points__name">On-line заявка</div>
+                        <div class="points__number">05</div>
+                    </div>
+                </a>
+                <a href="#contact">
+                    <div class="points points__contacts">
+                        <div class="points__name">Контакты</div>
+                        <div class="points__number">06</div>
+                    </div>
+                </a>
+            </nav>
+            <div class="active-content__number"><a href="tel:+79531085929">+7 (953) 108-59-29</a></div>
+            <div class="active-content__button button"><a href="#question">Заказать звонок</a></div>
+        </div>
+    </div>
+
+    <header class="main-screen__header header" id="header">
+        <a href='/'>
+            <div class="header__logo logo">
+                <img src="./img/main_screen/logo_big.png" alt="logo" class="logo-image">
+                <div class="logo-name">ВЭД<br>Логистика<br>Таможенное оформление</div>
+            </div>
+        </a>
+
+        <div class="header__info">
+            <div class="header__number"><a href="tel:+79531085929">+7 (953) 108-59-29</a></div>
+            <div class="header__button button"><a href="#question">Заказать звонок</a></div>
+            <div class="menu header-menu">
+                <div class="header__menu">Меню</div>
+                <span class="menu__span"></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="main-screen">
+        <div class="grid">
+            <div class="grid__block-white"></div>
+            <div class="grid__block-white"></div>
+            <div class="grid__block-white"></div>
+            <div class="grid__block-white"></div>
+            <div class="grid__block-white"></div>
+        </div>
+        <div class="grid-adaptive">
+            <div class="grid__block-white"></div>
+            <div class="grid__block-white"></div>
+            <div class="grid__block-white"></div>
+        </div>
+        <div class="container">
+            <div class="body">
+                <div class="main-body__wrapper">
+                    <div class="main-body">
+                        <div class="main-body__name fade fade--top">
+                            <span class='main-body__name-uppercase'>SK Group Trans</span> - Ваш надежный партнер в мире
+                            ВЭД
+                        </div>
+                        <h1 class="main-body__description split-text">
+                            Комплексные услуги по таможенному оформлению<br class="main-br">и международной доставке
+                            грузов на выгодных
+                            условиях
+                        </h1>
+                    </div>
+                    <div class="main-scroll">
+                        <div class="main-scroll__wrapper">
+                            <a href="#about" rel='nofollow'><img src="./img/main_screen/mose.png" alt="scroll"
+                                    class="main-scroll__img"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-footer">
+                    <div class="main-footer__advantage advantage">
+                        <div class="advantage__name advantage__name-size fade fade--bottom">Бесплатная
+                            консультация
+                        </div>
+                        <div class="advantage__name advantage__name-wsize fade fade--bottom">Таможенное
+                            оформление под
+                            свой
+                            или Ваш
+                            контракт </div>
+                        <div class="advantage__name advantage__name-size fade fade--bottom">Любые грузы от 10
+                            килограмм
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-skgroup fade ">SK Group Trans</div>
+    </section>
+    <section class="about" id='about' data-animation-timeout="1700">
+        <div class="grid">
+            <div class="grid__block-white"></div>
+            <div class="grid__block-white"></div>
+            <div class="grid__block-white"></div>
+            <div class="grid__block-white"></div>
+            <div class="grid__block-white"></div>
+        </div>
+        <div class="grid-adaptive">
+            <div class="grid__block-white"></div>
+            <div class="grid__block-white"></div>
+            <div class="grid__block-white"></div>
+        </div>
+        <div class="container">
+            <div class="about__content" data-scroll data-scroll-call="fadeAnimation">
+                <div class="about__description">
+                    <h2 class="about__name block-header" data-scroll data-scroll-call="headerAnimation"><span>О
+                            компании</span></h2>
+                    <div class="about__purpose fade fade--left">
+                        <p>
+                            <strong>SK Group Trans</strong> предоставляет комплексные решения по доставке товаров «от
+                            двери до двери», обеспечивая надлежащее решение всех вопросов таможенного оформления.
+                        </p>
+                        <p>
+                            <strong>Наша цель:</strong> предоставить клиентам быстрое и надежное таможенное оформление,
+                            услуги по доставке грузов автомобильным, морским и воздушным транспортом по разумным ценам.
+                        </p>
+                        <p>
+                            Наша команда специалистов готова предложить Вам грамотные и эффективные решения поставленных
+                            задач, учитывая все особенности каждой конкретной перевозки.
+                            Мы подберем для вас наиболее рентабельный и оптимальный способ осуществления
+                            внешнеэкономической деятельности.
+                        </p>
+                    </div>
+                </div>
+                <div class="sliders__wrapper">
+                    <div class="sliders__number">
+                        0<span class="sliders__number-current">1</span>&nbsp/&nbsp0<span
+                            class="sliders__number-total"></span>
+                    </div>
+                    <div class="about__sliders sliders" data-scroll data-scroll-call="sliderAnimation">
+                        <div class="slider-about">
+                            <div class="slider-about__item">
+                                <div class="img-wrapper img-wrapper--blue">
+                                    <div class="img-caption">SK Group Trans</div>
+                                    <img src="./img/about/about__img.png" alt="slide" class="sliders__img">
+                                </div>
+                            </div>
+                            <div class="slider-about__item">
+                                <div class="img-wrapper img-wrapper--blue">
+                                    <div class="img-caption">SK Group Trans</div>
+                                    <img src="./img/about/about__img3.jpg" alt="slide" class="sliders__img">
+                                </div>
+                            </div>
+                            <div class="slider-about__item">
+                                <div class="img-wrapper img-wrapper--blue">
+                                    <div class="img-caption">SK Group Trans</div>
+                                    <img src="./img/about/about__img4.jpg" alt="slide" class="sliders__img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="excellence" id='excellence'>
+        <div class="grid">
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+        </div>
+        <div class="grid-adaptive">
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+        </div>
+        <div class="container">
+            <h2 class="excellence__name block-header" data-scroll data-scroll-call="headerAnimation">
+                <span>Наши преимущества</span>
+            </h2>
+            <div class="excellence__description">
+                <div class="excellence-card excellence-card__delivery fade fade--left" data-scroll>
+                    <div class="excellence-card__name">Доставка в срок</div>
+                    <div class="excellence-card__description">Еженедельно формируем отправки, что позволяет доставить
+                        грузы в установленный срок.</div>
+                </div>
+                <div class="excellence-card excellence-card__finance fade fade--left" data-scroll>
+                    <div class="excellence-card__name">Финансовое сопровождение</div>
+                    <div class="excellence-card__description">С нами нет необходимости быть участником ВЭД. Мы сами
+                        оплатим товар поставщику и привезем оформленный товар Вам на склад.</div>
+                </div>
+                <div class="excellence-card excellence-card__document fade fade--left" data-scroll>
+                    <div class="excellence-card__name ">Закрывающие<br>документы</div>
+                    <div class="excellence-card__description">Предоставляем закрывающие документы с Вашей номенклатурой
+                        товаров для дальнейшей реализации на территории РФ.</div>
+                </div>
+                <div class="excellence-card excellence-card__optimization fade fade--left" data-scroll>
+                    <div class="excellence-card__name">Оптимизация затрат</div>
+                    <div class="excellence-card__description">Подберем и рассчитаем самый выгодный способ доставки и
+                        таможенного оформления Вашего груза.</div>
+                </div>
+                <div class="excellence-card excellence-card__oneWindow fade fade--left" data-scroll>
+                    <div class="excellence-card__name ">Работаем по принципу<br>«одного окна»</div>
+                    <div class="excellence-card__description">Берем на себя всю цепочку транспортно-экспедиторских
+                        услуг: таможенное оформление, логистика, сертификация.</div>
+                </div>
+                <div class="excellence-card excellence-card__guarantee fade fade--left" data-scroll>
+                    <div class="excellence-card__name ">Гарантия неизменности<br>рассчитанной ставки</div>
+                    <div class="excellence-card__description">Мы предоставим понятную схему расчёта и после Вашего
+                        утверждения данной сметы, работаем в рамках ставки.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services" id='services' data-scroll data-scroll-call="imgAnimation" data-animation-timeout="1000">
+        <div class="grid">
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+        </div>
+        <div class="grid-adaptive">
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+        </div>
+        <div class="container">
+            <h2 class="services__name block-header" data-scroll data-scroll-call="headerAnimation"><span>Услуги
+                    компании</span></h2>
+            <div class="services__description">
+                <div class="services-card services-card__registration roll-left">
+                    <span class="services-card__firm-name">SK Group Trans</span>
+                    <a href="./index-tamojnya.html" class="services-card__title">Таможенное<br>оформление</a>
+                    <a href="./index-tamojnya.html" class="services-card__btn cargo-btn">Подробнее</a>
+                </div>
+                <div class="services-card services-card__service roll-left">
+                    <span class="services-card__firm-name">SK Group Trans</span>
+                    <a href="./index-autsorsing.html" class="services-card__title">Аутсорсинг ВЭД</a>
+                    <a href="./index-autsorsing.html" class="services-card__btn cargo-btn">Подробнее</a>
+                </div>
+                <div class="services-card services-card__counseling roll-left">
+                    <span class="services-card__firm-name">SK Group Trans</span>
+                    <a href="./index-cargo.html" class="services-card__title">Сборные грузы</a>
+                    <a href="./index-cargo.html" class="services-card__btn cargo-btn">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cooperation">
+        <div class="grid">
+            <div class="grid__block-white"></div>
+            <div class="grid__block-white"></div>
+            <div class="grid__block-white"></div>
+            <div class="grid__block-white"></div>
+            <div class="grid__block-white"></div>
+        </div>
+        <div class="grid-adaptive">
+            <div class="grid__block-white"></div>
+            <div class="grid__block-white"></div>
+            <div class="grid__block-white"></div>
+        </div>
+        <div class="container">
+            <h2 class="cooperation__name block-header" data-scroll data-scroll-call="headerAnimation"><span>Как
+                    начать сотрудничество</span></h2>
+            <div class="cooperation__wrapper">
+                <div class="cooperation-wrapper fade fade--bottom" data-scroll>
+                    <div class="cooperation__band"></div>
+                    <div class="cooperation__body">
+                        <!-- <div class="cooperation__band"></div> -->
+                        <div class="stages__wrapper">
+                            <div class="stages__description stages-1">
+                                <div class="stages"></div>
+                                <div class="stages__number">1</div>
+                            </div>
+
+                        </div>
+                        <div class="stages__wrapper">
+                            <div class="stages__description stages-2">
+                                <div class="stages"></div>
+                                <div class="stages__number">2</div>
+                            </div>
+
+                        </div>
+                        <div class="stages__wrapper">
+                            <div class="stages__description stages-3">
+                                <div class="stages"></div>
+                                <div class="stages__number">3</div>
+                            </div>
+
+                        </div>
+                        <div class="stages__wrapper">
+                            <div class="stages__description stages-4">
+                                <div class="stages"></div>
+                                <div class="stages__number">4</div>
+                            </div>
+
+                        </div>
+                        <div class="stages__wrapper">
+                            <div class="stages__description stages-5">
+                                <div class="stages"></div>
+                                <div class="stages__number">5</div>
+                            </div>
+
+                        </div>
+                        <div class="stages__wrapper">
+                            <div class="stages__description stages-6">
+                                <div class="stages"></div>
+                                <div class="stages__number">6</div>
+                            </div>
+
+                        </div>
+                        <div class="stages__wrapper">
+                            <div class="stages__description stages-7">
+                                <div class="stages"></div>
+                                <div class="stages__number"><img src="./img/cooperation/Vector 7.png" alt=""></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="reviews" id='reviews'>
+        <div class="grid">
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+        </div>
+        <div class="grid-adaptive">
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+        </div>
+        <div class="container">
+            <div class="reviews__wrapper">
+                <h2 class="reviews__name block-header" data-scroll data-scroll-call="headerAnimation"><span>Отзывы
+                        клиентов</span></h2>
+                <div class="reviews__cards">
+                    <div class="reviews__marine comment fade fade--left" data-scroll>
+                        <div class="comment__header">
+                            <div class="comment__logo"><a href=""><img src="./img/reviews/jonacor_logo.png"
+                                        alt="jonacor"></a></div>
+                            <div class="comment__title">
+                                <div class="comment__name">Jonacor Marine</div>
+                                <div class="comment__caption">Международное яхтенное агентство</div>
+                            </div>
+
+                        </div>
+                        <div class="comment__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Atque explicabo reprehenderit, assumenda optio vero in minima nemo animi, numquam provident
+                            eligendi mollitia aut fuga omnis saepe sint ab impedit iure.</div>
+                    </div>
+                    <div class="reviews__majaro comment fade fade--left" data-scroll>
+                        <div class="comment__header">
+                            <div class="comment__logo"><img src="./img/reviews/majaro.png" alt="majaro"></div>
+                            <div class="comment__title">
+                                <div class="comment__name">ООО «МАДЖАРО»</div>
+                                <div class="comment__caption">Производство свежеобжаренного кофе</div>
+                            </div>
+
+                        </div>
+                        <div class="comment__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Atque explicabo reprehenderit, assumenda optio vero in minima nemo animi, numquam provident
+                            eligendi mollitia aut fuga omnis saepe sint ab impedit iure.</div>
+                    </div>
+                    <div class="reviews__stroy comment fade fade--left" data-scroll>
+                        <div class="comment__header">
+                            <div class="comment__logo"><img src="./img/reviews/stroy.png" alt="stroy"></div>
+                            <div class="comment__title">
+                                <div class="comment__name comment__name-size">ООО "Стройфинансгрупп"</div>
+                                <div class="comment__caption">Строительная компания</div>
+                            </div>
+
+                        </div>
+                        <div class="comment__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Atque explicabo reprehenderit, assumenda optio vero in minima nemo animi, numquam provident
+                            eligendi mollitia aut fuga omnis saepe sint ab impedit iure.</div>
+                    </div>
+                    <div class="reviews__somebody comment fade fade--left" data-scroll>
+                        <div class="comment__header">
+                            <div class="comment__logo"><img src="./img/reviews/stroy.png" alt="stroy"></div>
+                            <div class="comment__title">
+                                <div class="comment__name comment__name-size">ООО "Стройфинансгрупп"</div>
+                                <div class="comment__caption">Строительная компания</div>
+                            </div>
+
+                        </div>
+                        <div class="comment__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Atque explicabo reprehenderit, assumenda optio vero in minima nemo animi, numquam provident
+                            eligendi mollitia aut fuga omnis saepe sint ab impedit iure.</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="question" id='question' data-scroll data-scroll-call="fadeAnimation" data-animation-timeout="1700">
+        <div class="question__blue-fon"></div>
+        <div class="question__white-fon"></div>
+        <div class="grid">
+            <div class="grid__block-white"></div>
+            <div class="grid__block-white"></div>
+            <div class="grid__block-white"></div>
+            <div class="grid__block-transparent"></div>
+            <div class="grid__block-transparent"></div>
+        </div>
+        <div class="grid-adaptive">
+            <div class="grid__block-white"></div>
+            <div class="grid__block-white"></div>
+            <div class="grid__block-white"></div>
+        </div>
+        <div class="question__wrapper">
+            <div class="container">
+                <h2 class="question__name block-header" data-scroll data-scroll-call="headerAnimation">
+                    <span>Индивидуальная</span><br><span class='clear-after'>консультация</span>
+                </h2>
+                <div class="question__description fade fade--left">Получить бесплатную консультацию или заказать точный
+                    расчет.
+                    Оставляйте on-line заявку.</div>
+                <form action="send.php" method="POST" class="question__form question-form fade fade--left">
+                    <div class="question-form__contact">
+                        <div class="question-form__name"><input type="text" name="name" required placeholder="Имя"
+                                class="form__name form">
+                        </div>
+                        <div class="question-form__phone"><input type="tel" name="tel" required placeholder="Телефон"
+                                class="form__phone form" id="form__phone"></div>
+                    </div>
+                    <div class="question-form__send">
+                        <div class="question-form__email"><input type="email" name="email" placeholder="E-mail"
+                                class="form__email form"></div>
+                        <button class="button question-form__button" type="submit">Оставить заявку</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id='contact' data-scroll-call="fadeAnimation" data-animation-timeout="1500">
+        <div class="grid">
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+        </div>
+        <div class="grid-adaptive">
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+        </div>
+        <div class="container">
+            <div class="contact__wrapper">
+                <h2 class="contact__name block-header" data-scroll data-scroll-call="headerAnimation">
+                    <span>КОНТАКТЫ</span>
+                </h2>
+                <div class="contact__map fade fade--bottom">
+                    <div class="map__wrapper">
+                        <div class="contact__map-img">
+                            <!-- <img src="./img/contact/map.png" alt="map" class="map"> -->
+                            <iframe class="iframe"
+                                src="https://yandex.ru/map-widget/v1/?um=constructor%3A2b8dc3880c224b57b4d92e56fe5ce424cedfd7aafbaecab4c072e8e300c19b7e&amp;source=constructor"
+                                width="835" height="461" frameborder="0"></iframe>
+                        </div>
+
+                        <div class="our-address__wrapper">
+                            <div class="contact__address our-address fade fade--bottom">
+                                <div class="our-address__title">Наш адрес:</div>
+                                <div class="our-address__name">Санкт-Петербург, Софийская 8,<br> корпус 1, БЦ KROL
+                                </div>
+                                <div class="our-address__social social">
+                                    <div class="social__icon"><a href=""><img src="./img/contact/wats.png"
+                                                alt="wats"></a></div>
+                                    <div class="social__icon"><a href=""><img src="./img/contact/face.png"
+                                                alt="face"></a></div>
+                                    <div class="social__icon"><a href=""><img src="./img/contact/insta.png"
+                                                alt="insta"></a></div>
+                                    <div class="social__icon"><a href=""><img src="./img/contact/vk.png" alt="vk"></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer-logo">
+                <a href="/">
+                    <img src="./img/contact/logo_footer.png" alt="logo" class="footer-logo__img">
+                    <div class="footer-logo__name">ВЭД<br>Логистика<br>Таможенное оформление</div>
+                </a>
+            </div>
+            <div class="footer-services">
+                <div class="footer-services__name">Услуги:</div>
+                <div class="footer-services__description">
+                    <a href="./index-autsorsing.html">Аутсорсинг ВЭД</a>
+                    <a href="./index-tamojnya.html">Таможенное оформление</a>
+                    <a href="./index-cargo.html">Сборные грузы</a>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <a href="tel: +9160831789">
+                    <div class="footer-contact__phone">+7 (916) 083-17-89</div>
+                </a>
+                <a>
+                    <div class="footer-contact__politics">Политика конфиденциальности</div>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <section class="good-product">
+        <div class="good-product__copyrigth">
+            Copyright © SKGroupTrans 2021. Все права защищены.
+        </div>
+        <div class="good-product__name">
+            <a href="https://good-production.ru/" rel='nofollow'>Сайт разработан веб-студией "Good Production"</a>
+        </div>
+    </section>
+
+    <script src='./js/jquery/jquery.js'></script>
+    <script src='./js/jquery/jquery.nicescroll.min.js'></script>
+    <script src='./js/jquery.maskedinput.min.js'></script>
+    <script src="./js/slick-slider/slick-slider.js"></script>
+    <!-- Скрипты анимаций и прелоадера -->
+    <script src="./js/gsap.min.js"></script>
+    <script src="./js/Split3.min.js"></script>
+    <!-- <Locomotive Scroll> -->
+    <script src="./js/locomotive-scroll.min.js"></script>
+    <!-- </Locomotive Scroll> -->
+    <script src='./js/build-and-preloader.js'></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

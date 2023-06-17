@@ -1,0 +1,662 @@
+@media screen and (max-width: 421px){
+    html{
+        // overflow: unset;
+    }
+    .fz-sm-14{
+        font-size: 14px !important;
+    }
+    .d-sm{
+        display: block;
+    }
+    .grid{
+        display: none;
+        &-adaptive{
+            display: flex;
+            justify-content: space-between;
+            height: 100%;
+            width: 100%;
+            top:0;
+            right: 0;
+            box-sizing: border-box;
+            z-index: -1;
+            position: absolute;
+            padding: 0 7%;
+        }
+    }
+    .container{
+        padding: 0 7%
+    }
+    .body__bread{
+        margin-top: 0px;
+        font-size: 14px;
+    }
+    .body__name{
+        margin-bottom: 0px;
+    }
+    .body__header{
+        padding: 20px 0 20px;
+    }
+    .logo{
+        width: 100%;
+        &-image{
+            width: 65px;
+            margin-right: 4px;
+        }
+        &-name{
+            z-index: 1;
+            font-size: 10px;
+            margin-top: 0px;
+        }
+    }
+    .header{
+        width: 100vw;
+        &__number{
+            display: none;
+         
+        }
+        &__button{
+            display: none;
+          
+        }
+        &__menu{
+            font-size: 16px;
+        }
+    }
+
+    /* <Крестики для всех заголовков> */
+    .block-header{
+        margin-top: 9px;
+        line-height: 38px;
+        font-size: 34px;
+        -webkit-text-stroke-width: 1px;
+        & .split-parent{
+            & .word:last-child{
+                &:after{
+                    content: '';
+                    position: absolute;
+                    background-image: url(../../img/about/crosses_for_header.png);
+                    background-size: cover;
+                    z-index: 2;
+                    width: 47px;
+                    height: 26px;
+                    top: -0.5em;
+                    right: -0.85em;
+                    opacity: 0;
+                    transition: opacity 1s 1s ease-in;
+                }
+            }
+        }
+    } 
+    /* <Крестики для всех заголовков/> */
+
+    /* Первый экран  */
+    .main-screen{
+        padding-top: 89px;
+        &::after{
+            display: none;
+        }
+        .block-header{
+            font-size: 27px;
+            //first line and last word
+            &.animated{
+                & .split-parent:first-of-type{
+                    & .word:last-child{
+                        &:after{
+                            opacity: 1;
+                        }  
+                    }
+                } 
+            }
+        }
+    }
+    .menu{
+        margin-right: 18px;
+        margin-left: 11px;
+        &__span{
+            height: 1px;
+            border: none;
+            width: 16.67px;
+            &::before{
+                bottom: 5px;
+                height: 1px;
+                border: none;
+                left: 0;
+            }
+            &::after{
+                width: 26px;
+                height: 1px;
+                border: none;
+                top: 5px;
+                left: 0;
+            }
+        }
+        &-active{
+            &__content{
+                padding: 45% 0 21%;
+                width: 100vw;
+                left: 0;
+                position: fixed;
+                overflow-y: hidden;
+            }
+            &__wrapper{
+                right: -5vw;
+            }
+        }
+    }
+    .active{
+        &-content{
+            &__number{
+                font-size: 18px;
+            }
+            &__button{
+                font-size: 16px;
+            }
+        }
+    }
+
+    /* О компании */
+    .about{
+        padding: 60px 0px 30px;
+        overflow: unset;
+       
+       .block-header{
+            //first line and last word
+            &.animated{
+                & .split-parent:first-of-type{
+                    & .word:last-child{
+                        &:after{
+                            opacity: 1;
+                        }  
+                    }
+                } 
+            }
+        }
+        &:after{
+            width: 70px;
+            height: 70px;
+            border: 14px solid #FFFFFF;
+            filter: blur(2px);
+            // bottom: -13px;
+            box-shadow: -11px 18px 20px rgb(0 0 0 / 20%);
+            left: unset;
+            bottom: -19px;
+            right: 31px;
+        }
+        &:before{
+            right: -18.3px;
+            width: 22px;
+            height: 22px;
+            content: '';
+            position: absolute;
+            transform: rotate(45deg);
+            filter: blur(3px);
+            border: 11px solid #FFFFFF;
+            bottom: 56px;
+            top: unset;
+        }
+        
+        &__content{
+            flex-direction: column;
+        }
+        &__description{
+            width: 100%;
+            height: auto;
+        }
+        &__purpose{
+            margin-right: 0px;
+            line-height: 18px;
+            &>p{
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+        .img{
+            &-caption{
+                top: 58%;
+                font-size:12px;
+                font-weight: 700;
+            }
+        }
+        &__sliders{
+            width: 94%;
+            height: 340px;
+        }
+        .sliders{
+            &__wrapper{
+                width: 100%; 
+                align-items: center;
+            } 
+            &__number{
+                font-size: 15px;
+                margin-top: 57px;
+                align-self: flex-end;
+                margin-right: 100px;
+            }
+            &__img{
+                width: 100%;
+                height: 207px;
+            }
+            .slider-about{
+                width: 100%;
+                height: auto;
+                margin-right: 0px;
+                margin-top: 37px;
+                &__item{
+                    height: auto;
+                    margin-right: 12px;
+                    margin-top: unset;
+                    width: 100%;
+                    & img{
+                        // height: 100%;
+                        // width: 100%; 
+                        max-height: 207px;
+                        min-height: 207px;  
+                    }
+                    &:before{
+                        // max-height: 207px; 
+                        top: -10px;
+                        right: -10px;
+                        left: unset;
+                    }
+                    
+                }
+                &:before{
+                    width: 100%;
+                    height: 207px;
+                    bottom: 106px;
+                    // top: -10px;
+                    // bottom: unset;
+                    left: 8px;
+                }
+                &:after{
+                    display: none;
+                }
+            }
+            .slick{
+                &-arrow{
+                    bottom: -54px;
+                }
+            }
+            &-button{
+                margin-right: 10px;
+            }
+        }
+        
+    }
+
+    .block-header{
+        margin-top: 9px;
+        line-height: 38px;
+        font-size: 34px;
+        -webkit-text-stroke-width: 1px;
+        &:after{
+            display: none;
+        }
+        &>span{
+            position: relative;
+            &:after{
+                content: '';
+                position: absolute;
+                background-image: url(../../img/about/crosses_for_header.png);
+                background-size: cover;
+                z-index: 2;
+                width: 67px;
+                height: 36px;
+                top: -11px;
+                right: -44px;
+            }  
+        }
+    } 
+.event{
+    &__description{
+        font-size: 14px;
+        line-height: 1.3em;
+    }
+    &__name{
+        font-size: 20px;
+        line-height: 34px;
+        margin-bottom: 4px;
+        & .word::after{
+            right: -1.5em !important;
+        }
+    }
+}
+
+/* Плюсы перевозки */
+.plus{
+   padding-bottom: 0px;
+   padding-top: 15%;
+    &__name{
+        font-size: 18px;
+        letter-spacing: 0.01em;
+        line-height: 26px;
+    }
+    &-mobile{
+        display: block;
+    }
+    .block-header{
+        &::after{
+            display: none;
+        }
+        &.animated{
+            & .split-parent:last-of-type{
+                & .word:last-child{
+                    &:after{
+                        opacity: 1;
+                        top: -0.8em;
+                        right: -1.7em;
+                    }  
+                }
+            } 
+        }
+    }
+    .cost_savings__wrapper, 
+    .small_parties__wrapper, 
+    .organization__wrapper, 
+    .min_delivery__wrapper, 
+    .fixed_cost__wrapper{
+        text-align: left;
+        padding-left: 35px;
+    }
+}
+/* Этапы работы по доставке */
+.stages{
+    padding-bottom: 0px;
+    .block-header{
+        &::after{
+            display: none;
+        }
+        font-size: 16px;
+        line-height: 21px;
+        letter-spacing: 0.01em;
+        //last line and last word
+        &.animated{
+            & .split-parent:first-of-type{
+                & .word:last-child{
+                    &:after{
+                        opacity: 1;
+                        top: -1em;
+                        right: -2em;
+                    }  
+                }
+            } 
+        }
+    }
+    &__name{
+        margin-bottom: 30px;
+    }
+    &-card{
+        height: 65px;
+        width: 41vw;
+        padding-left: 0 !important;
+        &__number{
+            font-size: 33px;
+            font-size: 26px;
+            padding: 0px 8px;
+            line-height: 67px;
+            -webkit-text-stroke: 1px white;
+        }
+        &__description{
+            padding: 0 5px;
+            font-size: 13px;
+        }
+    }
+}
+.graph{
+    padding-top: 52px;
+    .d-s{
+        display: block;
+    }
+    &__name{
+        font-size: 32px;
+    }
+    .block-header{
+        &::after{
+            display: none;
+        }
+        //first line and last word
+        &.animated{
+            & .split-parent:first-of-type{
+                & .word:last-child{
+                    &:after{
+                        opacity: 1;
+                    }  
+                }
+            } 
+        }
+    }
+    #comparisonchart table td {
+        padding: 45px 65px 40px 20px;
+        font-size: 16px;
+    }
+    &__europe, &__china, &__usa{
+        &:after{
+            width: 150px;
+            height: 150px;
+        }
+    }
+}
+//   Цены
+.price{
+    padding: 40px 0 56px;
+    &__name{
+        font-size: 20px;
+        line-height: 1.3em;
+    }
+    &__description{
+        font-size: 14px;
+        margin-top: 14px;
+    }
+    & .block-header{
+        //first line and last word
+        &.animated{
+            & .split-parent:first-of-type{
+                & .word:last-child{
+                    &:after{
+                        opacity: 1;
+                    }  
+                }
+            } 
+        }
+    }
+}
+    /* Другие услуги компании */
+    .services{
+        padding-bottom: 60px;
+        &__name{
+            font-size: 30px;
+            margin-bottom: 24px;
+        }
+        .block-header{
+            &::after{
+                display: block;
+                right: 17px;
+                top: -17px;
+                width: 67px;
+                height: 36px;
+            }
+        }
+        &__description{
+            flex-direction: column;
+        }
+        &-card{
+            width: 100%;
+            height: 418px;
+            &__title{
+                top: 300px;
+            }
+            &__btn{
+                top: 305px;
+            }
+            &--hover{
+                .services-card__title{
+                    top: 264px;
+                }
+                .services-card__btn{
+                    top: 274px;
+                }
+            } 
+                
+        }
+    }
+    
+    /* Индивидуальная консультация */
+    .consultation{
+        background-color: #2B2B51;
+        padding: 60px 0 10px;
+        &__name.block-header{
+            -webkit-text-stroke: 1px white;
+            font-size: 29px;
+        }
+        &-br{
+            display: none;
+        }
+        .block-header{
+            //first line and last word
+            &.animated{
+                & .split-parent:first-of-type{
+                    & .word:last-child{
+                        &:after{
+                            opacity: 1;
+                            top: -0.4em;
+                            right: -1em;
+                        }  
+                    }
+                } 
+            }
+        }
+        &-form{
+            background-color: transparent;
+            margin: 0;
+            padding: 25px 4px 57px 4px;
+            box-shadow: none;
+            &:before{
+                display: none;
+            }
+            &__description{
+                font-size: 14px;
+                line-height: 18px;
+                &:before{
+                // display: none;
+                    content: '';
+                    position: absolute;
+                    transform: rotate(45deg);
+                    width: 22px;
+                    height: 22px;
+                    border: 15px solid #FFFFFF;
+                    left: -16%;
+                    top: 54%;
+                    filter: blur(4px);    
+                    z-index: 0;
+                }
+                &>span{
+                    &:after{
+                        display: none;
+                    }
+                }
+                .d-sm{
+                    display: block;
+                }
+            }
+            &__contact{
+                flex-direction: column;
+            }
+            &__button{
+                flex-direction: column;
+                margin-top: 15px;
+            }
+            &__name{
+                margin-bottom: 15px;
+            }
+            &__email{
+                margin-bottom: 15px;
+            }
+            &:after{
+                width: 83px;
+                height: 83px;
+                border: 18px solid #FFFFFF;
+                left: 250px;  
+                filter: blur(3px);    
+                z-index: 0;
+                box-shadow: -9px 10px 20px 0px #00000047;
+            }
+        }
+        .form{
+            &-tamojnya{
+                flex-direction: column;
+                &__whats{
+                    margin-left: 0px;
+                    margin-top: 16px;
+                    width: 100%;
+                }
+                &__wrapper{
+                    width: 100%;
+                    
+                }
+            }
+            &__name,&__phone,&__email,&__button,&__whats{
+                width: 100%;
+                margin-right: 0px;
+            }
+            &-or{
+                display: block;
+                font-size: 18px;
+                color: white;
+                margin-top: 16px;
+            }
+            &__whats{
+               &:after{
+                display: none;
+            } 
+            }
+            
+        }
+
+    }
+    /* Подвал */
+    .footer{
+        &__wrapper{
+            flex-direction: column;
+            align-items: center;
+            padding: 44px 24px 46px 24px;
+            &>a{
+                width: 100%;
+            }
+        }
+        &-logo{
+            width: 100%;
+            &__name{
+                font-size: 12px;
+            }
+        }
+        &-services{
+            &__name{
+                text-align: center;
+                margin-top: 20px;
+            }
+            &__description{
+                text-align: center;
+                &>a{
+                    font-size: 18px;
+                }
+            }
+        }
+        &-contact{
+            margin-top: 48px;
+            &__phone{
+                font-size: 18px;
+            }
+            &__politics{
+                font-size: 18px;
+            }
+        }
+    }
+    .good-product{
+        flex-direction: column-reverse;
+        height: 60px;
+        justify-content: space-evenly;
+        &__copyrigth{
+            font-size: 12px; 
+        }
+    }
+}

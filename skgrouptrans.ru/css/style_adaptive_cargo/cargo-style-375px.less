@@ -1,0 +1,344 @@
+@media screen and (max-width: 376px){
+    .grid{
+        display: none;
+        &-adaptive{
+            display: flex;
+            justify-content: space-between;
+            height: 100%;
+            width: 100%;
+            top:0;
+            right: 0;
+            box-sizing: border-box;
+            z-index: -1;
+            position: absolute;
+            padding: 0 7%;
+        }
+    }
+    .container{
+        padding: 0 7%
+    }
+    .body__bread{
+        margin-top: 0px;
+        font-size: 14px;
+    }
+    .body__name{
+        margin-bottom: 0px;
+    }
+    .body__header{
+        padding: 20px 0 20px;
+    }
+    .logo{
+        width: 100%;
+        &-image{
+            width: 65px;
+            margin-right: 4px;
+        }
+        &-name{
+            z-index: 1;
+            font-size: 10px;
+            margin-top: 0px;
+        }
+    }
+    .header{
+        width: 100vw;
+        &__number{
+            display: none;
+         
+        }
+        &__button{
+            display: none;
+        }
+        &__menu{
+            font-size: 16px;
+        }
+    }
+    .main-screen{
+        padding-top: 89px;
+    }
+    
+    .menu{
+        margin-right: 18px;
+        margin-left: 11px;
+        &__span{
+            height: 1px;
+            border: none;
+            width: 16.67px;
+            &::before{
+                bottom: 5px;
+                height: 1px;
+                border: none;
+                left: 0;
+            }
+            &::after{
+                width: 26px;
+                height: 1px;
+                border: none;
+                top: 5px;
+                left: 0;
+            }
+        }
+        &-active{
+            &__content{
+                padding: 45% 0 21%;
+                width: 100vw;
+                left: 0;
+                position: fixed;
+                overflow-y: hidden;
+            }
+            &__wrapper{
+                right: -5vw;
+            }
+        }
+    }
+    .active{
+        &-content{
+            &__number{
+                font-size: 18px;
+            }
+            &__button{
+                font-size: 16px;
+            }
+        }
+    }
+
+    /* Плюсы перевозки в сотаве */
+    .plus{
+        padding-top: 50px;
+        &__name{
+            font-size: 18px;
+            line-height: 26px;
+        }
+        &-mobile{
+            display: block;
+        }
+        .block-header{
+            &:after{
+                top: -19px;
+                right: 39px;
+            }
+        }
+        .cost_savings__wrapper, 
+        .small_parties__wrapper, 
+        .organization__wrapper, 
+        .min_delivery__wrapper, 
+        .fixed_cost__wrapper{
+            width: 98%;
+            margin-left: 4px;
+            padding-right: 5px;
+        }
+    }
+    // Этапы работы
+    .stages{
+        .block-header{
+            font-size: 15px;
+        }
+        &-card{
+            &__description{
+                font-size: 10px;
+            }
+        }
+    }
+    /* График и сроки доставки */
+    .graph{
+        padding-top: 52px;
+        &__name{
+            font-size: 28px;
+        }
+        .block-header{
+            &:after{
+                top: -13px;
+                right: -5px;
+            }
+        }
+        #comparisonchart table td {
+            padding: 45px 94px 40px 20px;
+            font-size: 14px;
+        }
+        &__usa{
+            &-desc{
+                padding-right: 45px;
+            }
+        }
+
+    }
+    .event{
+        &__name{
+            margin-top: 18px;
+            letter-spacing: 0.05em;
+            font-size: 18px;
+            line-height: 26px;
+
+        }
+    }
+    /* Цена транспортировки */
+    .price{
+        padding-top: 43px;
+        padding-bottom: 70px;
+        &__name{
+            line-height: 24px;
+            font-size: 17px;
+        }
+        .block-header{
+            &:after{
+                top: -19px;
+                right: 4px;
+            }
+        }
+    }
+    
+    
+    /* Другие услуги компании */
+    .services{
+        
+        .block-header {
+            &::after{
+                display: none;
+            }
+            //first line and last word
+            &.animated{
+                & .split-parent:first-of-type{
+                    & .word:last-child{
+                        &:after{
+                            opacity: 1;
+                        }  
+                    }
+                } 
+            }
+        }
+        &__description{
+            flex-direction: column;
+        }
+        &-card{
+            width: 100%;
+            height: 418px;
+        }
+    }
+    
+    /* Индивидуальная консультация */
+    .consultation{
+        background-color: #2B2B51;
+        padding: 28px 0 10px;
+        &__name.block-header{
+            -webkit-text-stroke: 1px white;
+            font-size: 26px;
+        }
+        &-br{
+            display: none;
+        }
+        .block-header>span{
+            &:after{
+                right: -35px;
+                top: -14px;
+                width: 58px;
+                height: 30px;
+            }
+        }
+        &-form{
+            background-color: transparent;
+            margin: 0;
+            padding: 37px 4px 57px 4px;
+            box-shadow: none;
+            &:before{
+                display: none;
+            }
+            &__contact{
+                flex-direction: column;
+            }
+            &__button{
+                flex-direction: column;
+                margin-top: 15px;
+            }
+            &__name{
+                margin-bottom: 15px;
+            }
+            &__email{
+                margin-bottom: 15px;
+            }
+            &:after{
+                width: 83px;
+                height: 83px;
+                border: 18px solid #FFFFFF;
+                left: 250px;      
+                z-index: 0;
+
+            }
+        }
+        .form{
+            &-tamojnya{
+                flex-direction: column;
+                &__whats{
+                    margin-left: 0px;
+                    margin-top: 16px;
+                    width: 100%;
+                }
+                &__wrapper{
+                    width: 100%;
+                    
+                }
+            }
+            &__name,&__phone,&__email,&__button,&__whats{
+                width: 100%;
+                margin-right: 0px;
+            }
+            &-or{
+                display: block;
+                font-size: 18px;
+                color: white;
+                margin-top: 16px;
+            }
+            &__whats{
+               &:after{
+                display: none;
+            } 
+            }
+            
+        }
+
+    }
+    /* Подвал */
+    .footer{
+        &__wrapper{
+            flex-direction: column;
+            align-items: center;
+            padding: 44px 24px 46px 24px;
+            &>a{
+                width: 100%;
+            }
+        }
+        &-logo{
+            width: 100%;
+            &__name{
+                font-size: 12px;
+            }
+        }
+        &-services{
+            &__name{
+                text-align: center;
+                margin-top: 20px;
+            }
+            &__description{
+                text-align: center;
+                &>a{
+                    font-size: 18px;
+                }
+            }
+        }
+        &-contact{
+            margin-top: 48px;
+            &__phone{
+                font-size: 18px;
+            }
+            &__politics{
+                font-size: 18px;
+            }
+        }
+    }
+    .good-product{
+        flex-direction: column-reverse;
+        height: 60px;
+        justify-content: space-evenly;
+        &__copyrigth{
+            font-size: 12px; 
+        }
+    }
+}

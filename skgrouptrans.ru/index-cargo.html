@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуга - Сборные грузы | SK Group Trans 2021</title>
+    <link rel="icon" href="./img/favicon/favicon-120x120.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style_cargo.css?v=1">
+    <link rel="stylesheet" href="./css/style_adaptive_cargo/cargo-style-1024px.css?v=1">
+    <link rel="stylesheet" href="./css/style_adaptive_cargo/cargo-style-768px.css?v=1">
+    <link rel="stylesheet" href="./css/style_adaptive_cargo/cargo-style-420px.css?v=1">
+    <link rel="stylesheet" href="./css/style_adaptive_cargo/cargo-style-375px.css?v=1">
+    <link rel="stylesheet" href="./css/style_adaptive_cargo/cargo-style-320px.css?v=1">
+</head>
+<!-- <Preloader> -->
+<div class="preloader js-progress">
+    <div class="preloader__inner">
+        <div class="logo">
+            <img src="./img/main_screen/logo_big.png" alt="logo" class="logo-image">
+            <div class="logo-name">ВЭД<br>Логистика<br>Таможенное оформление</div>
+        </div>
+    </div>
+    <div class="preloader__loader js-progress__loader"></div>
+</div>
+<style>
+    .preloader {
+        z-index: 99999;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 105vw;
+        height: 100vh;
+        background: #2B2B51;
+    }
+
+    .preloader .logo {
+        width: auto;
+    }
+
+    .preloader__inner {
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.75;
+        z-index: 2;
+    }
+
+    @media screen and (max-width:420px) {
+        .preloader .logo-image {
+            width: 90px;
+            margin-right: 8px;
+        }
+
+        .preloader .logo-name {
+            font-size: 14px;
+        }
+    }
+
+    .preloader.is-done {
+        opacity: 0;
+        transition: opacity 0.6s cubic-bezier(0.4, 0, 0, 1);
+    }
+
+    .preloader__loader {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #1c1c35;
+        z-index: 1;
+        transform: translateX(-99%);
+    }
+</style>
+<!-- <Preloader/> -->
+
+<body data-scroll-container>
+    <div class="menu-active__content active-content">
+        <div class="menu-active__wrapper">
+            <div class="menu-active__close header__menu">Закрыть</div>
+            <span class="menu__span"></span>
+        </div>
+
+        <div class="active-content__wrapper">
+            <nav class="active-content__points" id="menu">
+                <a href="#about">
+                    <div class="points points__about">
+                        <div class="points__name">Об услуге</div>
+                        <div class="points__number">01</div>
+                    </div>
+                </a>
+                <a href="#stages">
+                    <div class="points points__whyWe">
+                        <div class="points__name">Этапы работы</div>
+                        <div class="points__number">02</div>
+                    </div>
+                </a>
+                <a href="#graph">
+                    <div class="points points__whyWe">
+                        <div class="points__name">График доставки</div>
+                        <div class="points__number">03</div>
+                    </div>
+                </a>
+                <a href="#services">
+                    <div class="points points__services">
+                        <div class="points__name">Услуги</div>
+                        <div class="points__number">04</div>
+                    </div>
+                </a>
+                <!-- <a href="#contact">
+                    <div class="points points__contacts">
+                        <div class="points__name">Контакты</div>
+                        <div class="points__number">04</div>
+                    </div>
+                </a> -->
+            </nav>
+            <div class="active-content__number-button-wrapper">
+                <div class="active-content__number"><a href="tel:+78129831290">+7(812)983-12-90</a></div>
+                <div class="active-content__button button"><a href="#contact">Заказать звонок</a></div>
+            </div>
+        </div>
+    </div>
+
+    <header class="main-screen__header header" id="header">
+        <a href="./index.html">
+            <div class="header__logo logo">
+                <img src="./img/main_screen/logo_big.png" alt="logo" class="logo-image">
+                <div class="logo-name">ВЭД<br>Логистика<br>Таможенное оформление</div>
+            </div>
+        </a>
+
+        <div class="header__info">
+            <div class="header__number"><a href="tel:+78129831290">+7(812)983-12-90</a></div>
+            <div class="header__button button"><a href="#contact">Заказать звонок</a></div>
+            <div class="menu header-menu">
+                <div class="header__menu">Меню</div>
+                <span class="menu__span"></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="main-screen">
+        <div class="body__header">
+            <div class="grid">
+                <div class="grid__block-black"></div>
+                <div class="grid__block-black"></div>
+                <div class="grid__block-black"></div>
+                <div class="grid__block-black"></div>
+                <div class="grid__block-black"></div>
+            </div>
+            <div class="grid-adaptive">
+                <div class="grid__block-black"></div>
+                <div class="grid__block-black"></div>
+                <div class="grid__block-black"></div>
+            </div>
+            <div class="container">
+                <div class="body__bread fade fade--top" data-scroll><span class="body__bread-main"><a href="/">Главная
+                            /</a></span> Сборные грузы
+                </div>
+                <h1 class="body__name block-header" data-scroll data-scroll-call="headerAnimation">Сборные грузы</h1>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Об услуге  -->
+    <section class="about" id='about'>
+        <div class="grid">
+            <div class="grid__block-white"></div>
+            <div class="grid__block-white"></div>
+            <div class="grid__block-white"></div>
+            <div class="grid__block-white"></div>
+            <div class="grid__block-white"></div>
+        </div>
+        <div class="grid-adaptive">
+            <div class="grid__block-white"></div>
+            <div class="grid__block-white"></div>
+            <div class="grid__block-white"></div>
+        </div>
+        <div class="container">
+            <div class="about__content">
+                <div class="about__description" data-scroll data-scroll-call="fadesAnimations"
+                    data-animation-timeout="1500">
+                    <h2 class="about__name block-header" data-scroll data-scroll-call="headerAnimation"
+                        data-animation-timeout="700">Об
+                        услуге</h2>
+                    <div class="about__purpose fade fade--left">
+                        <p>
+                            Доставка сборных грузов - одно из приоритетных направлений<br class="d-lm"> деятельности
+                            компании SK Group
+                            Trans. Мы осуществляем доставку<br class="d-lm"> небольших партий товаров из различных стран
+                            в составе
+                            сборной<br class="d-lm"> авто с консолидацией на наших складах.
+                        </p>
+                        <p>
+                            Консолидационные склады компании расположены в Литве, Германии<br class="d-lm"> и Китае.<br
+                                class="d-lm">
+                            Каждую неделю осуществляется вывоз сборных партий со складов<br class="d-lm"> по
+                            соответствующим
+                            таможням с последующей доставкой<br class="d-lm"> до двери получателя.
+                        </p>
+                        <p>
+                            Мы можем организовать забор груза от поставщика или Вы можете<br class="d-lm"> привезти груз
+                            на один из наших складов самостоятельно.
+                        </p>
+
+
+                    </div>
+                </div>
+                <div class="sliders__wrapper">
+                    <div class="about__sliders sliders">
+                        <div class="slider-about roll-left__shadow" data-scroll>
+                            <div class="slider-about__item roll-left" data-scroll>
+                                <div class="img-wrapper img-wrapper--blue">
+                                    <div class="img-caption">SK Group Trans</div>
+                                    <img src="./img/services/cargo_about-clear.jpg" alt="грузовик со сборными грузами"
+                                        class="sliders__img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="plus" id='plus'>
+        <div class="grid">
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+        </div>
+        <div class="grid-adaptive">
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+        </div>
+        <div class="container">
+            <h2 class="plus__name block-header services-header" data-scroll data-scroll-call="headerAnimation">Плюсы
+                перевозки&ensp;<br class="plus-mobile">в составе
+                сборной авто</h2>
+            <div class="plus-body__wrapper">
+                <div class="plus-body fade fade--bottom" data-scroll>
+                    <img src="./img/index-cargo/dostavka_sb_gruzov.png" alt="">
+                    <div class="plus-card cost_savings__wrapper">
+                        <span class="plus-body__description cost_savings"><strong>Экономия средств</strong>
+                            на<br class='plus-mobile'>
+                            транспортировку за счет<br class="plus-adaptive"> объединения<br class='plus-mobile'> грузов
+                            от различных
+                            отправителей</span>
+                    </div>
+                    <div class="plus-card small_parties__wrapper">
+                        <span class="plus-body__description small_parties">Возможность отправлять как
+                            <strong>мелкие<br class='plus-mobile'>
+                                партии</strong> сборных грузов, увеличивая<br class='plus-mobile'> тем самым
+                            оборачиваемость грузов,<br class='plus-mobile'>так и
+                            <strong>крупногабаритные партии</strong>
+                            <br class='plus-mobile'>весом в несколько тонн</span>
+                    </div>
+                    <div class="plus-card organization__wrapper">
+                        <span class="plus-body__description organization">Полностью <strong>берем на себя
+                                всю<br class="plus-adaptive"><br class='plus-mobile'> организацию</strong> перевозки,
+                            документов<br class="plus-adaptive"> и<br class='plus-mobile'> таможенного оформления</span>
+                    </div>
+                    <div class="plus-card min_delivery__wrapper">
+                        <span class="plus-body__description min_delivery"><strong>Минимальный срок
+                                доставки.</strong><br class="plus-adaptive"><br class='plus-mobile'> Выход сборной авто
+                            каждую<br class='plus-mobile'> неделю<br class="plus-adaptive"> с
+                            консолидированного<br class='plus-mobile'> склада</span>
+                    </div>
+                    <div class="plus-card fixed_cost__wrapper">
+                        <span class="plus-body__description fixed_cost"><strong>Фиксированная</strong>
+                            неизменная
+                            <strong>цена</strong></span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="stages" id='stages'>
+        <div class="grid">
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+        </div>
+        <div class="grid-adaptive">
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+        </div>
+        <div class="container">
+            <h2 class="stages__name block-header services-header" data-scroll data-scroll-call="headerAnimation">Этапы
+                работы по доставке <br>
+                и таможенному оформлению сборных грузов</h2>
+            <div class="stages__description">
+                <div class="stages-card fade fade--left" data-scroll>
+                    <div class="stages-card__number">01</div>
+                    <div class="stages-card__description">Пикап от отправителя из<br> любой точки</div>
+                </div>
+                <div class="stages-card fade fade--rigth" data-scroll>
+                    <div class="stages-card__number number-right">02</div>
+                    <div class="stages-card__description">Консолидация<br class='stages-mobile'> грузов<br
+                            class='stages-mobile'> на<br class="stages-desktop"> складе</div>
+                </div>
+                <div class="stages-card fade fade--left" data-scroll>
+                    <div class="stages-card__number">03</div>
+                    <div class="stages-card__description">Оформление экспортных<br> формальностей</div>
+                </div>
+                <div class="stages-card fade fade--rigth" data-scroll>
+                    <div class="stages-card__number number-right">04</div>
+                    <div class="stages-card__description">Перевозка до таможни<br> назначения</div>
+                </div>
+                <div class="stages-card fade fade--left" data-scroll>
+                    <div class="stages-card__number">05</div>
+                    <div class="stages-card__description">Таможенное оформление<br> (растаможка)</div>
+                </div>
+                <div class="stages-card fade fade--rigth" data-scroll>
+                    <div class="stages-card__number number-right">06</div>
+                    <div class="stages-card__description">Доставка до конечного<br> получателя</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="graph" id='graph'>
+        <div class="grid">
+            <div class="grid__block-white"></div>
+            <div class="grid__block-white"></div>
+            <div class="grid__block-white"></div>
+            <div class="grid__block-white"></div>
+            <div class="grid__block-white"></div>
+        </div>
+        <div class="grid-adaptive">
+            <div class="grid__block-white"></div>
+            <div class="grid__block-white"></div>
+            <div class="grid__block-white"></div>
+        </div>
+        <div class="container">
+            <h2 class="graph__name block-header" data-scroll data-scroll-call="headerAnimation">График и сроки доставки
+            </h2>
+            <!-- Таблица доставки -->
+            <div id="comparisonchart" class="fade fade--bottom" data-scroll>
+                <input id="tcol1" name="tcol" type="radio" checked />
+                <input id="tcol2" name="tcol" type="radio" />
+                <input id="tcol3" name="tcol" type="radio" />
+                <nav>
+                    <label for="tcol1">Европа</label>
+                    <label for="tcol2" class="nav-china">Китай</label>
+                    <label for="tcol3">США</label>
+                </nav>
+                <table class="data-compchart">
+                    <colgroup>
+                        <col>
+                        <col>
+                        <col>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>
+                                <h3>Отправка из Европы</h3>
+                            </th>
+                            <th>
+                                <h3>Отправка из Китая</h3>
+                            </th>
+                            <th>
+                                <h3>Отправка из США</h3>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="graph__europe">
+                                <p>– еженедельно каждые вторник, пятница;</p>
+                                <br>
+                                <p>–Доставка до склада в Москве – еженедельно вторник, пятница;</p>
+                                <br>
+                                <p>– Сроки доставки от 7 <br class="d-s">до 10 дней,включая таможенное<br class="d-s">
+                                    оформление.</p>
+                            </td>
+                            <td class="graph__china">
+                                <p>- Еженедельная отправка из Китая (Гуанчжоу, Пекина, Иу);</p>
+                                <br>
+                                <p>– Доставка до склада в Москве включая таможенное оформление:</p>
+                                <br>
+                                <p>- авиа 7-9 дней</p>
+                                <br>
+                                <p>- авто 18-23 дня</p>
+                                <br>
+                                <p>- море 50-55 дней</p>
+                                <br>
+                                <p>- ж/д 35-40 дней</p>
+                            </td>
+                            <td class="graph__usa">
+                                <p>- авиа отправка до склада в Прибалтике от 3-10 дней</p>
+                                <br>
+                                <div class="graph__usa-desc">
+                                    <p>Далее в составе сборной<br class="d-s"> авто отправки<br class="d-s"> из Европы
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="test" class="about__event event" data-scroll data-scroll-call="fadesAnimations"
+                data-animation-timeout="170">
+                <div class="event__name block-header" data-scroll data-scroll-call="headerAnimation">Направления
+                    перевозок сборных
+                    грузов</div>
+                <div class="event__description fade fade--left"><span>⬦</span> Страны Западной и Восточной Европы:<br
+                        class="d-sm">
+                    Австрия, Бельгия,
+                    Великобритания, Германия,<br class="d-sm"> Ирландия,<br class="d-lm"> Лихтенштейн, Люксембург,<br
+                        class="d-sm"> Нидерланды, Франция, Польша, Литва,<br class="d-sm">
+                    Латвия, Эстония, Португалия,<br class="d-lm"> Испания, Чехия,<br class="d-sm"> Швейцария;</div>
+                <div class="event__description fade fade--left"><span>⬦</span> Скандинавские страны: Финляндия,<br
+                        class="d-sm"> Швеция,
+                    Норвегия, Дания;
+                </div>
+                <div class="event__description fade fade--left"><span>⬦</span> Страны Балканского полуострова:
+                    Италия,<br class="d-sm">
+                    Греция, Турция,<br class="d-lm">
+                    Словения, Болгария, Румыния, Македония,<br class="d-sm"> Хорватия,<br class="d-lm"> Черногория,
+                    Албания, Босния и Герцеговина;</div>
+                <div class="event__description fade fade--left"><span>⬦</span> ЮВА (Китай).</div>
+            </div>
+            <img class='graph__truck' src="./img/index-cargo/truck.png" alt="truck">
+        </div>
+    </section>
+
+    <!-- Цена транспортировки -->
+    <section class="price">
+        <div class="grid">
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+        </div>
+        <div class="grid-adaptive">
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+        </div>
+        <div class="container" data-scroll data-scroll-call="fadesAnimations" data-animation-timeout="170">
+            <h2 class="price__name block-header" data-scroll data-scroll-call="headerAnimation">Цена транспортировки<br
+                    class="d-lm">
+                формируется на основании параметров:</h2>
+            <div class="price__description fade fade--left"><span>⬦</span> Учитывается вес, габариты и объем товара;
+            </div>
+            <div class="price__description fade fade--left"><span>⬦</span> Тип груза. Особенности, требующие обеспечения
+                особых условий
+                доставки;</div>
+            <div class="price__description fade fade--left"><span>⬦</span> Расходы на перевозку. Стоимость
+                рассчитывается на основании
+                маршрута, по которому следует груз;</div>
+            <div class="price__description fade fade--left"><span>⬦</span> Таможенное оформление. Товару присваивается
+                код ТНВЭД,
+                подготавливаются разрешительные документы;</div>
+        </div>
+    </section>
+
+    <!-- Заявка на расчет -->
+    <section class="consultation" id='contact'>
+        <div class="grid">
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+        </div>
+        <div class="grid-adaptive">
+            <div class="grid__block-white"></div>
+            <div class="grid__block-white"></div>
+            <div class="grid__block-white"></div>
+        </div>
+        <div class="container">
+            <h2 class="consultation__name block-header" data-scroll data-scroll-call="headerAnimation"><span>ЗАЯВКА НА
+                    РАСЧЕТ</span></h2>
+            <div class="consultation-form fade fade--bottom" data-scroll>
+                <p class="consultation-form__description">Бесплатно рассчитать стоимость доставки и<br class="d-sm">
+                    таможенного оформления в составе сборного<br class="d-sm"> груза.<br class="d-lm"><br class="d-sm">
+                    Отправляйте заявки на почту или задавайте<br class="d-sm"> вопросы с <span>помощью
+                        мессенджера</span>.</p>
+                <form action="send.php" method="POST" class="form-tamojnya">
+                    <div class="form-tamojnya__wrapper">
+                        <div class="consultation-form__contact">
+                            <div class="consultation-form__name"><input type="text" name="name" required
+                                    placeholder="Имя" class="form__name"></div>
+                            <div class="consultation-form__phone"><input type="tel" name="tel" required
+                                    placeholder="Телефон" class="form__phone" id="form__phone"></div>
+                        </div>
+                        <div class="consultation-form__button">
+                            <div class="consultation-form__email"><input type="email" name="email" placeholder="E-mail"
+                                    class="form__email"></div>
+                            <a href=""><button class="form__button" type="submit">Оставить заявку</button></a>
+                        </div>
+                    </div>
+                    <div class="form-or">ИЛИ</div>
+                    <div class="form-tamojnya__whats"><a
+                            href="https://wa.me/+79633170143?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82!"><button
+                                class="form__whats" type='button'>Написать в WhatsApp</button></a></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Другие услуги компании -->
+    <section class="services" id='services' data-animation-timeout="1000">
+        <div class="grid">
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+        </div>
+        <div class="grid-adaptive">
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+        </div>
+        <div class="container">
+            <h2 class="services__name block-header" data-scroll data-scroll-call="headerAnimation">Другие услуги
+                компании</h2>
+            <div class="services__description" data-scroll data-scroll-call="imgAnimation">
+                <div class="services-card services-card__service roll-left">
+                    <span class="services-card__firm-name">SK Group Trans</span>
+                    <a href="./index-tamojnya.html" class="services-card__title">Таможенное оформление</a>
+                    <a href="./index-tamojnya.html" class="services-card__btn cargo-btn">Подробнее</a>
+                </div>
+                <div class="services-card services-card__counseling roll-left">
+                    <span class="services-card__firm-name">SK Group Trans</span>
+                    <a href="./index-autsorsing.html" class="services-card__title">Аутсорсинг ВЭД</a>
+                    <a href="./index-autsorsing.html" class="services-card__btn cargo-btn">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer-logo">
+                <a href="/">
+                    <img src="./img/contact/logo_footer.png" alt="logo" class="footer-logo__img">
+                    <div class="footer-logo__name">ВЭД<br>Логистика<br>Таможенное оформление</div>
+                </a>
+            </div>
+            <div class="footer-services">
+                <div class="footer-services__name">Услуги:</div>
+                <div class="footer-services__description">
+                    <a href="./index-autsorsing.html">Аутсорсинг ВЭД</a>
+                    <a href="./index-tamojnya.html">Таможенное оформление</a>
+                    <a href="./index-cargo.html">Сборные грузы</a>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <a href="mailto:skgrouptrans@gmail.com">
+                    <div class="footer-contact-item footer-contact__mail">skgrouptrans@gmail.com</div>
+                </a>
+                <a href="tel:+78129831290">
+                    <div class="footer-contact-item footer-contact__phone">+7(812)983-12-90</div>
+                </a>
+                <a>
+                    <div class="footer-contact__politics">Политика конфиденциальности</div>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <section class="good-product">
+        <div class="good-product__copyrigth">
+            Copyright © SKGroupTrans 2021. Все права защищены.
+        </div>
+        <div class="good-product__name">
+            <a href="https://good-production.ru/" rel='nofollow'>Сайт разработан веб-студией "Good Production"</a>
+        </div>
+    </section>
+
+    <script src='./js/jquery/jquery.js'></script>
+    <script src='./js/jquery/jquery.nicescroll.min.js'></script>
+    <script src='./js/jquery.maskedinput.min.js'></script>
+    <script src="./js/slick-slider/slick-slider.js"></script>
+    <!-- Скрипты анимаций и прелоадера -->
+    <script src="./js/gsap.min.js"></script>
+    <script src="./js/Split3.min.js"></script>
+    <!-- <Locomotive Scroll> -->
+    <script src="./js/locomotive-scroll.min.js"></script>
+    <!-- </Locomotive Scroll> -->
+    <script src='./js/build-and-preloader.js'></script>
+    <script src="./js/index-for-services.js"></script>
+</body>
+
+</html>

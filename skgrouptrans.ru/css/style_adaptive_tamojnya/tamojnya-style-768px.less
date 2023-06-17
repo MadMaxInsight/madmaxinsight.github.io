@@ -1,0 +1,477 @@
+@media screen and (max-width: 769px) {
+    .grid {
+        display: none;
+
+        &-adaptive {
+            display: flex;
+            justify-content: space-between;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            right: 0;
+            box-sizing: border-box;
+            z-index: 0;
+            position: absolute;
+            padding: 0 7%;
+        }
+    }
+
+    .container {
+        padding: 0 7%
+    }
+
+
+    .logo {
+        width: 501px;
+
+        &-image {
+            width: 113px;
+        }
+
+        &-name {
+            font-size: 18px;
+        }
+    }
+
+    .header {
+        &__number {
+            display: none;
+        }
+
+        &__menu {
+            font-size: 18px;
+        }
+
+        &__button {
+            display: none;
+        }
+    }
+
+    .button {
+        font-size: 18px;
+    }
+
+    .main-screen {
+
+        // margin-top: 133px;
+        &:after {
+            background-position: 40% center;
+
+        }
+        
+    }
+
+    .main-br {
+        display: none;
+    }
+
+    .main-body {
+        &__description {
+            font-size: 29px;
+        }
+    }
+
+    .main-scroll__wrapper {
+        transform: translateX(-153%);
+    }
+
+    .advantage {
+        &__name {
+            &-wsize {
+                width: 238px;
+            }
+
+            &-size {
+                width: 136px;
+            }
+        }
+    }
+
+    /* меню навигации  */
+    .active-content {
+        &__points {
+            height: 30%;
+            margin-top: 10%;
+        }
+    }
+
+    /* О компании */
+    .about {
+        padding: 60px 0px 94px;
+
+        &:before {
+            border: 13px solid #FFFFFF;
+            filter: blur(3px);
+            top: 653px;
+        }
+
+        .block-header>span {
+            &:after {
+                top: -10px;
+                right: -40px;
+            }
+        }
+
+        &:after {
+            width: 70px;
+            height: 70px;
+            border: 14px solid #FFFFFF;
+            bottom: -13px;
+            left: 651px;
+        }
+
+        &:before {
+            right: -18.3px;
+            width: 48px;
+            height: 48px;
+        }
+
+        &__content {
+            flex-direction: column;
+        }
+
+        &__description {
+            width: 100%;
+            height: auto;
+        }
+
+        &__purpose {
+            margin-right: 0px;
+            line-height: 18px;
+
+            &>p {
+                font-size: 16px;
+            }
+        }
+
+        .img {
+            &-caption {
+                top: 58%;
+                font-size: 12px;
+                font-weight: 700;
+            }
+        }
+
+        &__sliders {
+            width: 70%;
+            height: 340px;
+        }
+
+        .sliders {
+            &__wrapper {
+                width: 100%;
+                align-items: center;
+            }
+
+            &__number {
+                font-size: 15px;
+                margin-top: 57px;
+                align-self: flex-end;
+                margin-right: 100px;
+            }
+
+            &__img {
+                width: 100%;
+                height: 307px;
+            }
+
+            .slider-about {
+                width: 100%;
+                height: auto;
+                margin-right: 0px;
+                margin-top: 73px;
+
+                &__item {
+                    height: auto;
+                    margin-right: 12px;
+                    margin-top: 28px;
+                    width: 100%;
+
+                    & img {
+                        height: 100%;
+                        width: 100%;
+                    }
+
+                    &:before {
+                        // max-height: 207px; 
+                        top: -10px;
+                        right: -10px;
+                        left: unset;
+
+                    }
+
+                }
+
+                &:before {
+                    width: 100%;
+                    height: 307px;
+                    bottom: -24px;
+                    left: 14px;
+                }
+
+                &:after {
+                    display: none;
+                }
+            }
+
+            .slick {
+                &-arrow {
+                    bottom: -54px;
+                }
+            }
+
+            &-button {
+                margin-right: 10px;
+            }
+        }
+
+    }
+
+    .block-header {
+        margin-top: 0px;
+        line-height: 62px;
+
+        &:after {
+            display: none;
+        }
+
+        &>span {
+            position: relative;
+
+            &:after {
+                content: '';
+                position: absolute;
+                background-image: url(../../img/about/crosses_for_header.png);
+                background-size: cover;
+                z-index: 2;
+                width: 67px;
+                height: 36px;
+                top: -9px;
+                right: -44px;
+            }
+        }
+    }
+
+    /* Этапы таможенного офрмления */
+    .stages {
+        &__name {
+            font-size: 41px;
+        }
+
+        .block-header>span {
+            &:after {
+                top: -13px;
+                right: -274px;
+            }
+        }
+
+        &__description {
+            &-left {
+                left: 0;
+                align-self: center;
+            }
+
+            &-right {
+                right: 0;
+                align-self: center;
+            }
+        }
+
+        .registration {
+            width: 530px;
+            height: 173px;
+
+            &::before {
+                width: 121px;
+                height: 121px;
+                left: -61px;
+            }
+
+            &:after {
+                width: 121px;
+                height: 121px;
+                right: -61px;
+            }
+
+            &__name {
+                font-size: 20px;
+                line-height: 20px;
+            }
+
+            &__description {
+                line-height: 18px;
+                font-size: 16px;
+            }
+        }
+
+        &-footer {
+            &__description {
+                font-size: 16px;
+
+                &>strong {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    /* Другие услуги компании */
+    .services {
+        &__name {
+            margin-top: 63px;
+        }
+
+        .block-header>span {
+            &::after {
+                right: -179px;
+            }
+        }
+    }
+
+    /* Индивидуальная консультация */
+    .consultation {
+        background-color: #2B2B51;
+        padding: 60px 0 10px;
+
+        &__name {
+            -webkit-text-stroke: 2px white;
+        }
+
+        &-br {
+            display: none;
+        }
+
+        .block-header>span {
+            &:after {
+                right: -112px;
+                top: -14px;
+            }
+        }
+
+        &-form {
+            background-color: transparent;
+            margin: 0;
+            padding: 42px 4px 57px 4px;
+            box-shadow: none;
+
+            &:before {
+                display: none;
+            }
+
+            &__description {
+                font-size: 19px;
+
+                & span:after {
+                    display: none;
+                }
+            }
+        }
+
+        .form {
+            &-tamojnya {
+                flex-direction: column;
+
+                &__whats {
+                    margin-left: 0px;
+                    margin-top: 36px;
+                }
+            }
+
+            &__name,
+            &__phone,
+            &__email,
+            &__button,
+            &__whats {
+                width: 307px;
+            }
+
+            &__whats {
+                &:after {
+                    display: none;
+                }
+            }
+
+        }
+
+    }
+
+    /* Подвал */
+    .footer {
+        &-logo {
+            &__name {
+                width: 217px;
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media (min-width: 421px) and (max-width:769px) {
+    .block-header {
+        &:after {
+            display: block;
+            width: 53px;
+            height: 30px;
+            right: -35px;
+            top: -11px;
+        }
+    }
+
+
+    .about {
+        &:before {
+            right: -18.3px;
+            width: 22px;
+            height: 22px;
+            content: '';
+            position: absolute;
+            transform: rotate(45deg);
+            filter: blur(3px);
+            border: 11px solid #FFFFFF;
+            bottom: 56px;
+            top: unset;
+        }
+
+        &:after {
+            width: 70px;
+            height: 70px;
+            border: 14px solid #FFFFFF;
+            filter: blur(2px);
+            box-shadow: -11px 18px 20px rgb(0 0 0 / 20%);
+            left: unset;
+            bottom: -19px;
+            right: 31px;
+        }
+
+        &__purpose {
+            &>p {
+                font-size: 21px;
+                line-height: 1.2em;
+            }
+        }
+
+        .sliders .slider-about__item {
+            margin-top: 0px;
+        }
+    }
+
+    .stages {
+        .block-header {
+            &:after {
+                top: -8px;
+            }
+        }
+        .registration__description{
+           font-size: 18px;
+            line-height: 1.1em;
+                br{
+                display: none;
+            }
+            
+            
+        }
+        &-footer{
+                font-size: 20px;
+        }
+    }
+}

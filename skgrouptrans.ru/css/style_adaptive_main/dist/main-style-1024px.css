@@ -1,0 +1,231 @@
+@media screen and (max-width: 1250px) {
+  .container {
+    padding: 0 6%;
+  }
+  .grid {
+    padding: 0px 6%;
+  }
+  .logo {
+    width: 390px;
+  }
+  .logo-name {
+    font-size: 17px;
+  }
+  .header__number {
+    font-size: 20px;
+  }
+  .header__menu {
+    font-size: 16px;
+  }
+  .button {
+    font-size: 16px;
+  }
+  .main-screen {
+    background-position: 39% 50%;
+  }
+  .advantage__name-size {
+    width: 165px;
+  }
+  /* О компании */
+  .block-header {
+    font-size: 50px;
+  }
+  .block-header:after {
+    width: 100px;
+    height: 53px;
+    top: -16px;
+  }
+  .about__purpose > p {
+    font-size: 15px;
+  }
+  .sliders .slider-about {
+    width: 406px;
+    height: 275px;
+  }
+  .sliders .slider-about:before {
+    width: 406px;
+    height: 270px;
+    top: -18px;
+  }
+  .sliders .slider-about:after {
+    width: 100px;
+    height: 53px;
+    left: -50px;
+  }
+  /* Услуги компании */
+  .services__description {
+    font-size: 23px;
+  }
+  .services-card__title {
+    font-size: 23px;
+  }
+  /* Как начать сотрудничество */
+  .cooperation__name > span {
+    position: relative;
+  }
+  .cooperation__name > span:after {
+    content: '';
+    position: absolute;
+    background-image: url(../../img/about/crosses_for_header.png);
+    background-size: cover;
+    z-index: 2;
+    width: 100px;
+    height: 53px;
+    bottom: 39px;
+    right: -59px;
+  }
+  .cooperation__name:after {
+    display: none;
+  }
+  .cooperation .stages__description.stages-1:before,
+  .cooperation .stages__description.stages-2:before,
+  .cooperation .stages__description.stages-3:before,
+  .cooperation .stages__description.stages-4:before,
+  .cooperation .stages__description.stages-5:before,
+  .cooperation .stages__description.stages-6:before {
+    font-size: 16px;
+  }
+  /* Остались вопросы */
+  .question__name {
+    font-size: 41px;
+  }
+  .question__name:after {
+    top: -28px;
+  }
+  .question__description {
+    font-size: 18px;
+    width: 630px;
+  }
+  .question__subname {
+    font-size: 34px;
+  }
+  .question .form {
+    width: 290px;
+  }
+  .question-form__button {
+    width: 290px;
+  }
+  .question__blue-fon:before {
+    height: 439px;
+    width: 400px;
+    right: -314px;
+  }
+  /* Контакты */
+  .contact .our-address__wrapper {
+    left: -269px;
+    width: 50vw;
+  }
+  .contact__map-img {
+    width: 60vw;
+  }
+  .contact__map-img:after {
+    width: 100%;
+  }
+  .contact .iframe {
+    width: 100%;
+  }
+  .footer-logo__name {
+    font-size: 16px;
+    width: 275px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1250px) {
+  .logo {
+    width: 348px;
+  }
+  .logo-image {
+    width: 12vw;
+  }
+  .logo-name {
+    font-size: 1.7vw;
+  }
+  .main-screen__header {
+    padding: 16px 2%;
+  }
+  .header__number {
+    font-size: 1.5vw;
+  }
+  .header-menu {
+    margin-left: 1.7vw;
+    margin-right: 2vw;
+  }
+  /* About */
+  .about__description {
+    height: auto;
+    padding-bottom: 10vw;
+  }
+  .about__name {
+    font-size: 5vw;
+  }
+  .sliders .button-slide {
+    bottom: -50%;
+  }
+  .sliders .slider-about {
+    width: 42vw;
+  }
+  .sliders .slider-about:after {
+    bottom: -35%;
+  }
+  .sliders .slider-about__item {
+    width: 40vw;
+  }
+  .excellence-card__delivery:before,
+  .excellence-card__finance:before,
+  .excellence-card__document:before,
+  .excellence-card__optimization:before,
+  .excellence-card__oneWindow:before,
+  .excellence-card__guarantee:before {
+    width: 88px;
+    height: 88px;
+  }
+  .excellence-card {
+    padding: 24px 26px 25px 27px;
+  }
+  .excellence-card__name {
+    font-size: 12px;
+    margin-right: 22px;
+  }
+  .excellence-card__description {
+    font-size: 10px;
+  }
+  .cooperation .stages__description.stages-1:before,
+  .cooperation .stages__description.stages-2:before,
+  .cooperation .stages__description.stages-3:before,
+  .cooperation .stages__description.stages-4:before,
+  .cooperation .stages__description.stages-5:before,
+  .cooperation .stages__description.stages-6:before {
+    font-size: 14px;
+  }
+  .reviews .comment__description {
+    font-size: 14px;
+    margin-top: 22px;
+  }
+  .reviews .comment__logo img {
+    max-width: 99px;
+  }
+  .reviews .comment__name-size {
+    font-size: 13px;
+  }
+  .reviews .comment__name {
+    font-size: 15px;
+  }
+  .question__blue-fon {
+    width: 100%;
+  }
+  .question__blue-fon:before {
+    display: none;
+  }
+  .question__white-fon:before {
+    display: none;
+  }
+  .contact .our-address__name {
+    padding-right: 45px;
+  }
+  .contact .our-address:before {
+    width: 157.82px;
+    height: 157.82px;
+  }
+  .footer-services {
+    margin-right: 3%;
+  }
+}
