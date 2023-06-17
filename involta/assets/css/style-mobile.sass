@@ -1,0 +1,639 @@
+@media screen and (max-width: 420px)
+    html
+        font-size: 14px
+        overflow-x: hidden
+
+    body
+        overflow-y: scroll
+        // cursor: auto
+        &.loading
+            overflow: hidden
+            height: 100vh
+
+    .container
+        padding: 0 20px
+
+    /** Header **/    
+    .header
+        .menu__item
+            opacity: 0
+        &__logo
+            height: 2.8vh
+            // z-index: 99
+            & svg
+                height: 2.8vh
+                width: auto
+        .nav
+            position: absolute
+            height: 100vh
+            width: 100vw
+            top: 0
+            left: 0
+            padding: 10vh 24px
+            transform: translateX(100%)
+            // background-color: #fff
+            transition: transform 0.3s ease-in-out
+            flex-direction: column
+
+            &__lang-switcher
+                padding: 8px 16px !important
+                .lang
+                    margin-left: 1.8rem
+                    font-weight: 700
+                    margin: 0
+            &__menu
+                flex-direction: column
+                .menu
+                    &__item
+                        display: flex
+                        align-items: center
+                        margin-bottom: 4.2rem
+                        position: relative
+                        a
+                            margin-left: 1.8rem
+                            font-weight: 700
+
+            .item-line
+                display: flex
+                align-items: center
+                width: 30px
+                transition: width 0.3s ease-in-out
+                .arrow-line
+                    height: 2px
+                    width: 100%
+                    background-color: #000
+                    margin-right: -10px
+                &.open
+                    width: 80px
+
+                        // &::before
+                        //     content: ''
+                        //     display: inline-block
+                        //     height: 8px
+                        //     width: 30px
+                        //     background-image: url('../images/header/menu-arrow.svg')
+
+        &__burger-button
+            position: absolute
+            z-index: 99
+            display: flex
+            align-items: center
+            justify-content: center
+            right: 3%
+            height: 30px
+            width: 30px
+            .burger-img
+                position: absolute
+                transform-origin: center center
+                // transition: 0.3s ease-in-out
+                &--menu
+                    opacity: 1
+                    & svg
+                        path
+                            stroke: var(--header-color)
+                &--cross
+                    opacity: 0
+
+        &.open
+            .nav
+                transform: translateX(0%)
+            .menu__item
+                opacity: 1
+                .burger-img
+                    &--menu
+                        opacity: 0
+                    &--cross
+                        opacity: 1
+                        transform: rotate(180deg)
+        &.header--black
+            --header-color: #000
+            &.open
+                .header__logo svg
+                    fill: #fff
+                .nav
+                    background-color: var(--header-color)
+                    a
+                        color: #fff
+                    .arrow-line
+                        background: #fff
+                    .item-line svg path
+                        stroke: #fff
+                .burger-img
+                    &--cross svg path
+                        stroke: #fff
+        &.header--white
+            --header-color: #fff
+            &.open
+                .header__logo
+                    svg
+                        fill: #000
+                .nav
+                    background-color: var(--header-color)
+                    a
+                        color: #000
+                    .arrow-line
+                        background: #000
+                    .item-line svg path
+                        stroke: #000
+                .burger-img
+                    &--cross svg path
+                        stroke: #000
+    /** Preloader **/
+    .preloader
+        padding: 0 4%
+        video
+            width: 100%
+            display: none
+        .involta-title
+            &__text
+                -webkit-background-clip: text
+                background-clip: text
+                color: transparent
+                font-size: 24vw
+                font-weight: 900
+                background-image: url("../images/involta-title-background.png")
+                background-size: cover
+                animation: animation-pulse 25s infinite
+
+    /** Main & Animation logic **/
+
+    /** Screen "About" **/
+
+    .about
+        height: auto
+        // position: sticky
+        position: relative !important
+        // z-index: 2 !important
+        &.active
+            z-index: 2
+        &-container-wrapper
+            position: relative
+        &-wrapper
+            height: auto
+            flex-direction: column
+            position: relative
+            padding-top: 12vh
+        &__bg
+            // position: fixed
+            position: absolute
+            height: 100%
+            z-index: 0
+            .bg__item
+                width: 100vw
+                // height: 100%
+                // height: 25%
+                min-height: 100%
+                &-wrapper
+                    grid-template-rows: 1fr
+                    grid-template-columns: 1fr
+                    overflow: hidden
+                    width: 100vw
+        &__promo
+            height: 100vh
+            width: 100%
+        &__desc
+            // height: 100vh
+            // position: absolute
+            height: 100%
+            width: 100%
+        &__desc
+            padding-left: 30px
+
+        .promo
+            &__header
+                padding-top: 6vh
+                svg
+                    height: 28vh
+            &__desc
+                display: none
+                // &--desktop
+                //     display: none
+                &--mobile
+                    display: block
+                    font-weight: 300
+                    font-size: 1.6rem
+                    line-height: 130%
+                    text-transform: none
+                    font-style: normal
+                    margin-top: 4.3rem
+        .desc
+            &__header
+            &__paragraphs-wrapper
+                margin-bottom: 10vh
+            &__paragraph
+                font-weight: 500
+                font-size: 1.8rem
+                line-height: 125%
+                width: 100%
+
+        .scroll-arrow
+            left: -20px
+            &__img
+                justify-content: start
+                svg
+                    margin-left: -6px
+            &__line
+                // margin-left: 2px
+    .main-wrapper
+        height: 2880vh
+        height: auto
+    /**  Screen "Involta GO" **/
+    .involta-go
+        z-index: 1
+        // z-index: 0
+        position: relative
+        // height: 800vh
+        &.active
+            z-index: 3
+        &-wrapper
+            position: relative
+        &__green-preloader
+            background-color: #B4DB4D
+            position: absolute
+            opacity: 1
+            height: 190vh
+            width: 190vh
+            top: -90vh
+            left: -61vh
+            border-radius: 50%
+
+        /* Web browser screen */
+        &__web-browser
+            background-color: #fff
+            .web-browser
+                &__browser-bg,
+                &__content-wrapper
+                    top: 9vh
+                &__content-wrapper
+                    justify-content: start
+                    top: 18vh
+                    width: 100%
+                &__browser-bg
+                    width: 95%
+                    .browser-bg
+                        &__control-btns
+                            left: 20px
+                            top: 16px
+                    // display: none
+                &__logo
+                    width: 58vw
+                    margin-bottom: 1.4rem
+                &__cards
+                    // position: relative
+                    margin-bottom: 6vh
+                    height: 54vh
+                    position: relative
+                    width: 100%
+                    .cards
+                        &__wrapper
+                            position: absolute
+                            left: 0
+                            top: 0
+                            // transform: translateX(2%)
+                            // overflow-x: scroll
+                            // display: block
+                        &__item
+                            // height: 54vh
+                            height: 100vw
+                            width: 78vw
+                            min-width: unset
+                            // margin: 0 1% !important
+                            &:first-of-type
+                                // margin-left: 2% !important
+                        &__title
+                            font-style: normal
+                            font-weight: 700
+                            font-size: 2.4rem
+                            line-height: 135%
+                            text-transform: none
+                            color: #000
+                        &__desc
+                            font-size: 1.5rem
+                            font-weight: 500
+                            line-height: 135%
+                        // .flickity-viewport
+                        //     width: 78vw
+                &__search
+                    width: 100%
+                    margin-bottom: 28px
+
+            .search
+                &__phrase
+                    display: none
+                    left: 2%
+                    & span
+                        font-weight: 500
+                        font-size: 1.2rem
+                        transform: rotate(-15deg)
+                    .phrase__arrow
+                        height: 76px
+                        margin-right: 28%
+                        margin-bottom: 20px
+                        &--desktop
+                            display: none
+                        &--mobile
+                            display: block
+
+                &-bar
+                    width: 90%
+                    min-width: unset
+
+        /* Slider screen */
+        &__slider
+            top: 0
+            .slider
+                &__items
+                    width: 100vw
+                    height: 100vh
+                    border-radius: 0
+                &__item
+                    border-radius: 0
+                    &:nth-child(1)
+                        background-image: url(../images/third/slider-image-1--mobile.png)
+                    &:nth-child(2)
+                        background-image: url(../images/third/slider-image-2--mobile.png)
+                    &:nth-child(3)
+                        // background-image: url(../images/third/slider-image-3--mobile.png)
+                        background-image: url("../images/third/min/slider-image-3.png")
+
+                        background-size: cover
+                        background-position: left bottom
+                &__darken
+                    // display: none
+                    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%)
+
+        /* Sirius screen */
+        &__sirius
+            // display: none
+            background-image: url("../images/third/slider-image-3--mobile.png")
+            background-size: cover
+            background-position: 0% 60%
+            display: flex
+            flex-direction: column
+            align-items: start
+            padding-top: 14vh
+            height: 100vh
+            width: 100%
+            .sirius
+                &-wrapper
+                    position: relative
+                    height: auto
+                    flex-direction: column
+                    align-items: start
+                    width: 100%
+                &__header
+                    width: 60vw
+                    position: relative
+                    top: 0
+                    &:first-of-type
+                        position: relative
+                    &--desktop
+                        display: none
+                    &--mobile
+                        display: block
+                    &-wrapper
+                        margin-bottom: 2.6rem
+                        height: auto
+                &__desc
+                    width: 100%
+                    height: 60vh
+                    padding-left: 0
+                &__txt
+                    font-size: 1.7rem
+                    position: relative
+                    height: auto
+                    p
+                        position: absolute
+                        top: 0
+                &__more-btn
+                    display: none
+                    &--mobile
+                        display: block
+                &__filter
+                    &--darken
+                        background: linear-gradient(357deg, rgba(0, 0, 0, 0) 0.81%, #000000 80%)
+        /* Contacts screen */           
+        &__contacts
+            display: none
+            z-index: 4
+            &--mobile
+                padding: 10vh 0 4vh 0
+                position: relative
+                height: auto
+                display: block
+            .contacts
+                &__cells
+                    justify-content: center
+                &__cell
+                    width: 100% !important
+                    padding: 40px 35px
+                    padding: 8% 6%
+                    margin-right: 0
+                    flex-direction: column
+                    & .cell
+                        &__img
+                            display: none
+                        &__header
+                            font-size: 2.3rem
+                            font-family: 'Montserrat'
+                            font-weight: 800
+                            line-height: 100%
+                            margin-bottom: 20px
+                        &__desc
+                            font-size: 1.4rem
+                            line-height: 135%
+                        &__btn
+                            font-size: 1.6rem
+                            // width: 230px
+                            // height: 65px
+                            width: 215px
+                            height: 60px
+                        &__socials
+                            display: flex
+                            flex-direction: column
+                            justify-content: space-between
+                            & .socials
+                                &__phone,&__mail
+                                    margin-bottom: 1rem
+                                    img
+                                        display: none
+                                    a
+                                        color: #3145FF
+                                        font-weight: 700
+                                        font-size: 1.4rem
+                // &__test
+                //     display: none
+
+/* Modal test form for Mobile  */
+div#modal-bg
+    background-color: #fff
+    padding: 10vh 4vw
+    .lite-modal
+        // transform: translate(-50%,0%)
+        // top: 10vh
+        // top: 0
+        // height: 100%
+        // width: 100%
+        // padding: 10vh 4vw
+        &__close-btn
+            content: 'Закрыть'
+            height: 30px
+            width: 30px
+            display: block
+            position: absolute
+            top: -60px
+            width: 100%
+            text-align: right
+            font-size: 20px
+.testing__modal
+    display: flex
+    .question
+        &__txt
+            font-weight: 600
+            font-size: 1.5rem
+            line-height: 125%
+            display: none
+            margin-bottom: 20px
+            &.active
+                display: block
+        &__number
+            color: #0000004D
+            font-size: 1.2rem
+            font-weight: 700
+
+    .cell__test-form
+        width: 90vw
+        &.result
+            background: #fff
+            .test-form__next
+                display: none
+    .test-form
+        &__question
+            display: none
+            &.result
+                display: none
+            &.active
+                display: block
+        &__answers
+            margin-top: 50px
+            font-weight: 500
+            font-size: 20px
+            line-height: 125%
+            display: none
+            &.active
+                display: block
+            .answers__variant
+                display: flex
+                align-items: center
+                min-height: 12vh
+                width: 100%
+                margin-bottom: 10px
+                padding: 22px 20px
+                background: #F1F5FA
+                border-radius: 25px
+                &.active
+                    background: #3145FF
+                    color: #fff
+                span
+                    pointer-events: none
+
+                input
+                    visibility: hidden
+                    position: absolute
+                    // width: 100%
+                    // height: 100%
+                    // top: 0
+                    // left: 0  
+        &__next
+            display: flex
+            align-items: center
+            float: right
+            // justify-content: end
+            margin-top: 10vh
+            background-color: unset
+            border: unset
+            span
+                font-weight: 600
+                font-size: 1.4rem
+                line-height: 155%
+                margin-right: 10px
+            svg
+                width: 20px
+                path
+                    stroke: #000
+                    stroke-width: 1.3px
+                // fill: blue
+        &__result
+            flex-direction: column
+            justify-content: space-between
+            display: none
+            &.active
+                display: flex
+            .result
+                &__body
+                    background: #F1F5FA
+                    padding: 26px 28px
+                    border-radius: 21px
+                    margin-bottom: 20px
+
+                &__points
+                    font-weight: 600
+                    font-size: 1.6rem
+                    line-height: 100%
+                    margin-bottom: 20px
+                    span
+                        color: #3145FF
+                &__txt
+                    font-weight: 500
+                    font-size: 1.2rem
+                    line-height: 130%
+                    margin-bottom: 40px
+                &__again
+                    display: flex
+                    align-items: center
+                    margin-bottom: 20px
+                    img
+                        height: 12px
+                        width: 12px
+                    button
+                        background-color: unset
+                        border: unset
+                        text-decoration-line: underline
+                        font-size: 1.4rem
+                        font-weight: 600
+                        line-height: 145%
+                        color: #3145FF
+                        margin-left: 10px
+                        &:hover
+                            cursor: pointer
+                &__footer
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    background: #F1F5FA
+                    padding: 26px 28px
+                    border-radius: 21px
+                    .footer
+                        &__socials
+                            flex-direction: column
+                            display: flex
+                            justify-content: space-between
+                            align-items: center
+                            span
+                                width: 100%
+                                color: #000
+                                font-weight: 600
+                                font-size: 1.6rem
+                            .socials-icons
+                                margin-top: 10px
+                                a
+                                    // height: 46px
+                                    position: relative
+                                    display: inline-block
+                                    margin-right: 40px
+                                    &:hover
+                                        transform: scale(1.2)s
+                                img
+                                    height: 46px
+                                    width: auto
+                                    transition: all 0.3s ease-in-out
